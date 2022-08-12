@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-login {
+  background-image: url(../img/BG-login.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  padding: 4rem;
+  background-color: $color--lightgrey;
+  box-shadow: 2px 0px 20px rgba(104, 115, 125, 0.06), 0px 2px 20px rgba(104, 115, 125, 0.06), 0px -2px 20px rgba(104, 115, 125, 0.06),
+    -2px 0px 20px rgba(104, 115, 125, 0.06);
+  max-width: 58rem;
+  max-height: 58rem;
+  border-radius: 2rem;
+  &__logo {
+    display: block;
+    max-width: 38.9rem;
+    margin: 0 auto;
+  }
+  &__form {
+    margin-top: 4rem;
+    .form-group {
+      margin-top: 2rem;
+    }
+    .login-label {
+      font-family: $font-medium;
+      font-size: 2rem;
+      color: $color--black;
+      margin-bottom: 1rem;
+    }
+    .check-label {
+      font-family: $font-medium;
+      font-size: 1.8rem;
+      color: $color--black;
+    }
+    .login-input {
+      height: 4rem;
+      border-radius: 0.8rem;
+      background-color: $color-bg-semiwhite;
+      border: solid 1px #dee4f5;
+      font-size: 1.8rem;
+      padding-left: 2rem;
+    }
+    .login-input::placeholder {
+      font-family: $font-medium;
+      font-size: 1.8rem;
+      color: #c2cfd6;
+    }
+    .help {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      .form-check-input:checked {
+        background-color: $color--blue;
+        border-color: $color--blue;
+      }
+    }
+    .forgot {
+      font-family: $font-medium;
+      color: $color--blue;
+      font-size: 1.8rem;
+    }
+    .form-check-input {
+      border: 2px solid $color--grey;
+    }
+    .btn-login {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      margin-top: 3rem;
+      background-color: $color--orange;
+      font-family: $font-bold;
+      font-size: 1.8rem;
+      color: $color--lightgrey;
+      border: none;
+      border-radius: 0.8rem;
+    }
+  }
+  .bottom-help {
+    .line {
+      display: block;
+      position: relative;
+      max-width: 60rem;
+      margin: 2rem auto;
+      text-align: center;
+      font-family: $font-medium;
+      font-size: 1.8rem;
+      color: $color--black;
+    }
+    .line::before {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 1px;
+      background: $color--black;
+      opacity: 25%;
+      left: 10%;
+      top: 50%;
+      position: absolute;
+    }
+    .line::after {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 1px;
+      background: $color--black;
+      opacity: 25%;
+      right: 10%;
+      top: 50%;
+      position: absolute;
+    }
+    .guide {
+      margin-top: 3rem;
+      text-align: center;
+      font-family: $font-semibold;
+      font-size: 1.8rem;
+      color: $color--black;
+      line-height: 2.5rem;
+      &__link {
+        color: $color--red;
+      }
+    }
+  }
+}
+.password-wrap {
+  position: relative;
+}
+.showpass {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -50px;
+  cursor: pointer;
+  color: $palette-3;
+}
+// small device
+@include mobile {
+  .login {
+    margin: 0 2rem;
+    .login-label {
+      font-size: 2rem;
+    }
+    .check-label {
+      font-size: 1.6rem;
+    }
+    .forgot {
+      font-size: 1.6rem;
+    }
+  }
+}

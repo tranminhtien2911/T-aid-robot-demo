@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/Logo.svg" />
+    <title>T-AID-ROBOT</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/awesome-fonts/css/all.css" />
+    <link rel="stylesheet" href="vendors/uicons/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="vendors/slick/slick.css" />
+    <link rel="stylesheet" href="vendors/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/fonts-style.css" />
+    <link rel="stylesheet" href="assets/sass/main.css" />
+
+    <!-- JS -->
+    <script src="./vendors/js/jquery-2.1.4.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="head wrap">
+      <div class="bg-top"></div>
+      <!--start nav-mobile -->
+      <div class="header-mobile">
+        <label for="toggle-nav" class="nav-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="#">
+          <div class="navtop__logo-mobile">
+            <img src="./assets/img/logo-1.svg" alt="" />
+          </div>
+        </a>
+      </div>
+      <input class="input-nav" type="checkbox" name="" id="toggle-nav" />
+      <label for="toggle-nav" class="nav-overlay"></label>
+      <!-- Menu Left Bar Mobile -->
+      <div class="nav-mobile">
+        <label for="toggle-nav" class="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <!-- <div class="nav-mobile__login">
+          <a href="#" class="btn-login">
+            <i class="fa-solid fa-user"></i>
+            Đăng nhập
+          </a>
+        </div> -->
+        <div class="nav-mobile__user">
+          <div class="user-img">
+            <img src="./assets/img/user-img.png" alt="" />
+          </div>
+          <div class="user-name">Trần Ngọc Đoan Trang</div>
+        </div>
+        <ul class="nav-mobile__account">
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-user"></i>
+              Thông tin cá nhân
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-calendar"></i>
+              Thời khóa biểu
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-star"></i>
+              Mục ưa thích
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-trophy"></i>
+              Điểm số
+            </a>
+          </li>
+        </ul>
+        <ul class="nav-mobile__menu">
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-house"></i>
+              Trang chủ
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-copy"></i>
+              Môn học
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-book-open"></i>
+              Học
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-laptop-file"></i>
+              Thi
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-square-poll-horizontal"></i>
+              Giới thiệu
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Đăng xuất
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End nav mobile -->
+      <!-- Nav Desktop -->
+      <div class="container-xxl">
+        <div class="navtop">
+          <a href="#">
+            <div class="navtop__logo">
+              <img src="./assets/img/Logo.svg" alt="" />
+              <span class="logoname">T-AID-ROBOT</span>
+            </div>
+          </a>
+          <!--  -->
+          <div class="navtop__menu">
+            <ul class="menu">
+              <li>
+                <a data-text="Trang chủ" class="" href="#">Trang chủ</a>
+              </li>
+              <li>
+                <a data-text="Môn học" class="" href="#">Môn học</a>
+              </li>
+              <li>
+                <a data-text="Học" class="" href="#">Học</a>
+              </li>
+              <li>
+                <a data-text="Thi" class="" href="#">Thi</a>
+              </li>
+              <li>
+                <a data-text="Giới thiệu" class="" href="#">Giới thiệu</a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <!-- <div class="navtop__login">
+            <a href="#" class="btn-login">
+              <i class="fa-solid fa-user"></i>
+              Đăng nhập
+            </a>
+          </div> -->
+          <!-- nav-user  -->
+          <div class="navtop__user">
+            <div class="user-img">
+              <img src="./assets/img/user-img.png" alt="" />
+            </div>
+            <div class="user-name">
+              Trần Ngọc Đoan Trang <label for="show-account"><i class="fa-solid fa-caret-down"></i></label>
+              <input class="input-account" type="checkbox" id="show-account" />
+              <label for="show-account" class="overlay-account"></label>
+              <div class="account">
+                <ul>
+                  <li>
+                    <a class="" href="#">
+                      <i class="fi fi-rr-user"></i>
+                      Thông tin cá nhân
+                    </a>
+                  </li>
+                  <li>
+                    <a class="" href="#">
+                      <i class="fi fi-rr-calendar"></i>
+                      Thời khóa biểu
+                    </a>
+                  </li>
+                  <li>
+                    <a class="" href="#">
+                      <i class="fi fi-rr-star"></i>
+                      Mục ưa thích
+                    </a>
+                  </li>
+                  <li>
+                    <a class="" href="#">
+                      <i class="fi fi-rr-trophy"></i>
+                      Điểm số
+                    </a>
+                  </li>
+                  <li>
+                    <a class="" href="#">
+                      <i class="fi fi-rr-sign-out"></i>
+                      Đăng xuất
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </div>
+    </header>
+    <!-- Banner -->
+    <section class="banner-bg">
+      <div class="container-xxl">
+        <div class="banner">
+          <div class="row">
+            <div class="col-lg-5 col-md-7 col-sm-7 w-cs">
+              <div class="banner-wrap">
+                <p class="banner__text">HỆ THỐNG QUẢN LÍ THI CỬ</p>
+                <p class="banner__text--bold">T-AID-ROBOT</p>
+                <p class="banner__desc">
+                  Hệ thống hỗ trợ cho việc học tập và thi cử, sinh viên có thể lựa chọn các môn học, làm các bài tập trắc nghiệm, tự luận.
+                </p>
+                <div class="banner__btn">
+                  <div class="btn-custom">
+                    <a href="#" class="btn-white">CHI TIẾT</a>
+                  </div>
+                  <div class="btn-custom">
+                    <a href="#" class="btn-orange">VÀO THI NGAY</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-5 col-sm-5 banner-mobile">
+              <div class="banner__img">
+                <img src="./assets/img/banner.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="function wrap">
+      <div class="bg-func"></div>
+      <div class="container-xxl">
+        <div class="function-wrap">
+          <div class="titleheading">
+            <h4>NHỮNG TÍNH NĂNG NỔI BẬT</h4>
+          </div>
+          <!-- Start Slide Mobile -->
+          <div class="func-mobile">
+            <div class="func__item">
+              <img class="item__img" src="./assets/img/func1.svg" alt="" />
+              <div class="item__text">
+                <p class="title">HỖ TRỢ THI TRỰC TUYẾN</p>
+                <p class="desc">Sử dụng trí tuệ nhân tạo để tạo các bài kiểm tra trực tuyến từ ngân hàng đề cho sinh viên</p>
+              </div>
+            </div>
+            <div class="func__item">
+              <img class="item__img" src="./assets/img/func2.svg" alt="" />
+              <div class="item__text">
+                <p class="title">HỌC MỌI LÚC MỌI NƠI</p>
+                <p class="desc">Sinh viên có thể học tất cả các bài hiện đang được giảng dạy ở trường</p>
+              </div>
+            </div>
+            <div class="func__item">
+              <img class="item__img" src="./assets/img/func3.svg" alt="" />
+              <div class="item__text">
+                <p class="title">TẠO CHỨNG CHỈ TRỰC TUYẾN</p>
+                <p class="desc">Có được chứng chỉ trực tuyến sau bài học hay bài thi giúp sinh viên cải thiện điểm trung bình tích luỹ</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Slide Mobile -->
+          <div class="func func-desktop">
+            <!--  -->
+            <div class="func__item">
+              <img class="item__img" src="./assets/img/func1.svg" alt="" />
+              <div class="item__text">
+                <p class="title">HỖ TRỢ THI TRỰC TUYẾN</p>
+                <p class="desc">Sử dụng trí tuệ nhân tạo để tạo các bài kiểm tra trực tuyến từ ngân hàng đề cho sinh viên</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="func__item">
+              <img class="item__img" src="./assets/img/func2.svg" alt="" />
+              <div class="item__text">
+                <p class="title">HỌC MỌI LÚC MỌI NƠI</p>
+                <p class="desc">Sinh viên có thể học tất cả các bài hiện đang được giảng dạy ở trường</p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="func__item">
+              <img class="item__img" src="./assets/img/func3.svg" alt="" />
+              <div class="item__text">
+                <p class="title">TẠO CHỨNG CHỈ TRỰC TUYẾN</p>
+                <p class="desc">Có được chứng chỉ trực tuyến sau bài học hay bài thi giúp sinh viên cải thiện điểm trung bình tích luỹ</p>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="about wrap">
+      <div class="bg-about"></div>
+      <div class="container-xxl">
+        <div class="titleheading">
+          <h4>GIỚI THIỆU VỀ HỆ THỐNG</h4>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about__img">
+              <img src="./assets/img/about-img.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about__text">
+              <p>T-AID-ROBOT là một hệ thống học tập và thi trực truyến của Đại học Duy Tân.</p>
+              <p>
+                Tổng quan về Đại học Duy Tân: Tọa lạc giữa trung tâm thành phố Đà Nẵng, Đại học Duy Tân đang từng ngày vươn lên cùng thành phố với khát vọng đổi
+                mới theo hướng hiện đại.
+              </p>
+              <p>
+                Hơn 27 năm xây dựng và phát triển Trường đã cung cấp cho xã hội 77.604 Tiến sĩ, Thạc sĩ, Kỹ sư, Kiến trúc sư, Dược sĩ và Cử nhân, đóng góp nguồn
+                nhân lực chất lượng vào quá trình công nghiệp hóa - hiện đại hóa và phát triển kinh tế - xã hội của đất nước.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="highlight">
+      <div class="container-xxl">
+        <div class="hl">
+          <div class="hl__item">
+            <img src="./assets/img/hl-icon-1.svg" alt="" />
+            <div class="text">
+              <p class="text__tilte">Ngân hàng đề thi</p>
+              <p class="text__number text__number--orange">+ 12.000<span class="numbertype">đề</span></p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="hl__item">
+            <img src="./assets/img/hl-icon-2.svg" alt="" />
+            <div class="text">
+              <p class="text__tilte">Câu hỏi, bài tập</p>
+              <p class="text__number text__number--red">+ 150.000<span class="numbertype">câu</span></p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="hl__item">
+            <img src="./assets/img/hl-icon-3.svg" alt="" />
+            <div class="text">
+              <p class="text__tilte">Tài khoản tham gia</p>
+              <p class="text__number text__number--blue">+ 65.000<span class="numbertype">tài khoản</span></p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="hl__item">
+            <img src="./assets/img/hl-icon-4.svg" alt="" />
+            <div class="text">
+              <p class="text__tilte">Ngân hàng đề thi</p>
+              <p class="text__number text__number--darkblue">+ 12.000<span class="numbertype">đề</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="application wrap">
+      <div class="bg-app"></div>
+      <div class="container-xxl">
+        <div class="titleheading">
+          <h4>ỨNG DỤNG CỦA HỆ THỐNG</h4>
+        </div>
+        <div class="application__textwrap">
+          <div class="application__text">
+            <p>
+              Hệ thống ứng dụng trí tuệ nhân tạo vào việc lọc, chọn đề thi, giúp cho đề thi đầy đủ điều kiện cần để đáp ứng được kỳ thi của sinh viên.<br />
+              Sử dụng AI đề xuất bài học phù hợp với tất cả sinh viên.
+            </p>
+          </div>
+          <div class="application__img">
+            <img src="./assets/img/application1.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <footer class="footer">
+      <div class="container-xxl">
+        <div class="footer__wrap">
+          <div class="footer__item footer__logoinfo">
+            <div class="logo">
+              <a href="#" class="">
+                <img src="./assets/img/logo-1.svg" alt="" />
+              </a>
+            </div>
+            <ul>
+              <li>
+                <a class="no-pd-top" href="#">HỆ THỐNG QUẢN LÍ THI CỬ</a>
+              </li>
+              <li>
+                <a href="#">Trường Đại Học Duy Tân</a>
+              </li>
+              <li>
+                <a class="location" href="#"> 254 Nguyễn Văn Linh, Quận ThanhKhê - Tp. Đà Nẵng </a>
+              </li>
+              <li>
+                <a class="phone" href="#"> (+84) 236.3650403 - (+84) 236.3827111 </a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="footer__item footer__guide">
+            <div class="guide">
+              <a class="title" href="#">HƯỚNG DẪN</a>
+            </div>
+            <div class="guide-content">
+              <a href="#">Trung tâm hỗ trợ</a>
+              <a href="#">Điều khoản sử dụng</a>
+              <a href="#">Chính sách bảo mật</a>
+            </div>
+          </div>
+          <!--  -->
+          <div class="footer__item footer__info">
+            <div class="info">
+              <a class="title" href="#">THÔNG TIN</a>
+            </div>
+            <div class="info-content">
+              <a href="#">Trang chủ</a>
+              <a href="#">Danh mục</a>
+              <a href="#">Ôn thi</a>
+              <a href="#">Giới thiệu</a>
+            </div>
+          </div>
+          <!--  -->
+          <div class="footer__item footer__links">
+            <div>
+              <a class="title" href="#">LIÊN KẾT</a>
+            </div>
+            <div class="links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
+    <section class="bottom">
+      <div class="container-xxl">
+        <div class="bottom__info">
+          <p>Copyright © 2022 Duy Tan University</p>
+        </div>
+      </div>
+    </section>
+    <!-- back-top -->
+    <div id="back-top" style="display: block">
+      <a href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+    <!-- JS -->
+    <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendors/slick/slick.min.js"></script>
+  </body>
+</html>

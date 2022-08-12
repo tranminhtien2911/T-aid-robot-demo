@@ -1,0 +1,49 @@
+/* Aquire */
+@font-face {
+  font-family: "Aquire-Regular";
+  src: url(../webfonts/Aquire-BW0ox.otf) format("opentype");
+}
+@font-face {
+    font-family: "Aquire-Bold";
+    src: url(../webfonts/AquireBold-8Ma60.otf) format("opentype");
+}
+@font-face {
+    font-family: "Aquire-Light";
+    src: url(../webfonts/AquireLight-YzE0o.otf) format("opentype");
+}
+/* Darker Grotestque */
+@font-face {
+  font-family: "DarkerGrotesque-Light";
+  src: url(../webfonts/DarkerGrotesque-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "DarkerGrotesque-Regular";
+  src: url(../webfonts/DarkerGrotesque-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DarkerGrotesque-Medium";
+  src: url(../webfonts/DarkerGrotesque-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DarkerGrotesque-SemiBold";
+  src: url(../webfonts/DarkerGrotesque-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "DarkerGrotesque-Bold";
+  src: url(../webfonts/DarkerGrotesque-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DarkerGrotesque-ExtraBold";
+  src: url(../webfonts/DarkerGrotesque-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "DarkerGrotesque-Black";
+  src: url(../webfonts/DarkerGrotesque-Black.ttf) format("truetype");
+  font-weight: 900;
+}

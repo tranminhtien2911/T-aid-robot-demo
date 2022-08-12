@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/Logo.svg" />
+    <title>T-AID-ROBOT</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/awesome-fonts/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="vendors/uicons/css/uicons-regular-rounded.css"
+    />
+    <link rel="stylesheet" href="vendors/slick/slick.css" />
+    <link rel="stylesheet" href="vendors/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/fonts-style.css" />
+    <link rel="stylesheet" href="assets/sass/main.css" />
+
+    <!-- JS -->
+    <script src="./vendors/js/jquery-2.1.4.min.js"></script>
+    <script src="./vendors/bootstrap/js/bootstrap.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="head wrap">
+      <!--start nav-mobile -->
+      <div class="header-mobile">
+        <label for="toggle-nav" class="nav-icon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="#">
+          <div class="navtop__logo-mobile">
+            <img src="./assets/img/logo-1.svg" alt="" />
+          </div>
+        </a>
+      </div>
+      <input class="input-nav" type="checkbox" name="" id="toggle-nav" />
+      <label for="toggle-nav" class="nav-overlay"></label>
+      <!-- Menu Left Bar Mobile -->
+      <div class="nav-mobile">
+        <label for="toggle-nav" class="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        <!-- <div class="nav-mobile__login">
+          <a href="#" class="btn-login">
+            <i class="fa-solid fa-user"></i>
+            Đăng nhập
+          </a>
+        </div> -->
+        <div class="nav-mobile__user">
+          <div class="user-img">
+            <img src="./assets/img/user-img.png" alt="" />
+          </div>
+          <div class="user-name">Trần Ngọc Đoan Trang</div>
+        </div>
+        <ul class="nav-mobile__account">
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-user"></i>
+              Thông tin cá nhân
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-calendar"></i>
+              Thời khóa biểu
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-star"></i>
+              Mục ưa thích
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fi fi-rr-trophy"></i>
+              Điểm số
+            </a>
+          </li>
+        </ul>
+        <ul class="nav-mobile__menu">
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-house"></i>
+              Trang chủ
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-copy"></i>
+              Môn học
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-book-open"></i>
+              Học
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-laptop-file"></i>
+              Thi
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-square-poll-horizontal"></i>
+              Giới thiệu
+            </a>
+          </li>
+          <li>
+            <a class="" href="#">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Đăng xuất
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End nav mobile -->
+      <!-- Nav Desktop -->
+      <div class="bg-menu">
+        <div class="container-xxl">
+          <div class="navtop navtop-pages">
+            <a href="#">
+              <div class="navtop__logo">
+                <img src="./assets/img/Logo.svg" alt="" />
+                <span class="logoname">T-AID-ROBOT</span>
+              </div>
+            </a>
+            <!--  -->
+            <div class="navtop__menu">
+              <ul class="menu">
+                <li>
+                  <a data-text="Trang chủ" class="" href="#">Trang chủ</a>
+                </li>
+                <li>
+                  <a data-text="Môn học" class="" href="#">Môn học</a>
+                </li>
+                <li>
+                  <a data-text="Học" class="" href="#">Học</a>
+                </li>
+                <li>
+                  <a data-text="Thi" class="" href="#">Thi</a>
+                </li>
+                <li>
+                  <a data-text="Giới thiệu" class="" href="#">Giới thiệu</a>
+                </li>
+              </ul>
+            </div>
+            <!--  -->
+            <!-- <div class="navtop__login">
+              <a href="#" class="btn-login">
+                <i class="fa-solid fa-user"></i>
+                Đăng nhập
+              </a>
+            </div> -->
+            <!-- nav-user  -->
+            <div class="navtop__user">
+              <div class="user-img">
+                <img src="./assets/img/user-img.png" alt="" />
+              </div>
+              <div class="user-name">
+                Trần Ngọc Đoan Trang
+                <label for="show-account"
+                  ><i class="fa-solid fa-caret-down"></i
+                ></label>
+                <input
+                  class="input-account"
+                  type="checkbox"
+                  id="show-account"
+                />
+                <label for="show-account" class="overlay-account"></label>
+                <div class="account">
+                  <ul>
+                    <li>
+                      <a class="" href="#">
+                        <i class="fi fi-rr-user"></i>
+                        Thông tin cá nhân
+                      </a>
+                    </li>
+                    <li>
+                      <a class="" href="#">
+                        <i class="fi fi-rr-calendar"></i>
+                        Thời khóa biểu
+                      </a>
+                    </li>
+                    <li>
+                      <a class="" href="#">
+                        <i class="fi fi-rr-star"></i>
+                        Mục ưa thích
+                      </a>
+                    </li>
+                    <li>
+                      <a class="" href="#">
+                        <i class="fi fi-rr-trophy"></i>
+                        Điểm số
+                      </a>
+                    </li>
+                    <li>
+                      <a class="" href="#">
+                        <i class="fi fi-rr-sign-out"></i>
+                        Đăng xuất
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="search-bar">
+          <button class="btn-search"><i class="fi fi-rr-search"></i></button>
+          <input type="text" class="input-search" placeholder="Tìm kiếm" />
+        </div>
+        <div class="sort-list">
+          <div class="sort-list__item">
+            <a href="#" class="sort-letter"><span>A</span></a>
+            <a href="#" class="sort-letter"><span>B</span></a>
+            <a href="#" class="sort-letter"><span>C</span></a>
+            <a href="#" class="sort-letter"><span>D</span></a>
+            <a href="#" class="sort-letter"><span>E</span></a>
+            <a href="#" class="sort-letter"><span>F</span></a>
+            <a href="#" class="sort-letter"><span>G</span></a>
+            <a href="#" class="sort-letter"><span>H</span></a>
+            <a href="#" class="sort-letter"><span>I</span></a>
+            <a href="#" class="sort-letter"><span>J</span></a>
+            <a href="#" class="sort-letter"><span>K</span></a>
+            <a href="#" class="sort-letter"><span>L</span></a>
+            <a href="#" class="sort-letter"><span>M</span></a>
+            <a href="#" class="sort-letter"><span>N</span></a>
+          </div>
+          <div class="sort-list__item sort-list__item-width">
+            <a href="#" class="sort-letter"><span>O</span></a>
+            <a href="#" class="sort-letter"><span>P</span></a>
+            <a href="#" class="sort-letter"><span>Q</span></a>
+            <a href="#" class="sort-letter"><span>R</span></a>
+            <a href="#" class="sort-letter"><span>S</span></a>
+            <a href="#" class="sort-letter"><span>T</span></a>
+            <a href="#" class="sort-letter"><span>U</span></a>
+            <a href="#" class="sort-letter"><span>V</span></a>
+            <a href="#" class="sort-letter"><span>W</span></a>
+            <a href="#" class="sort-letter"><span>X</span></a>
+            <a href="#" class="sort-letter"><span>Y</span></a>
+            <a href="#" class="sort-letter"><span>X</span></a>
+          </div>
+        </div>
+        <div class="sort-list-tl">
+          <div class="sort-list-tl__item">
+            <a href="#" class="sort-letter"><span>A</span></a>
+            <a href="#" class="sort-letter"><span>B</span></a>
+            <a href="#" class="sort-letter"><span>C</span></a>
+            <a href="#" class="sort-letter"><span>D</span></a>
+            <a href="#" class="sort-letter"><span>E</span></a>
+            <a href="#" class="sort-letter"><span>F</span></a>
+            <a href="#" class="sort-letter"><span>G</span></a>
+            <a href="#" class="sort-letter"><span>H</span></a>
+            <a href="#" class="sort-letter"><span>I</span></a>
+            <a href="#" class="sort-letter"><span>J</span></a>
+            <a href="#" class="sort-letter"><span>K</span></a>
+            <a href="#" class="sort-letter"><span>L</span></a>
+            <a href="#" class="sort-letter"><span>M</span></a>
+            <a href="#" class="sort-letter"><span>N</span></a>
+            <a href="#" class="sort-letter"><span>O</span></a>
+            <a href="#" class="sort-letter"><span>P</span></a>
+            <a href="#" class="sort-letter"><span>Q</span></a>
+            <a href="#" class="sort-letter"><span>R</span></a>
+            <a href="#" class="sort-letter"><span>S</span></a>
+            <a href="#" class="sort-letter"><span>T</span></a>
+            <a href="#" class="sort-letter"><span>U</span></a>
+            <a href="#" class="sort-letter"><span>V</span></a>
+            <a href="#" class="sort-letter"><span>W</span></a>
+            <a href="#" class="sort-letter"><span>X</span></a>
+            <a href="#" class="sort-letter"><span>Y</span></a>
+            <a href="#" class="sort-letter"><span>X</span></a>
+          </div>
+        </div>
+        <div class="line-table"></div>
+        <div class="table-list">
+          <table class="table">
+            <thead class="table-Header">
+              <th>
+                <span class="table-Title-1">Mã ngành</span>
+                <span class="table-Title-2">Mã môn học</span>
+                <span class="table-Title-3">Tên môn học</span>
+              </th>
+            </thead>
+            <tbody>
+              <tr class="table-Row">
+                <td class="table-Col">
+                  <div class="table-Code-major">
+                    <span>ACC</span>
+                  </div>
+
+                  <div class="table-Action">
+                    <div class="table-Code-subject">
+                      <span class="subject-Code">201</span>
+                      <span class="subject-Code">301</span>
+                      <span class="subject-Code">301</span>
+                    </div>
+                    <div class="table-Name-subject">
+                      <span class="subject-Name">Nguyên Lí Kế Toán 1 </span>
+                      <span class="subject-Name">Kế Toán Quản Trị 1</span>
+                      <span class="subject-Name">Kế Toán Tài Chính 1</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-Row">
+                <td class="table-Col">
+                  <div class="table-Code-major">
+                    <span>ACC</span>
+                  </div>
+                  <div class="table-Action">
+                    <div class="table-Code-subject">
+                      <span class="subject-Code">201</span>
+                      <span class="subject-Code">301</span>
+                      <span class="subject-Code">301</span>
+                    </div>
+                    <div class="table-Name-subject">
+                      <span class="subject-Name">Nguyên Lí Kế Toán 1 </span>
+                      <span class="subject-Name">Kế Toán Quản Trị 1</span>
+                      <span class="subject-Name">Kế Toán Tài Chính 1</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <footer class="footer">
+      <div class="container-xxl">
+        <div class="footer__wrap">
+          <div class="footer__item footer__logoinfo">
+            <div class="logo">
+              <a href="#" class="">
+                <img src="./assets/img/logo-1.svg" alt="" />
+              </a>
+            </div>
+            <ul>
+              <li>
+                <a class="no-pd-top" href="#">HỆ THỐNG QUẢN LÍ THI CỬ</a>
+              </li>
+              <li>
+                <a href="#">Trường Đại Học Duy Tân</a>
+              </li>
+              <li>
+                <a class="location" href="#">
+                  254 Nguyễn Văn Linh, Quận ThanhKhê - Tp. Đà Nẵng
+                </a>
+              </li>
+              <li>
+                <a class="phone" href="#">
+                  (+84) 236.3650403 - (+84) 236.3827111
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="footer__item footer__guide">
+            <div class="guide">
+              <a class="title" href="#">HƯỚNG DẪN</a>
+            </div>
+            <div class="guide-content">
+              <a href="#">Trung tâm hỗ trợ</a>
+              <a href="#">Điều khoản sử dụng</a>
+              <a href="#">Chính sách bảo mật</a>
+            </div>
+          </div>
+          <!--  -->
+          <div class="footer__item footer__info">
+            <div class="info">
+              <a class="title" href="#">THÔNG TIN</a>
+            </div>
+            <div class="info-content">
+              <a href="#">Trang chủ</a>
+              <a href="#">Danh mục</a>
+              <a href="#">Ôn thi</a>
+              <a href="#">Giới thiệu</a>
+            </div>
+          </div>
+          <!--  -->
+          <div class="footer__item footer__links">
+            <div>
+              <a class="title" href="#">LIÊN KẾT</a>
+            </div>
+            <div class="links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
+    <section class="bottom">
+      <div class="container-xxl">
+        <div class="bottom__info">
+          <p>Copyright © 2022 Duy Tan University</p>
+        </div>
+      </div>
+    </section>
+    <!-- back-top -->
+    <div id="back-top" style="display: block">
+      <a href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+    <!-- JS -->
+    <!-- <script src="./vendors/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./vendors/slick/slick.min.js"></script>
+    <script>
+      const codeSubject = document.querySelectorAll(".subject-Code");
+      const nameSubject = document.querySelectorAll(".subject-Name");
+      const heightName = [];
+      const heightCode = [];
+      const heightTotal = [heightCode, heightName];
+      $(".subject-Name").each(function (name, value) {
+        heightName.push($(value).height());
+      });
+      $(".subject-Code").each(function (name, value) {
+        heightCode.push($(value).height());
+      });
+      for (let i = 0; i < heightCode.length; i++) {
+        if (heightCode[i] < heightName[i]) {
+          $(".subject-Code").each(function (name, value) {
+            if (name === i) {
+              $(this).height(heightName[i]);
+            }
+          });
+        }
+      }
+      for (let i = 0; i < codeSubject.length; i++) {
+        // Subject-Code Hover
+        codeSubject[i].addEventListener("mouseover", mOver_Code, false);
+        codeSubject[i].addEventListener("mouseout", mOut_Code, false);
+
+        function mOver_Code() {
+          if (i == codeSubject.length - 1) {
+            codeSubject[i].classList.add("subject_MouseMove");
+            nameSubject[i].classList.add("subject_MouseMove_Last");
+          } else {
+            codeSubject[i].classList.add("subject_MouseMove");
+            nameSubject[i].classList.add("subject_MouseMove");
+          }
+        }
+        function mOut_Code() {
+          codeSubject[i].classList.remove("subject_MouseMove");
+          nameSubject[i].classList.remove("subject_MouseMove");
+          nameSubject[i].classList.remove("subject_MouseMove_Last");
+        }
+        //Subject-Name Hover
+        nameSubject[i].addEventListener("mouseover", mOver_Name, false);
+        nameSubject[i].addEventListener("mouseout", mOut_Name, false);
+        function mOver_Name() {
+          if (i == codeSubject.length - 1) {
+            codeSubject[i].classList.add("subject_MouseMove");
+            nameSubject[i].classList.add("subject_MouseMove_Last");
+          } else {
+            codeSubject[i].classList.add("subject_MouseMove");
+            nameSubject[i].classList.add("subject_MouseMove");
+          }
+        }
+        function mOut_Name() {
+          codeSubject[i].classList.remove("subject_MouseMove");
+          nameSubject[i].classList.remove("subject_MouseMove");
+          nameSubject[i].classList.remove("subject_MouseMove_Last");
+        }
+      }
+      $(document).ready(function () {
+        $(".sort-list-tl__item").slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 9,
+          slidesToScroll: 9,
+          cssEase: "linear",
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 9,
+                slidesToScroll: 9,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 6,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
