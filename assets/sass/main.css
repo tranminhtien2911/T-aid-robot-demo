@@ -1057,21 +1057,23 @@ a.phone {
   font-size: 1.8rem;
   line-height: 2.6rem;
   overflow-y: scroll;
+  width: 30%;
 }
 .tree ul {
   padding: 0;
   list-style: none;
   margin-left: 1em;
   position: relative;
+  width: 100%;
 }
 .tree ul ul {
   margin-left: 1em;
   position: relative;
+  width: 100%;
 }
 .tree li {
   margin: 0;
   padding: 0 1em;
-  line-height: 2em;
   color: #7B7986;
   font-weight: 700;
   position: relative;

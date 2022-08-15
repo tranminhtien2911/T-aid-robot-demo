@@ -1104,7 +1104,6 @@ a.phone {
 //   }
 // }
 .tree {
-
   background-color: $palette-7 ;
   list-style: none;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.04);
@@ -1115,22 +1114,25 @@ a.phone {
   font-size: 1.8rem;
   line-height: 2.6rem;
   overflow-y: scroll;
+  width: 30%;
   ul {
       // margin: 0;
       padding: 0;
       list-style: none;
       margin-left: 1em;
       position: relative;
+      width: 100%;
 
       ul {
           margin-left: 1em;
           position: relative;
+          width: 100%;
       }
   }
   li{
       margin:0;
       padding:0 1em;
-      line-height:2em;
+      // line-height:2em;
       color: $secondary-7;
       font-weight:700;
       position:relative;
