@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.css" />
+     <link rel="stylesheet" href="/vendors/awesome-fonts/css/all.css" />
+    <link rel="stylesheet" href="/vendors/uicons/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="/assets/sass/test3.css">
+
+     <!-- JS -->
+     <script src="/vendors/js/jquery-2.1.4.min.js"></script>
+     <script src="/vendors/bootstrap/js/bootstrap.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="margin-top:30px;">
+        <div class="row">
+            <div class="col-md-4">
+                <ul id="tree1">
+                    <!-- Lv-01 -->
+                    <li><a href="#">Đề mục 1</a>
+                        <ul>
+                            <!-- Lv-02 -->
+                            <li><a href="#">Chương 1</a>
+                                <ul>
+                                    <!-- Lv-03 -->
+                                    <li><a href="#">Phần I. Định nghĩa</a>
+                                        <ul>
+                                            <!-- Lv-04 -->
+                                            <li><a href="#">Phần I. 1 Định nghĩa</a></li>
+                                            <li><a href="#">Con lv4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Phần I.1.1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bài 1</a></li>
+                            <li><a href="#">Bài 2</a></li>
+                            <li><a href="#">Chương 2</a>
+                                <ul>
+                                    <li><a href="#">Bài 1 - Chương 2</a></li>
+                                    <li><a href="#">Bài 2 - Chương 2</a></li>
+                                    <li><a href="#">Bài 3 - Chương 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Chương 3</a>
+                                <ul>
+                                    <li><a href="#">Bài 1 - Chương 2</a></li>
+                                    <li><a href="#">Bài 2 - Chương 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Đề mục 2</a>
+                        <ul>
+                            <li><a href="#">Chương 1-  Đề mục 2</a>
+                                <ul>
+                                    <li><a href="#">Bài 1 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - bài 1</a></li>
+                                            <li><a href="#">Mục 2 - bài 1</a></li>
+                                            <li><a href="#">Mục 3 - bài 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li><a href="#">Chương 2 - Đề mục 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        $.fn.extend({treed: function (o) {
+       
+      var openedClass = 'fi-rr-angle-small-down';
+      var closedClass = 'fi-rr-angle-small-right';
+       
+      if (typeof o != 'undefined'){
+        if (typeof o.openedClass != 'undefined'){
+        openedClass = o.openedClass;
+        }
+        if (typeof o.closedClass != 'undefined'){
+        closedClass = o.closedClass;
+        }
+      };
+       
+        //initialize each of the top levels
+        var tree = $(this);
+        tree.addClass("tree");
+        tree.find('li').has("ul").each(function () {
+            var branch = $(this); //li with children ul
+            branch.prepend("<i class='fi " + closedClass + "'></i>");
+            branch.addClass('branch');
+            branch.on('click', function (e) {
+                if (this == e.target) {
+                    var icon = $(this).children('i:first');
+                    icon.toggleClass(openedClass + " " + closedClass);
+                    $(this).children().children().toggle();
+                }
+            })
+            branch.children().children().toggle();
+        });
+        //fire event from the dynamically added icon
+      tree.find('.branch .indicator').each(function(){
+        $(this).on('click', function () {
+            $(this).closest('li').click();
+        });
+      });
+        //fire event to open branch if the li contains an anchor instead of text
+        tree.find('.branch > a').each(function () {
+            $(this).on('click', function (e) {
+                $(this).closest('li').click();
+                e.preventDefault();
+            });
+        });
+        //fire event to open branch if the li contains a button instead of text
+        tree.find('.branch>button').each(function () {
+            $(this).on('click', function (e) {
+                $(this).closest('li').click();
+                e.preventDefault();
+            });
+        });
+    }
+});
+ 
+//Initialization of treeviews
+ 
+$('#tree1').treed();
+ 
+$('#tree2').treed({openedClass:'fi-rr-angle-small-down', closedClass:'fi-rr-angle-small-right'});
+ 
+$('#tree3').treed({openedClass:'fi-rr-angle-small-down', closedClass:'fi-rr-angle-small-right'});
+$('a').mouseover(function(){
+    $(this).parent().children('i').addClass('colorHover');
+    $(this).addClass('colorHover');
+});
+$('a').mouseout(function(){
+    $(this).parent().children('i').removeClass('colorHover');
+    $(this).removeClass('colorHover');
+});
+$('li > a').click(function(){
+    $('.active').removeClass('active');
+    $(this).prev().addClass('active');
+    $(this).addClass('active');
+})
+    </script>
+</body>
+</html>
+<!-- <i class="fi fi-rr-angle-small-right"></i>
+<i class="fi fi-rr-angle-small-down"></i> -->
