@@ -485,6 +485,13 @@ $('li > a').click(function () {
   $('.active').removeClass('active');
   $(this).prev().addClass('active');
   $(this).addClass('active');
+  if($(this).prev().length === 0){
+    $('.bg-color').removeClass('bg-color');
+    $(this).parent().addClass('bg-color');
+  }else{
+    $('.bg-color').removeClass('bg-color');
+  }
+
 })
 
 

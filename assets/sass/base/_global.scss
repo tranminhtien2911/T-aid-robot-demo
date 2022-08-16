@@ -1107,14 +1107,14 @@ a.phone {
   background-color: $palette-7 ;
   list-style: none;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.04);
-  height: 100vh;
-  position: fixed;;
+  height: 100%;
+  // position: sticky;
   padding: 1.8rem 0px 0px 0px ;
   font-family: $font-bold;
   font-size: 1.8rem;
   line-height: 2.6rem;
   overflow-y: scroll;
-  width: 30%;
+  width: 100%;
   ul {
       // margin: 0;
       padding: 0;
@@ -1139,18 +1139,22 @@ a.phone {
       cursor: pointer;
      
       a{
-          font-family: $font-bold;
+          font-family: $font-semibold;
           color: $secondary-7;
-          font-size: 1.8rem;
-          line-height: 2.6rem;
+          font-size: 2rem;
+          line-height: 2.8rem;
+          display: inline-block;
       }
       i{
           font-size: 2rem;
           vertical-align: middle;
-          padding: 10px 10px 0px 6px;
+          padding: 10px 4px 0px 6px;
       }
       .active{
           color: $secondary-1;
+      }
+      .bg-color{
+        background-color: $secondary-5;
       }
   }
   .colorHover{
@@ -1165,7 +1169,7 @@ a.phone {
   top:0;
   bottom:0;
   left:0;
-  border-left:1px solid;
+  // border-left:1px solid;
  
 }
 .tree ul li::before{
@@ -1173,7 +1177,7 @@ a.phone {
   display:block;
   width:10px;
   height:0;
-  border-top:1px solid;
+  // border-top:1px solid;
   margin-top:-1px;
   position:absolute;
   top:1em;
