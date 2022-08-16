@@ -1084,6 +1084,7 @@ a.phone {
   font-size: 2rem;
   line-height: 2.8rem;
   display: inline-block;
+  width: 90%;
 }
 .tree li i {
   font-size: 2rem;
