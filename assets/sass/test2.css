@@ -17,8 +17,7 @@ html {
 
 input,
 textarea,
-select,
-button {
+select button {
   outline: none;
 }
 
@@ -51,10 +50,6 @@ html {
   font-size: 62.5%;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -69,77 +64,312 @@ body {
   background-color: #f9fbfe;
 }
 
-.table {
-  width: 91.667%;
-  margin-top: 6rem;
+body {
+  margin: auto;
 }
-.table-wraper {
+
+.nav-bar {
+  background-color: #e0e7eb;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-left: 6rem;
 }
-.table-header {
+.nav-bar_content {
   display: flex;
-  border-radius: 10px 10px 0 0;
-  border-top: 1px solid #c2cfd6;
-  border-right: 1px solid #c2cfd6;
-  border-left: 1px solid #c2cfd6;
-}
-.table-title {
-  font-size: 3.2rem;
-  line-height: 4rem;
+  gap: 8px;
+  margin: auto;
+  max-width: 1440px;
+  font-size: 2rem;
+  line-height: 2.8rem;
   font-family: "DarkerGrotesque-Bold", sans-serif;
-  display: flex;
-  padding: 1.5rem 1rem;
 }
-.table-title span {
+.nav-bar_content a,
+.nav-bar_content i {
+  cursor: pointer;
+  color: #1D262B;
+}
+.nav-bar_content i {
+  display: flex;
+  align-items: center;
+}
+.nav-bar_content a:last-child {
+  color: #22438C;
+}
+.nav-bar_content a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  max-width: 1440px;
+}
+.main-content_tree {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-width: 1440px;
+  background-color: #F6F8F9;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.06);
+}
+.main-content_tree .tree {
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
-  text-align: center;
+  padding: 1.8rem 0 0 0;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
 }
-.table-title:not(:last-child) {
-  width: 300px;
-  justify-content: center;
-  border-right: 1px solid #c2cfd6;
-}
-.table-title:last-child {
-  width: 720px;
-}
-.table-body {
+.main-content_tree .tree ul {
+  position: relative;
   width: 100%;
+  margin-left: 1.4rem;
+  padding: 0;
 }
-.table-row {
+.main-content_tree .tree ul ul {
+  position: relative;
+  width: 100%;
+  margin-left: 1.4rem;
+}
+.main-content_tree .tree li {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+  padding: 0 1.2rem 0 1.8rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #7B7986;
+}
+.main-content_tree .tree li a {
   display: flex;
+  width: inherit;
+  height: 100%;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #7B7986;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.main-content_tree .tree li i {
+  display: inline !important;
+  vertical-align: middle;
+  font-size: 1.6rem;
+  margin-top: 4px;
+  margin-right: 1rem;
+}
+.main-content_tree .tree li .active {
+  color: #22438C;
+}
+.main-content_tree .tree li .bg-color {
+  background-color: #D6F0F5;
   width: 100%;
 }
-.table-row-left {
-  width: 22.73%;
-  padding: 0px !important;
+.main-content_tree .tree .colorHover {
+  color: #22438C;
 }
-.table-row-right {
-  width: 77.344%;
-  padding: 0px !important;
+.main-content_tree .tree ul::before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
-.table-Major__code {
-  font-size: 3.2rem;
-  line-height: 4rem;
+.main-content_tree .tree ul li::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 0;
+  margin-top: -1px;
+  position: absolute;
+  top: 1em;
+  left: 0;
+}
+.main-content_tree .tree ul li:last-child:before {
+  height: auto;
+  top: 1em;
+  bottom: 0;
+}
+.main-content_tree .tree li button,
+.main-content_tree .tree li button:active,
+.main-content_tree .tree li button:focus {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  outline: 0;
+}
+.main-content_lesson {
+  background-color: #fcfcfc;
+}
+.main-content_lesson .lesson-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 14rem 0 5rem;
+}
+.main-content_lesson .lesson-head {
+  padding: 1.6rem 0;
+}
+.main-content_lesson .lesson-head h1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
   font-family: "DarkerGrotesque-Bold", sans-serif;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  color: #1D262B;
 }
-.table-Subject {
+.main-content_lesson .lesson-general {
   display: flex;
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  font-family: "DarkerGrotesque-Medium", sans-serif;
+  gap: 1.6rem;
+  padding: 1.4rem 0;
 }
-.table-Subject__code {
-  width: 300px;
-  border-right: 1px solid #000;
+.main-content_lesson .lesson-general_info {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #1D262B;
 }
-.table-Subject__name {
-  width: 720px;
+.main-content_lesson .lesson-general_info i {
+  transform: translateY(12%);
+  font-size: 4px;
+}
+.main-content_lesson .lesson-general_author {
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+  color: #22438C;
+}
+.main-content_lesson .lesson-general_divide {
+  border: 1px solid #e0e7eb;
+  border-radius: 2px;
+  background-color: #e0e7eb;
+  height: 2.8rem;
+}
+.main-content_lesson .lesson-general_favorite {
+  position: relative;
+  height: 100%;
+}
+.main-content_lesson .lesson-general_favorite i {
+  position: relative;
+}
+.main-content_lesson .lesson-general_announce {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 3.2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  color: #fcfcfc;
+  opacity: 0;
+  visibility: hidden;
+}
+.main-content_lesson .lesson-general_announce span {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+}
+.main-content_lesson .lesson-general .click-announce {
+  color: #1D262B;
+  background-color: #fcfcfc;
+  box-shadow: 0px 4px 10px rgba(121, 132, 165, 0.25);
+  opacity: 1;
+  visibility: visible;
+  z-index: 100;
+}
+.main-content_lesson .lesson-body {
+  padding: 2.4rem 0;
+}
+.main-content_lesson .lesson-content {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+}
+.main-content_lesson .lesson-paragraph:not(:first-child) {
+  margin-top: 1.6rem;
+}
+.main-content_lesson .lesson-action {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+}
+.main-content_lesson .lesson-action_back i, .main-content_lesson .lesson-action_next i {
+  vertical-align: middle;
+}
+.main-content_lesson .lesson-action_back span, .main-content_lesson .lesson-action_back i, .main-content_lesson .lesson-action_next span, .main-content_lesson .lesson-action_next i {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  color: #1A71CA;
+}
+.main-content_lesson .lesson-more {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 8px 0 6.4rem 0;
+}
+.main-content_lesson .lesson-more_head {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.main-content_lesson .lesson-more_head h2 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #22438C;
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+}
+.main-content_lesson .lesson-more_number {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+  background-color: #A4D9FF;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+  color: #1A71CA;
+}
+.main-content_lesson .lesson-more_document {
+  padding: 1.6rem 3.2rem;
+}
+.main-content_lesson .lesson-more_item {
+  display: flex;
+  gap: 8px;
+}
+.main-content_lesson .lesson-more_item:not(:first-child) {
+  margin-top: 1.8rem;
+}
+.main-content_lesson .lesson-more_icon {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 100px;
+  background: #F6F8F9;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+.main-content_lesson .lesson-more_icon i {
+  font-size: 1rem;
+  color: #1A71CA;
+}
+.main-content_lesson .lesson-more_nameFile a {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  color: #1D262B;
 }
 
 /*# sourceMappingURL=test2.css.map */

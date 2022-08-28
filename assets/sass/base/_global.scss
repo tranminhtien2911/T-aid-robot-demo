@@ -1049,66 +1049,11 @@ a.phone {
   }
  
 }
-// Accordion
-// .accordion-sidebar {
-//   position: relative;
-//   // box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.04);
-//   // background-color: #fcfcfc;
-//   .accordion {
-//     position: sticky;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.04);
-//     height: 100vh;
-//     background-color: #fcfcfc;
-//   }
-//   .accordion-item {
-//     background-color: #fcfcfc;
-//     border: none;
-//   }
-//   .accordion-button {
-//     font-family: $font-semibold;
-//     font-size: 1.8rem;
-//     color: $color--grey;
-//     background-color: transparent;
-//     box-shadow: none;
-//   }
-//   .accordion-button:focus {
-//     color: $color--darkblue;
-//   }
-//   .accordion-button:not(.collapsed) {
-//     color: $color--darkblue;
-//   }
-//   .accordion-body {
-//     padding: 0 0 0 4rem;
-//   }
-//   .accordion-links {
-//     font-family: $font-semibold;
-//     font-size: 1.6rem;
-//     color: $color--grey;
-//     display: list-item;
-//     padding: 1.1rem 0;
-//   }
-//   .accordion-links:hover,
-//   .accordion-links:focus {
-//     color: $color--darkblue;
-//   }
-//   .accordion-button::after {
-//     transform: rotate(-90deg);
-//   }
-//   .accordion-button:not(.collapsed)::after {
-//     transform: rotate(0deg);
-//     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2322438c'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-//   }
-// }
 .tree {
   background-color: $palette-7 ;
   list-style: none;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.04);
-  height: 100%;
-  // position: sticky;
+  height: 100vh;
   padding: 1.8rem 0px 0px 0px ;
   font-family: $font-bold;
   font-size: 1.8rem;
@@ -1116,7 +1061,6 @@ a.phone {
   overflow-y: scroll;
   width: 100%;
   ul {
-      // margin: 0;
       padding: 0;
       list-style: none;
       margin-left: 1em;
@@ -1132,7 +1076,6 @@ a.phone {
   li{
       margin:0;
       padding:0 1em;
-      // line-height:2em;
       color: $secondary-7;
       font-weight:700;
       position:relative;
@@ -1143,8 +1086,8 @@ a.phone {
           color: $secondary-7;
           font-size: 2rem;
           line-height: 2.8rem;
-          display: inline-block;
-          width: 90%;
+          // display: inline-block;
+          width: 100%;
       }
       i{
           font-size: 2rem;

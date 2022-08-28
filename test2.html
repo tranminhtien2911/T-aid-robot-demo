@@ -1,60 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.css" />
-     <link rel="stylesheet" href="/vendors/awesome-fonts/css/all.css" />
+    <link rel="stylesheet" href="/vendors/awesome-fonts/css/all.css" />
     <link rel="stylesheet" href="/vendors/uicons/css/uicons-regular-rounded.css" />
-    <link rel="stylesheet" href="/assets/sass/test2.css">
+    <link rel="stylesheet" href="/vendors/uicons/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet" href="assets/css/fonts-style.css" />
+    <link rel="stylesheet" href="/assets/sass/test2.css" />
+    <!-- JS -->
+    <script src="./vendors/js/jquery-2.1.4.min.js"></script>
+    <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendors/slick/slick.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <div class="table-wraper">
-        <div class="table">
-            <div class="table-header">
-                <div class="table-title"><span>Mã ngành</span></div>
-                <div class="table-title"><span>Mã môn học</span></div>
-                <div class="table-title"><span>Tên môn học</span></div>
+    <!-- Breadcrumb -->
+    <div class="nav-bar">
+        <div class="nav-bar_content">
+            <a href="#" class="nav-bar_link">Trang chủ</a>
+            <i class="fi fi-rr-angle-small-right"></i>
+            <a href="#" class="nav-bar_link">Logic học đại cương</a>
+            <i class="fi fi-rr-angle-small-right"></i>
+            <a href="#" class="nav-bar_link">Học</a>
+        </div>
+    </div>
+    <!-- End - Breadcrumb -->
+    <div class="container-fluid main-content">
+        <div class="row">
+            <!-- Tree -->
+            <div class="col-md-3 main-content_tree pe-0 sticky-top">
+                <ul id="tree1">
+                    <!-- Lv-01 -->
+                    <li>
+                        <a href="#">Chương I: Đối tượng nghiên cứu và ý nghĩa của Logic học</a>
+                        <!-- <a href="#">Chương I: Đối tượng nghiên cứu và ý nghĩa của Logic học</a> -->
+                        <ul>
+                            <!-- Lv-02 -->
+                            <li><a href="#">Chương 1</a>
+                                <ul>
+                                    <!-- Lv-03 -->
+                                    <li><a href="#">Phần I. Định nghĩa </a>
+                                        <ul>
+                                            <!-- Lv-04 -->
+                                            <li><a href="#">Phần I. 1 Định nghĩa</a></li>
+                                            <li><a href="#">Con lv4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Phần I.1.1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bài 1</a></li>
+                            <li><a href="#">Bài 2</a></li>
+                            <li><a href="#">Chương 2</a>
+                                <ul>
+                                    <li><a href="#">Bài 1 - Chương 2</a></li>
+                                    <li><a href="#">Bài 2 - Chương 2</a></li>
+                                    <li><a href="#">Bài 3 - Chương 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Chương 3</a>
+                                <ul>
+                                    <li><a href="#">Bài 1 - Chương 2</a></li>
+                                    <li><a href="#">Bài 2 - Chương 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="table-body">
-                <div class="table-row">
-                    <div class="table-row-left">
-                        <div class="table-Major__code">
-                            <span>ACC</span>
+            <!-- End - Tree -->
+            <!-- Lesson -->
+            <div class="col-md-9 main-content_lesson">
+                <div class="lesson-wrapper">
+                    <div class="lesson-head">
+                        <h1>Đối tượng nghiên cứu và ý nghĩa của Logic học</h1>
+                        <div class="lesson-general">
+                            <div class="lesson-general_divide"></div>
+                            <div class="lesson-general_info">
+                                <span>Cập nhật tháng 07 năm 2022</span>
+                                <i class="fi fi-sr-rec"></i>
+                                <span>Bởi: <span class="lesson-general_author">Nguyễn Văn Dương</span></span>
+                            </div>
+                            <div class="lesson-general_divide"></div>
+                            <div class="lesson-general_favorite">
+                                <img src="./assets/img/SVG/book_mark.svg" alt="">
+                                <div class="lesson-general_announce">
+                                    <span></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="table-row-right">
-                        <div class="table-Subject">
-                            <div class="table-Subject__code">
-                                <span>201</span>
+                    <hr class="m-0" style="border-radius: 10px;">
+                    <div class="lesson-body">
+                        <div class="lesson-content">
+                            <div class="lesson-paragraph">
+                                Đối tượng của logic học là nghiên cứu hình thức, qui luật, các qui tắc tư duy đúng đắn.
+                                Muốn hiểu biết đúng đắn các hình thức, các qui luật, các qui tắc của tư duy, chúng ta
+                                phải phân tích kết cấu logic của tư tưởng được thể hiện trong đó, nghĩa là phải chỉ ra
+                                được các bộ phận, các yếu tố cấu thành và các kiểu liên kết đúng của tư tưởng.
                             </div>
-                            <div class="table-Subject__name">
-                                <span>Nguyên lí kế toán 1</span>
+                            <div class="lesson-paragraph">
+                                Việc phân chia một sự vật phức tạp thành các mặt phải dùng các kí hiệu để chỉ các thành
+                                phần, các yếu tố và các kiểu liên kết. Việc kí hiệu hóa một quá trình tư tưởng phức tạp,
+                                làm rõ kết cấu của nó như vậy được gọi là sự hình thức hóa kết cấu logic của tư tưởng.
+                            </div>
+                            <div class="lesson-paragraph">
+                                Vậy phương pháp cơ bản mà người ta sử dụng trong logic học là phương pháp phân tích và
+                                hình thức hóa.
+                            </div>
+                            <div class="lesson-paragraph">
+                                Ngoài phương pháp trên, chúng ta còn sử dụng các phương pháp khác như: Phương pháp so
+                                sánh, phương pháp trừu tượng hóa, khái quát hóa… thậm chí sử dụng cả những phương pháp
+                                của bản thân môn logic như diễn dịch, qui nạp…
+                            </div>
+                            <div class="lesson-paragraph">
+                                Ngoài phương pháp trên, chúng ta còn sử dụng các phương pháp khác như: Phương pháp so
+                                sánh, phương pháp trừu tượng hóa, khái quát hóa… thậm chí sử dụng cả những phương pháp
+                                của bản thân môn logic như diễn dịch, qui nạp…
+                            </div>
+                            <div class="lesson-paragraph">
+                                Ngoài phương pháp trên, chúng ta còn sử dụng các phương pháp khác như: Phương pháp so
+                                sánh, phương pháp trừu tượng hóa, khái quát hóa… thậm chí sử dụng cả những phương pháp
+                                của bản thân môn logic như diễn dịch, qui nạp…
+                            </div>
+                            <div class="lesson-paragraph">
+                                Ngoài phương pháp trên, chúng ta còn sử dụng các phương pháp khác như: Phương pháp so
+                                sánh, phương pháp trừu tượng hóa, khái quát hóa… thậm chí sử dụng cả những phương pháp
+                                của bản thân môn logic như diễn dịch, qui nạp…
                             </div>
                         </div>
-                        <div class="table-Subject">
-                            <div class="table-Subject__code">
-                                <span>301</span>
-                            </div>
-                            <div class="table-Subject__name">
-                                <span>Kế toán quản trị 1</span>
+                    </div>
+                    <div class="lesson-action">
+                        <div class="lesson-action_back">
+                            <i class="fi fi-rr-arrow-small-left"></i>
+                            <span>Quay lại</span>
+                        </div>
+                        <div class="lesson-action_next">
+                            <span>Bài học kế tiếp</span>
+                            <i class="fi fi-rr-arrow-small-right"></i>
+                        </div>
+                    </div>
+                    <hr class="m-0" style="border-radius: 10px;">
+                    <div class="lesson-more">
+                        <div class="lesson-more_head">
+                            <h2>TÀI LIỆU ĐÍNH KÈM</h2>
+                            <div class="lesson-more_number">
+                                <span>7</span>
                             </div>
                         </div>
-                        <div class="table-Subject">
-                            <div class="table-Subject__code">
-                                <span>302</span>
+                        <div class="lesson-more_document">
+                            <!-- Các file tài liệu đính kèm -->
+                            <!-- File a head -->
+                            <div class="lesson-more_item">
+                                <div class="lesson-more_icon">
+                                    <i class="fi fi-rr-link"></i>
+                                </div>
+                                <div class="lesson-more_nameFile">
+                                    <a href="#">TUAN 1  PHI 306  -LOGIC HOC - 2020S - Lecture Slides -.pdf</a>
+                                </div>
                             </div>
-                            <div class="table-Subject__name">
-                                <span>Kế toán tài chính 1</span>
+                            <!-- File a second -->
+                            <div class="lesson-more_item">
+                                <div class="lesson-more_icon">
+                                    <i class="fi fi-rr-link"></i>
+                                </div>
+                                <div class="lesson-more_nameFile">
+                                    <a href="#">TUAN 1  PHI 306  -LOGIC HOC - 2020S - Lecture Slides -.pdf</a>
+                                </div>
+                            </div>
+                            <div class="lesson-more_item">
+                                <div class="lesson-more_icon">
+                                    <i class="fi fi-rr-link"></i>
+                                </div>
+                                <div class="lesson-more_nameFile">
+                                    <a href="#">TUAN 1  PHI 306  -LOGIC HOC - 2020S - Lecture Slides -.pdf</a>
+                                </div>
+                            </div>
+                            <div class="lesson-more_item">
+                                <div class="lesson-more_icon">
+                                    <i class="fi fi-rr-link"></i>
+                                </div>
+                                <div class="lesson-more_nameFile">
+                                    <a href="#">TUAN 1  PHI 306  -LOGIC HOC - 2020S - Lecture Slides -.pdf</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End - Lesson -->
         </div>
     </div>
+    <!-- Js extent -->
+    <script src="./assets/js/test2.js"></script>
 </body>
+
 </html>

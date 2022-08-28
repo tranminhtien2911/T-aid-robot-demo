@@ -1050,7 +1050,7 @@ a.phone {
   background-color: #fcfcfc;
   list-style: none;
   box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.04);
-  height: 100%;
+  height: 100vh;
   padding: 1.8rem 0px 0px 0px;
   font-family: "DarkerGrotesque-Bold", sans-serif;
   font-size: 1.8rem;
@@ -1083,8 +1083,7 @@ a.phone {
   color: #7B7986;
   font-size: 2rem;
   line-height: 2.8rem;
-  display: inline-block;
-  width: 90%;
+  width: 100%;
 }
 .tree li i {
   font-size: 2rem;
