@@ -6,6 +6,8 @@ body{
 }
 //--Top---------------------------------------------------//
 .nav-bar {
+  display: flex;
+  justify-content: space-between;
   background-color: $palette-4;
   width: 100%;
   padding-top: 2.4rem;
@@ -15,7 +17,6 @@ body{
   &_content {
     display: flex;
     gap: 8px;
-    margin: auto;
     max-width: 1440px;
     font-size: 2rem;
     line-height: 2.8rem;
@@ -39,6 +40,20 @@ body{
 
   &_content a:hover {
     text-decoration: underline;
+  }
+  &_menu{
+    position: relative;
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 8px;
+    i{
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      color: $palette-1;
+    }
   }
 }
 
@@ -381,6 +396,9 @@ body{
         font-size: 1.6rem;
         line-height: 2.4rem;
         font-family: $font-semibold;
+      }
+      &-paragraph{
+        text-align: justify;
       }
       &-paragraph:not(:first-child){
         margin-top: 1.6rem;

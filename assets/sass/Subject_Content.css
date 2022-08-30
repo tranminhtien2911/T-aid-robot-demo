@@ -69,6 +69,8 @@ body {
 }
 
 .nav-bar {
+  display: flex;
+  justify-content: space-between;
   background-color: #e0e7eb;
   width: 100%;
   padding-top: 2.4rem;
@@ -78,7 +80,6 @@ body {
 .nav-bar_content {
   display: flex;
   gap: 8px;
-  margin: auto;
   max-width: 1440px;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -98,6 +99,20 @@ body {
 }
 .nav-bar_content a:hover {
   text-decoration: underline;
+}
+.nav-bar_menu {
+  position: relative;
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 8px;
+}
+.nav-bar_menu i {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #1D262B;
 }
 
 .main-content {
@@ -426,6 +441,9 @@ body {
   line-height: 2.4rem;
   font-family: "DarkerGrotesque-SemiBold", sans-serif;
 }
+.main-content_lesson .lesson-paragraph {
+  text-align: justify;
+}
 .main-content_lesson .lesson-paragraph:not(:first-child) {
   margin-top: 1.6rem;
 }
@@ -507,4 +525,4 @@ body {
   color: #1D262B;
 }
 
-/*# sourceMappingURL=test2.css.map */
+/*# sourceMappingURL=Subject_Content.css.map */
