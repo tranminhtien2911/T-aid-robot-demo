@@ -15,7 +15,6 @@
 //             white-space: nowrap;
 //             overflow: hidden;
 //             text-overflow: ellipsis;
-//             overflow: hidden;
 //             max-width: 8rem;
 //         }
 //         &_menu{
@@ -24,6 +23,7 @@
 //     }
 //     .main-content{
 //         &_tree{
+//             display: none;
 //             padding-left: 0 !important;
 //             overflow-x: hidden;
 //             .tree{
@@ -41,24 +41,39 @@
 //             }
 //         }
 //         &_lesson{
-//             display: none;
+//             padding-left: 0 !important;
+//             padding-right: 0 !important;
+//             .lesson{
+//                 &-wrapper{
+//                     padding: 0 2rem 0 2rem;
+//                 }
+//                 &-head{
+//                     h1{
+//                         font-size: 3.2rem;
+//                         line-height: 4rem;
+//                     }
+//                 }
+//                 &-general{
+//                     flex-direction: column;
+//                 }
+//             }
 //         }
 //     }
 // }
-@media screen and(min-width:320px){
+// @media screen and(min-width:320px){
     
-}
-@media screen and(min-width:480px){
+// }
+// @media screen and(min-width:480px){
     
-}
-@media screen and(min-width:768px){
+// }
+// @media screen and(min-width:768px){
     
-}
-@media screen and(min-width:1024px){
-}
-@media screen and(min-width:1200px){
+// }
+// @media screen and(min-width:1024px){
+// }
+// @media screen and(min-width:1200px){
     
-}
-@media screen and(min-width:1440px){
+// }
+// @media screen and(min-width:1440px){
     
-}
+// }
