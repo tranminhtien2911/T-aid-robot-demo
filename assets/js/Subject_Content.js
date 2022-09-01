@@ -284,4 +284,11 @@ function directionAware() {
     }
 }
 
-
+$('.nav-bar_menu').click(function(){
+    $(".main-content_tree").toggleClass('showTree');
+    $(".main-content_lesson").toggleClass('blurLesson'); 
+});
+$('.main-content_lesson').click(function(){
+    $(".main-content_tree").removeClass('showTree');
+    $(".main-content_lesson").removeClass('blurLesson');
+});

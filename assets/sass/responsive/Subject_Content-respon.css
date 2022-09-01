@@ -1,3 +1,325 @@
-
+@media screen and (min-width: 240px) {
+  .nav-bar {
+    gap: 4px;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 1.2rem;
+  }
+  .nav-bar_content {
+    font-size: 14px;
+    line-height: 2.2rem;
+  }
+  .nav-bar_content i {
+    padding-top: 2px;
+  }
+  .nav-bar_link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 8rem;
+  }
+  .nav-bar_menu {
+    display: block;
+  }
+  .main-content_tree {
+    padding-left: 0 !important;
+    position: fixed;
+    top: 0px;
+    transform: translateX(-100%);
+    width: 90%;
+    height: 100vh;
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.06);
+  }
+  .main-content_tree .tree {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .main-content_tree .tree li {
+    padding: 0 1.4rem 0 1rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .main-content_tree .tree li a {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .main-content_lesson {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .main-content_lesson .lesson-wrapper {
+    gap: 8px;
+    padding: 0 2rem 0 2rem;
+  }
+  .main-content_lesson .lesson-head {
+    padding: 1.6rem 0 1rem 0;
+  }
+  .main-content_lesson .lesson-head h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .main-content_lesson .lesson-general {
+    flex-direction: column;
+    padding: 1.4rem 0 0 0;
+  }
+  .main-content_lesson .lesson-general .audio.green-audio-player {
+    min-width: 254px;
+  }
+  .main-content_lesson .lesson-general .volume {
+    display: none;
+  }
+  .main-content_lesson .lesson-general_divide {
+    display: none;
+  }
+  .main-content_lesson .lesson-general_info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .main-content_lesson .lesson-general_info i {
+    display: none;
+  }
+  .main-content_lesson .lesson-general_favorite {
+    width: 16px;
+  }
+  .main-content_lesson .lesson-general_announce {
+    top: -2px;
+    left: 2.4rem;
+  }
+  .main-content_lesson .lesson-body {
+    padding: 1rem 0 2.4rem 0;
+  }
+  .main-content_lesson .lesson-action_next span,
+.main-content_lesson .lesson-action_next i, .main-content_lesson .lesson-action_back span,
+.main-content_lesson .lesson-action_back i {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .main-content_lesson .lesson-more_document {
+    padding: 8px 0;
+  }
+  .main-content .showTree {
+    transform: translateX(0%);
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+  }
+  .main-content .blurLesson {
+    filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -webkit-filter: blur(4px);
+  }
+}
+@media screen and (min-width: 320px) {
+  .main-content_tree {
+    width: 80%;
+  }
+  .main-content .main-content_lesson .lesson-general {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 480px) {
+  .nav-bar_content {
+    font-size: 16px;
+    line-height: 2.4rem;
+  }
+  .nav-bar_content i {
+    padding-top: 2px;
+  }
+  .nav-bar_link {
+    max-width: 24rem;
+  }
+  .main-content_tree {
+    padding-left: 0 !important;
+    width: 50%;
+  }
+  .main-content_tree .tree {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .main-content_tree .tree li {
+    padding: 0 1.2rem 0 1.2rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .main-content_tree .tree li a {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .main-content_lesson .lesson-general .audio.green-audio-player {
+    min-width: 396px;
+  }
+  .main-content_lesson .lesson-general .volume {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    padding-left: 6rem;
+  }
+  .nav-bar_content {
+    font-size: 18px;
+    line-height: 2.6rem;
+  }
+  .nav-bar_content i {
+    padding-top: 4px;
+  }
+  .nav-bar_link {
+    max-width: 60rem;
+  }
+  .main-content_lesson {
+    width: 90%;
+    margin: auto;
+  }
+  .main-content_lesson .lesson-general .audio.green-audio-player {
+    min-width: 300px;
+  }
+  .main-content_lesson .lesson-general_divide {
+    display: block;
+  }
+  .main-content_lesson .lesson-general_info {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .main-content_lesson .lesson-general_info i {
+    display: none;
+  }
+  .main-content_lesson .lesson-general_favorite {
+    width: 18px;
+  }
+  .main-content_lesson .lesson-general_announce {
+    top: -2px;
+    left: 2.4rem;
+  }
+  .main-content_lesson .lesson-action_next span,
+.main-content_lesson .lesson-action_next i, .main-content_lesson .lesson-action_back span,
+.main-content_lesson .lesson-action_back i {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .main-content_lesson .lesson-more_document {
+    padding: 8px 2.4rem;
+  }
+  .main-content_lesson .lesson-general > .lesson-general_divide {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-bar_menu i {
+    display: none;
+  }
+  .main-content .row {
+    flex-wrap: nowrap;
+  }
+  .main-content_tree {
+    position: sticky;
+    top: 0;
+    display: block;
+    transform: translateX(0%);
+    width: 35%;
+    padding-left: 1.2rem !important;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.06);
+  }
+  .main-content_tree .tree {
+    height: inherit;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+  .main-content .blurLesson {
+    filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  .main-content_lesson {
+    width: 65%;
+    margin: 0;
+  }
+  .main-content_lesson .lesson-wrapper {
+    gap: 1rem;
+    padding: 0 14rem 0 5rem;
+  }
+  .main-content_lesson .lesson-head {
+    padding: 1.6rem 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav-bar {
+    padding-left: 6rem;
+  }
+  .nav-bar_content {
+    font-size: 20px;
+    line-height: 2.8rem;
+  }
+  .nav-bar_content i {
+    padding-top: 0px;
+  }
+  .nav-bar_link {
+    max-width: 60rem;
+  }
+  .main-content_tree {
+    width: 25%;
+  }
+  .main-content_lesson {
+    margin: 0;
+    width: 75%;
+  }
+  .main-content_lesson .lesson-head h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .main-content_lesson .lesson-general {
+    flex-direction: row;
+    align-items: center;
+  }
+  .main-content_lesson .lesson-general .audio.green-audio-player {
+    min-width: 300px;
+  }
+  .main-content_lesson .lesson-general_divide {
+    display: block;
+  }
+  .main-content_lesson .lesson-general_info {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .main-content_lesson .lesson-general_info i {
+    display: none;
+  }
+  .main-content_lesson .lesson-general_favorite {
+    width: 18px;
+  }
+  .main-content_lesson .lesson-general_announce {
+    top: -2px;
+    left: 2.4rem;
+  }
+  .main-content_lesson .lesson-body {
+    padding: 2.4rem 0;
+  }
+  .main-content_lesson .lesson-action_next span,
+.main-content_lesson .lesson-action_next i, .main-content_lesson .lesson-action_back span,
+.main-content_lesson .lesson-action_back i {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .main-content_lesson .lesson-more_document {
+    padding: 1.6rem 3.2rem;
+  }
+  .main-content_lesson .lesson-general > .lesson-general_divide {
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=Subject_Content-respon.css.map */

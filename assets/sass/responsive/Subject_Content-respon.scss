@@ -1,79 +1,471 @@
-// @media screen and(min-width:240px){
-//     .nav-bar{
-//         gap: 4px;
-//         padding-top: 1.8rem;
-//         padding-bottom: 1.8rem;
-//         padding-left: 1.2rem;
-//         &_content{
-//             font-size: 14px;
-//             line-height: 2.2rem;
-//             i{
-//                 padding-top: 2px;
-//             }
-//         }
-//         &_link{
-//             white-space: nowrap;
-//             overflow: hidden;
-//             text-overflow: ellipsis;
-//             max-width: 8rem;
-//         }
-//         &_menu{
-//             display: block;
-//         }
-//     }
-//     .main-content{
-//         &_tree{
-//             display: none;
-//             padding-left: 0 !important;
-//             overflow-x: hidden;
-//             .tree{
-//                 font-size: 1.8rem;
-//                 line-height: 2.6rem;
-//                 li{
-//                     padding: 0 1.2rem 0 1.2rem;
-//                     font-size: 1.8rem;
-//                     line-height: 2.6rem;
-//                     a{
-//                         font-size: 1.8rem;
-//                         line-height: 2.6rem;
-//                     }
-//                 }
-//             }
-//         }
-//         &_lesson{
-//             padding-left: 0 !important;
-//             padding-right: 0 !important;
-//             .lesson{
-//                 &-wrapper{
-//                     padding: 0 2rem 0 2rem;
-//                 }
-//                 &-head{
-//                     h1{
-//                         font-size: 3.2rem;
-//                         line-height: 4rem;
-//                     }
-//                 }
-//                 &-general{
-//                     flex-direction: column;
-//                 }
-//             }
-//         }
-//     }
-// }
-// @media screen and(min-width:320px){
-    
-// }
-// @media screen and(min-width:480px){
-    
-// }
-// @media screen and(min-width:768px){
-    
-// }
-// @media screen and(min-width:1024px){
-// }
-// @media screen and(min-width:1200px){
-    
-// }
-// @media screen and(min-width:1440px){
-    
-// }
+@media screen and(min-width:240px) {
+    .nav-bar {
+        gap: 4px;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+        padding-left: 1.2rem;
+
+        &_content {
+            font-size: 14px;
+            line-height: 2.2rem;
+
+            i {
+                padding-top: 2px;
+            }
+        }
+
+        &_link {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 8rem;
+        }
+
+        &_menu {
+            display: block;
+        }
+    }
+
+    .main-content {
+        &_tree {
+            padding-left: 0 !important;
+            position: fixed;
+            top: 0px;
+            transform: translateX(-100%);
+            width: 90%;
+            height: 100vh;
+            transition: 0.5s;
+            box-shadow: 0px 0px 0px rgb(0 0 0 / 6%);
+
+            .tree {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                li {
+                    padding: 0 1.4rem 0 1rem;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+
+                    a {
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+
+        &_lesson {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            .lesson {
+                &-wrapper {
+                    gap: 8px;
+                    padding: 0 2rem 0 2rem;
+                }
+
+                &-head {
+                    padding: 1.6rem 0 1rem 0;
+
+                    h1 {
+                        font-size: 3.2rem;
+                        line-height: 4rem;
+                    }
+                }
+
+                &-general {
+                    flex-direction: column;
+                    padding: 1.4rem 0 0 0;
+
+                    .audio.green-audio-player {
+                        min-width: 254px;
+                    }
+
+                    .volume {
+                        display: none;
+                    }
+
+                    &_divide {
+                        display: none;
+                    }
+
+                    &_info {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 8px;
+                        width: 100%;
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+
+                        i {
+                            display: none;
+                        }
+                    }
+
+                    &_favorite {
+                        width: 16px;
+                    }
+
+                    &_announce {
+                        top: -2px;
+                        left: 2.4rem;
+                    }
+
+                }
+
+                &-body {
+                    padding: 1rem 0 2.4rem 0;
+                }
+
+                &-action {
+
+                    &_next,
+                    &_back {
+
+                        span,
+                        i {
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                        }
+                    }
+                }
+
+                &-more {
+                    &_document {
+                        padding: 8px 0;
+                    }
+                }
+            }
+
+        }
+
+        .showTree {
+            transform: translateX(0%);
+            box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blurLesson {
+            filter: blur(4px);
+            -o-filter: blur(4px);
+            -ms-filter: blur(4px);
+            -moz-filter: blur(4px);
+            -webkit-filter: blur(4px);
+        }
+    }
+}
+
+@media screen and(min-width:320px) {
+    .main-content {
+        &_tree {
+            width: 80%;
+        }
+
+        .main-content {
+            &_lesson {
+                .lesson {
+                    &-general {
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width:480px) {
+    .nav-bar {
+        &_content {
+            font-size: 16px;
+            line-height: 2.4rem;
+
+            i {
+                padding-top: 2px;
+            }
+        }
+
+        &_link {
+            max-width: 24rem;
+        }
+    }
+
+    .main-content {
+        &_tree {
+            padding-left: 0 !important;
+            width: 50%;
+
+            .tree {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+
+                li {
+                    padding: 0 1.2rem 0 1.2rem;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+
+                    a {
+                        font-size: 1.8rem;
+                        line-height: 2.6rem;
+                    }
+                }
+            }
+        }
+
+        &_lesson {
+            .lesson {
+                &-general {
+                    .audio.green-audio-player {
+                        min-width: 396px;
+                    }
+
+                    .volume {
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and(min-width:768px) {
+    .nav-bar {
+        padding-left: 6rem;
+
+        &_content {
+            font-size: 18px;
+            line-height: 2.6rem;
+
+            i {
+                padding-top: 4px;
+            }
+        }
+
+        &_link {
+            max-width: 60rem;
+        }
+    }
+
+    .main-content {
+        &_lesson {
+            width: 90%;
+            margin: auto;
+
+            .lesson {
+                &-general {
+                    .audio.green-audio-player {
+                        min-width: 300px;
+                    }
+
+                    &_divide {
+                        display: block;
+                    }
+
+                    &_info {
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 8px;
+                        width: 100%;
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+
+                        i {
+                            display: none;
+                        }
+                    }
+
+                    &_favorite {
+                        width: 18px;
+                    }
+
+                    &_announce {
+                        top: -2px;
+                        left: 2.4rem;
+                    }
+
+                }
+
+                &-action {
+
+                    &_next,
+                    &_back {
+
+                        span,
+                        i {
+                            font-size: 1.8rem;
+                            line-height: 2.6rem;
+                        }
+                    }
+                }
+
+                &-more {
+                    &_document {
+                        padding: 8px 2.4rem;
+                    }
+                }
+
+            }
+
+            .lesson-general>.lesson-general_divide {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and(min-width:1024px) {
+    .nav-bar {
+        &_menu {
+            i {
+                display: none;
+            }
+        }
+    }
+
+    .main-content {
+        .row {
+            flex-wrap: nowrap;
+        }
+        &_tree{
+            position: sticky;
+            top: 0;
+            display: block;
+            transform: translateX(0%);
+            width: 35%;
+            padding-left: 1.2rem !important;
+            box-shadow: 4px 0px 6px rgb(0 0 0 / 6%);
+            .tree{
+                height: inherit;
+                overflow-y: auto;
+                scroll-snap-type: y mandatory;
+            }
+
+        }
+        .blurLesson {
+            filter: blur(0px);
+            -o-filter: blur(0px);
+            -ms-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -webkit-filter: blur(0px);
+        }
+
+        &_lesson {
+            width: 65%;
+            margin: 0;
+
+            .lesson {
+                &-wrapper {
+                    gap: 1rem;
+                    padding: 0 14rem 0 5rem;
+                }
+
+                &-head {
+                    padding: 1.6rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width:1200px) {}
+
+@media screen and(min-width:1440px) {
+    .nav-bar {
+        padding-left: 6rem;
+
+        &_content {
+            font-size: 20px;
+            line-height: 2.8rem;
+
+            i {
+                padding-top: 0px;
+            }
+        }
+
+        &_link {
+            max-width: 60rem;
+        }
+    }
+
+    .main-content {
+        &_tree{
+            width: 25%;
+        }
+        
+        &_lesson {
+            margin: 0;
+            width: 75%;
+            .lesson {
+                &-head {
+                    h1 {
+                        font-size: 4rem;
+                        line-height: 4.8rem;
+                    }
+                }
+
+                &-general {
+                    flex-direction: row;
+                    align-items: center;
+
+                    .audio.green-audio-player {
+                        min-width: 300px;
+                    }
+
+                    &_divide {
+                        display: block;
+                    }
+
+                    &_info {
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 8px;
+                        width: 100%;
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+
+                        i {
+                            display: none;
+                        }
+                    }
+
+                    &_favorite {
+                        width: 18px;
+                    }
+
+                    &_announce {
+                        top: -2px;
+                        left: 2.4rem;
+                    }
+
+                }
+
+                &-body {
+                    padding: 2.4rem 0;
+                }
+
+                &-action {
+
+                    &_next,
+                    &_back {
+
+                        span,
+                        i {
+                            font-size: 1.8rem;
+                            line-height: 2.6rem;
+                        }
+                    }
+                }
+
+                &-more {
+                    &_document {
+                        padding: 1.6rem 3.2rem;
+                    }
+                }
+
+            }
+
+            .lesson-general>.lesson-general_divide {
+                display: block;
+            }
+        }
+        
+    }
+}

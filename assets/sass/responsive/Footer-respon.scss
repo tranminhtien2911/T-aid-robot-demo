@@ -1,0 +1,216 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/responsive';
+
+@include mobile {
+    .footer {
+      &__wrap {
+        flex-direction: column;
+      }
+      &__item a {
+        padding-top: 1.6rem;
+      }
+      &__logoinfo {
+        text-align: center;
+        ul {
+          padding: 0;
+        }
+      }
+      .location,
+      .phone {
+        display: block;
+        line-height: 2;
+        text-align: center;
+      }
+      .location::before,
+      .phone::before {
+        margin: 0 auto;
+        display: block;
+      }
+      .footer__guide,
+      .footer__info {
+        position: relative;
+        display: flex;
+        padding-bottom: 2rem;
+        .title {
+          font-size: 2rem;
+        }
+        .guide,
+        .info {
+          width: 11rem;
+        }
+        .guide-content,
+        .info-content {
+          margin-left: 7rem;
+        }
+      }
+      .footer__guide::after,
+      .footer__info::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 50%;
+        background-color: $color--darkblue;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .footer__links {
+        text-align: center;
+        .title {
+          font-size: 2rem;
+        }
+        .links {
+          justify-content: center;
+          a {
+            margin: 0 3.5rem;
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-top: 0;
+    }
+    #back-top a {
+      right: 3rem;
+    }
+  }
+  //--------------------------------MOBILE-LG
+  @include mobile-lg {
+    .footer {
+      &__wrap {
+        flex-direction: column;
+      }
+      &__item a {
+        padding-top: 1.6rem;
+      }
+      &__logoinfo {
+        text-align: center;
+        ul {
+          padding: 0;
+        }
+      }
+      .location,
+      .phone {
+        display: block;
+        line-height: 2;
+        text-align: center;
+      }
+      .location::before,
+      .phone::before {
+        margin: 0 auto;
+        display: block;
+      }
+      .footer__guide,
+      .footer__info {
+        position: relative;
+        display: flex;
+        padding-bottom: 2rem;
+        padding-left: 18rem;
+        .title {
+          font-size: 2rem;
+        }
+        .guide,
+        .info {
+          width: 11rem;
+        }
+        .guide-content,
+        .info-content {
+          margin-left: 7rem;
+        }
+      }
+      .footer__guide::after,
+      .footer__info::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 80%;
+        background-color: $color--darkblue;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .footer__links {
+        text-align: center;
+        .title {
+          font-size: 2rem;
+        }
+        .links {
+          justify-content: center;
+          a {
+            margin: 0 3.5rem;
+          }
+        }
+      }
+    }
+  }
+  // --------------------------------TABLET
+  @include tablet {
+    .footer {
+      &__wrap {
+        flex-direction: column;
+      }
+      &__item a {
+        padding-top: 1.6rem;
+      }
+      &__logoinfo {
+        text-align: center;
+        ul {
+          padding: 0;
+        }
+      }
+      .location,
+      .phone {
+        display: block;
+        line-height: 2;
+        text-align: center;
+      }
+      .location::before,
+      .phone::before {
+        margin: 0 auto;
+        display: block;
+      }
+      .footer__guide,
+      .footer__info {
+        position: relative;
+        display: flex;
+        padding-bottom: 2rem;
+        padding-left: 18rem;
+        .title {
+          font-size: 2rem;
+        }
+        .guide,
+        .info {
+          width: 11rem;
+        }
+        .guide-content,
+        .info-content {
+          margin-left: 7rem;
+        }
+      }
+      .footer__guide::after,
+      .footer__info::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 90%;
+        background-color: $color--darkblue;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .footer__links {
+        text-align: center;
+        .title {
+          font-size: 2rem;
+        }
+        .links {
+          justify-content: center;
+          a {
+            margin: 0 3.5rem;
+          }
+        }
+      }
+    }
+  }
+  //--------------------------------DESKTOP

@@ -1603,7 +1603,7 @@ a.phone {
     margin: 0 3.5rem;
   }
   .bottom {
-    margin-top: 4rem;
+    margin-top: 0;
   }
   #back-top a {
     right: 3rem;
@@ -1861,9 +1861,6 @@ a.phone {
   .footer .footer__links .links a {
     margin: 0 3.5rem;
   }
-  .bottom {
-    margin-top: 4rem;
-  }
   .sort-list {
     display: none;
   }
@@ -2074,9 +2071,6 @@ a.phone {
   }
   .footer .footer__links .links a {
     margin: 0 3.5rem;
-  }
-  .bottom {
-    margin-top: 4rem;
   }
   .sort-list {
     display: none;

@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="/vendors/uicons/css/uicons-regular-rounded.css" />
     <link rel="stylesheet" href="/vendors/uicons/css/uicons-solid-rounded.css" />
     <link rel="stylesheet" href="/assets/css/fonts-style.css" />
+    <link rel="stylesheet" href="/assets/sass/Header.css" />
+    <link rel="stylesheet" href="/assets/sass/responsive/Header-respon.css" />
     <link rel="stylesheet" href="/assets/sass/Subject_Content.css" />
     <link rel="stylesheet" href="/assets/sass/responsive/Subject_Content-respon.css" />
-    
+    <link rel="stylesheet" href="/assets/sass/Footer.css" />
+    <link rel="stylesheet" href="/assets/sass/responsive/Footer.css" />
+
     <!-- JS -->
     <script src="./vendors/js/jquery-2.1.4.min.js"></script>
     <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
@@ -23,6 +27,192 @@
 </head>
 
 <body>
+    <header class="head wrap">
+        <!--start nav-mobile -->
+        <div class="header-mobile">
+          <label for="toggle-nav" class="nav-icon">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <a href="#">
+            <div class="navtop__logo-mobile">
+              <img src="./assets/img/logo-1.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <input class="input-nav" type="checkbox" name="" id="toggle-nav" />
+        <label for="toggle-nav" class="nav-overlay"></label>
+        <!-- Menu Left Bar Mobile -->
+        <div class="nav-mobile">
+          <label for="toggle-nav" class="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <div class="nav-mobile__user">
+            <div class="user-img">
+              <img src="./assets/img/user-img.png" alt="" />
+            </div>
+            <div class="user-name">Trần Ngọc Đoan Trang</div>
+          </div>
+          <ul class="nav-mobile__account">
+            <li>
+              <a class="" href="#">
+                <i class="fi fi-rr-user"></i>
+                Thông tin cá nhân
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fi fi-rr-calendar"></i>
+                Thời khóa biểu
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fi fi-rr-star"></i>
+                Mục ưa thích
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fi fi-rr-trophy"></i>
+                Điểm số
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-mobile__menu">
+            <li>
+              <a class="" href="#">
+                <i class="fa-solid fa-house"></i>
+                Trang chủ
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fa-solid fa-copy"></i>
+                Môn học
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fa-solid fa-book-open"></i>
+                Học
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fa-solid fa-laptop-file"></i>
+                Thi
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                Giới thiệu
+              </a>
+            </li>
+            <li>
+              <a class="" href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Đăng xuất
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End nav mobile -->
+        <!-- Nav Desktop -->
+        <div class="bg-menu">
+          <div class="container-xxl">
+            <div class="navtop navtop-pages">
+              <a href="#">
+                <div class="navtop__logo">
+                  <img src="./assets/img/Logo.svg" alt="" />
+                  <span class="logoname">T-AID-ROBOT</span>
+                </div>
+              </a>
+              <!--  -->
+              <div class="navtop__menu">
+                <ul class="menu">
+                  <li>
+                    <a data-text="Trang chủ" class="" href="#">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a data-text="Môn học" class="" href="#">Môn học</a>
+                  </li>
+                  <li>
+                    <a data-text="Học" class="" href="#">Học</a>
+                  </li>
+                  <li>
+                    <a data-text="Thi" class="" href="#">Thi</a>
+                  </li>
+                  <li>
+                    <a data-text="Giới thiệu" class="" href="#">Giới thiệu</a>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+              <!-- <div class="navtop__login">
+                <a href="#" class="btn-login">
+                  <i class="fa-solid fa-user"></i>
+                  Đăng nhập
+                </a>
+              </div> -->
+              <!-- nav-user  -->
+              <div class="navtop__user">
+                <div class="user-img">
+                  <img src="./assets/img/user-img.png" alt="" />
+                </div>
+                <div class="user-name">
+                  Trần Ngọc Đoan Trang
+                  <label for="show-account"
+                    ><i class="fa-solid fa-caret-down"></i
+                  ></label>
+                  <input
+                    class="input-account"
+                    type="checkbox"
+                    id="show-account"
+                  />
+                  <label for="show-account" class="overlay-account"></label>
+                  <div class="account">
+                    <ul>
+                      <li>
+                        <a class="" href="#">
+                          <i class="fi fi-rr-user"></i>
+                          Thông tin cá nhân
+                        </a>
+                      </li>
+                      <li>
+                        <a class="" href="#">
+                          <i class="fi fi-rr-calendar"></i>
+                          Thời khóa biểu
+                        </a>
+                      </li>
+                      <li>
+                        <a class="" href="#">
+                          <i class="fi fi-rr-star"></i>
+                          Mục ưa thích
+                        </a>
+                      </li>
+                      <li>
+                        <a class="" href="#">
+                          <i class="fi fi-rr-trophy"></i>
+                          Điểm số
+                        </a>
+                      </li>
+                      <li>
+                        <a class="" href="#">
+                          <i class="fi fi-rr-sign-out"></i>
+                          Đăng xuất
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </header>
     <!-- Breadcrumb -->
     <div class="nav-bar">
         <div class="nav-bar_content">
@@ -40,7 +230,7 @@
     <div class="container-fluid main-content">
         <div class="row">
             <!-- Tree -->
-            <div class="col-md-3 main-content_tree pe-0 sticky-top">
+            <div class="col-xxl-3 col-md-4 main-content_tree pe-0 sticky-top">
                 <ul id="tree1">
                     <!-- Lv-01 -->
                     <li>
@@ -121,11 +311,312 @@
 
                         </ul>
                     </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Chương II: Khái lược lịch sử Logic học</a>
+                        <ul>
+                            <li><a href="#">I. Logic học là gì ?</a></li>
+                            <li><a href="#">II. Các hình thức và quy luật Logic của tư duy</a>
+                                <ul>
+                                    <li><a href="#">1. Quá trình nhận thức và những hình thức cơ bản của tư duy</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1.a</a></li>
+                                            <li><a href="#">Mục 2.a</a></li>
+                                            <li><a href="#">Mục 3.a</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Bài 2 - Chương 1</a>
+                                        <ul>
+                                            <li><a href="#">Mục 1 - Bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 2 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Mục 3 bài 2</a>
+                                                <ul>
+                                                    <li><a href="#">Mục a - Mục 1</a></li>
+                                                    <li><a href="#">Mục b - Mục 1</a></li>
+                                                    <li><a href="#">Mục c - Mục 1</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- End - Tree -->
             <!-- Lesson -->
-            <div class="col-md-9 main-content_lesson">
+            <div class="col-md-9 col-12 main-content_lesson">
                 <div class="lesson-wrapper">
                     <div class="lesson-head">
                         <h1>Đối tượng nghiên cứu và ý nghĩa của Logic học</h1>
@@ -139,7 +630,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             viewBox="0 0 18 24">
                                             <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0"
-                                                class="play-pause-icon" id="playPause" style="fill: #22438C;"/>
+                                                class="play-pause-icon" id="playPause" style="fill: #22438C;" />
                                         </svg>
                                     </div>
 
@@ -159,22 +650,21 @@
                                                 viewBox="0 0 24 24">
                                                 <path fill="#566574" fill-rule="evenodd"
                                                     d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
-                                                    id="speaker" style="fill: #22438C;"/>
+                                                    id="speaker" style="fill: #22438C;" />
                                             </svg>
                                         </div>
                                         <div class="volume-controls hidden">
                                             <div class="slider" data-direction="vertical">
                                                 <div class="progressing">
-                                                    <div class="pining" id="volume-pin" data-method="changeVolume"></div>
+                                                    <div class="pining" id="volume-pin" data-method="changeVolume">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <audio crossorigin>
-                                        <source
-                                            src="/assets/audio/LRMonoPhase4.wav"
-                                            type="audio/wav">
+                                        <source src="/assets/audio/LRMonoPhase4.wav" type="audio/wav">
                                     </audio>
                                 </div>
                             </div>
@@ -191,7 +681,7 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
                     <hr class="m-0" style="border-radius: 10px;">
@@ -295,6 +785,75 @@
             <!-- End - Lesson -->
         </div>
     </div>
+    <footer class="footer">
+        <div class="container-xxl">
+          <div class="footer__wrap">
+            <div class="footer__item footer__logoinfo">
+              <div class="logo">
+                <a href="#" class="">
+                  <img src="./assets/img/logo-1.svg" alt="" />
+                </a>
+              </div>
+              <ul>
+                <li>
+                  <a class="no-pd-top" href="#">HỆ THỐNG QUẢN LÍ THI CỬ</a>
+                </li>
+                <li>
+                  <a href="#">Trường Đại Học Duy Tân</a>
+                </li>
+                <li>
+                  <a class="location" href="#"> 254 Nguyễn Văn Linh, Quận ThanhKhê - Tp. Đà Nẵng </a>
+                </li>
+                <li>
+                  <a class="phone" href="#"> (+84) 236.3650403 - (+84) 236.3827111 </a>
+                </li>
+              </ul>
+            </div>
+            <!--  -->
+            <div class="footer__item footer__guide">
+              <div class="guide">
+                <a class="title" href="#">HƯỚNG DẪN</a>
+              </div>
+              <div class="guide-content">
+                <a href="#">Trung tâm hỗ trợ</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Chính sách bảo mật</a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="footer__item footer__info">
+              <div class="info">
+                <a class="title" href="#">THÔNG TIN</a>
+              </div>
+              <div class="info-content">
+                <a href="#">Trang chủ</a>
+                <a href="#">Danh mục</a>
+                <a href="#">Ôn thi</a>
+                <a href="#">Giới thiệu</a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="footer__item footer__links">
+              <div>
+                <a class="title" href="#">LIÊN KẾT</a>
+              </div>
+              <div class="links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--  -->
+      <section class="bottom">
+        <div class="container-xxl">
+          <div class="bottom__info">
+            <p>Copyright © 2022 Duy Tan University</p>
+          </div>
+        </div>
+      </section>
     <!-- Js extent -->
     <script src="./assets/js/Subject_Content.js"></script>
 </body>
