@@ -1,216 +1,238 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
-@import '../base/responsive';
 
-@include mobile {
-    .footer {
-      &__wrap {
-        flex-direction: column;
-      }
-      &__item a {
-        padding-top: 1.6rem;
-      }
-      &__logoinfo {
-        text-align: center;
-        ul {
-          padding: 0;
+@media screen and(min-width:240px){
+  .footer{
+    &-Logo{
+      a{
+        justify-content: center;
+        gap: 1rem;
+        img{
+          width: 7rem;
         }
-      }
-      .location,
-      .phone {
-        display: block;
-        line-height: 2;
-        text-align: center;
-      }
-      .location::before,
-      .phone::before {
-        margin: 0 auto;
-        display: block;
-      }
-      .footer__guide,
-      .footer__info {
-        position: relative;
-        display: flex;
-        padding-bottom: 2rem;
-        .title {
-          font-size: 2rem;
-        }
-        .guide,
-        .info {
-          width: 11rem;
-        }
-        .guide-content,
-        .info-content {
-          margin-left: 7rem;
-        }
-      }
-      .footer__guide::after,
-      .footer__info::after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 50%;
-        background-color: $color--darkblue;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .footer__links {
-        text-align: center;
-        .title {
-          font-size: 2rem;
-        }
-        .links {
-          justify-content: center;
-          a {
-            margin: 0 3.5rem;
-          }
+        span{
+          font-size: 3.2rem;
         }
       }
     }
-    .bottom {
+    &-Body{
+      flex-direction: column;
+      padding: 0 1.2rem;
+    }
+    &-Col{
+      text-align: center;
+    }
+    &-Intro{
+      text-align: center;
+      &_nameSys{
+        text-align: center;
+        &_title{
+          font-size: 2.4rem;
+          line-height: 2.4rem;
+        }
+      }
+      &_nameSchool{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+      &_location, &_phone{
+        justify-content: center;
+        i{
+          font-size: 2rem;
+          height: 2rem;
+        }
+        span{
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+    &-Guide, &-Info, &-Conect{
+      flex-direction: column;
+      margin-top: 2rem;
+      &_name{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+      &_link{
+        font-size: 2rem;
+        line-height: 1.8rem;
+      }
+      &_link:hover{
+        color: $palette-1;
+      }
+    }
+    &-Conect{
+      &_social{
+        justify-content: center;
+        gap: 5.2rem;
+        i{
+          font-size: 3.2rem;
+        }
+      }
+    }
+  }
+  .copyR{
+    span{
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+    }
+  }
+
+}
+@media screen and(min-width:320px){
+
+}
+@media screen and(min-width:480px){
+
+}
+@media screen and(min-width:768px){
+
+}
+@media screen and(min-width:1024px){
+  .footer{
+    &-Logo{
+      a{
+        justify-content: flex-start;
+        gap: 2rem;
+        img{
+          width: 8rem;
+        }
+      }
+    }
+    &-Body{
+      flex-direction: row;
+      padding: 0 0;
+    }
+    &-Col{
+      text-align: start;
+    }
+    &-Intro{
+      text-align: start;
+      &_nameSys{
+        text-align: start;
+        &_title{
+          font-size: 3.2rem;
+          line-height: 3.2rem;
+        }
+      }
+      &_location, &_phone{
+        justify-content: flex-start;
+        i{
+          font-size: 2rem;
+          height: 2rem;
+        }
+        span{
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+    &-Guide, &-Info, &-Conect{
       margin-top: 0;
+      &_name{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+      &_link{
+        font-size: 2rem;
+        line-height: 1.8rem;
+      }
     }
-    #back-top a {
-      right: 3rem;
+    &-Conect{
+      &_social{
+        justify-content: flex-start;
+        gap: 3.2rem;
+        i{
+          font-size: 3.2rem;
+        }
+      }
     }
-  }
-  //--------------------------------MOBILE-LG
-  @include mobile-lg {
-    .footer {
-      &__wrap {
-        flex-direction: column;
-      }
-      &__item a {
-        padding-top: 1.6rem;
-      }
-      &__logoinfo {
-        text-align: center;
-        ul {
-          padding: 0;
-        }
-      }
-      .location,
-      .phone {
-        display: block;
-        line-height: 2;
-        text-align: center;
-      }
-      .location::before,
-      .phone::before {
-        margin: 0 auto;
-        display: block;
-      }
-      .footer__guide,
-      .footer__info {
-        position: relative;
-        display: flex;
-        padding-bottom: 2rem;
-        padding-left: 18rem;
-        .title {
-          font-size: 2rem;
-        }
-        .guide,
-        .info {
-          width: 11rem;
-        }
-        .guide-content,
-        .info-content {
-          margin-left: 7rem;
-        }
-      }
-      .footer__guide::after,
-      .footer__info::after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 80%;
-        background-color: $color--darkblue;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .footer__links {
-        text-align: center;
-        .title {
-          font-size: 2rem;
-        }
-        .links {
-          justify-content: center;
-          a {
-            margin: 0 3.5rem;
-          }
-        }
-      }
+    &_nameSchool{
+      font-size: 2.4rem;
+      line-height: 3.2rem;
     }
   }
-  // --------------------------------TABLET
-  @include tablet {
-    .footer {
-      &__wrap {
-        flex-direction: column;
-      }
-      &__item a {
-        padding-top: 1.6rem;
-      }
-      &__logoinfo {
-        text-align: center;
-        ul {
-          padding: 0;
-        }
-      }
-      .location,
-      .phone {
-        display: block;
-        line-height: 2;
-        text-align: center;
-      }
-      .location::before,
-      .phone::before {
-        margin: 0 auto;
-        display: block;
-      }
-      .footer__guide,
-      .footer__info {
-        position: relative;
-        display: flex;
-        padding-bottom: 2rem;
-        padding-left: 18rem;
-        .title {
-          font-size: 2rem;
-        }
-        .guide,
-        .info {
-          width: 11rem;
-        }
-        .guide-content,
-        .info-content {
-          margin-left: 7rem;
-        }
-      }
-      .footer__guide::after,
-      .footer__info::after {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 90%;
-        background-color: $color--darkblue;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .footer__links {
-        text-align: center;
-        .title {
-          font-size: 2rem;
-        }
-        .links {
-          justify-content: center;
-          a {
-            margin: 0 3.5rem;
-          }
+  .copyR{
+    span{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+    
+  }
+}
+@media screen and(min-width:1200px){
+}
+@media screen and(min-width:1440px){
+  .footer{
+    &-Logo{
+      a{
+        justify-content: flex-start;
+        gap: 2rem;
+        img{
+          width: 8rem;
         }
       }
     }
+    &-Body{
+      flex-direction: row;
+      padding: 0 0;
+    }
+    &-Col{
+      text-align: start;
+    }
+    &-Intro{
+      text-align: start;
+      &_nameSys{
+        text-align: start;
+        &_title{
+          font-size: 3.2rem;
+          line-height: 3.2rem;
+        }
+      }
+      &_location, &_phone{
+        justify-content: flex-start;
+        i{
+          font-size: 2.4rem;
+          height: 2.4rem;
+        }
+        span{
+          font-size: 1.8rem;
+          line-height: 2.6rem;
+        }
+      }
+    }
+    &-Guide, &-Info, &-Conect{
+      margin-top: 0;
+      &_name{
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
+      &_link{
+        font-size: 2rem;
+        line-height: 1.8rem;
+      }
+    }
+    &-Conect{
+      &_social{
+        justify-content: flex-start;
+        gap: 3.2rem;
+        i{
+          font-size: 4rem;
+        }
+      }
+    }
+    &_nameSchool{
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
   }
-  //--------------------------------DESKTOP
+  .copyR{
+    span{
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+    
+  }
+}
+

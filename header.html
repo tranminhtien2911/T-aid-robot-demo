@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="/vendors/awesome-fonts/css/all.css" />
     <link rel="stylesheet" href="/vendors/uicons/css/uicons-regular-rounded.css" />
     <link rel="stylesheet" href="/vendors/uicons/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet" href="/vendors/uicons/css/uicons-bold-rounded.css" />
     <link rel="stylesheet" href="/assets/css/fonts-style.css" />
     <link rel="stylesheet" href="/assets/sass/Header.css" />
     <link rel="stylesheet" href="/assets/sass/responsive/Header-respon.css" />
+
+    <!-- JS -->
+    <script src="./vendors/js/jquery-2.1.4.min.js"></script>
+    <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -20,12 +25,16 @@
     <div class="header">
         <div class="container header-wrapper p-0">
             <div class="row">
+                <!-- Desktop -->
                 <div class="header-General p-0">
                     <div class="header-General_left">
+                        <div class="header-Menu">
+                            <i class="fi fi-br-menu-burger"></i>
+                        </div>
                         <div class="header-Logo">
                             <a href="#">
                                 <img src="./assets/img/Logo.svg" alt="" />
-                                <span class="logoname">T-AID-ROBOT</span>
+                                <span>T-AID-ROBOT</span>
                             </a>
                         </div>
                         <div class="header-Category">
@@ -49,14 +58,18 @@
                             <!-- Don't Login -->
                             <!-- Have Acount -->
                             <div class="header-Action_acount">
-                                <img src="./assets/img/user-img.png" alt="">
+                                <!-- Avatar-user -->
+                                <div class="header-Acount_img">
+                                    <img src="./assets/img/user-img.png" alt="">
+                                </div>
+                                <!-- Avatar-user -->
                                 <span>Trần Ngọc Đoan Trang</span>
                                 <i class="fi fi-rr-caret-down"></i>
                                 <div class="header-Acount_category">
                                     <div class="header-Acount_item">
                                         <a href="#" class="header-Acount_link">
                                             <i class="fi fi-rr-user"></i>
-                                            <span>Thông tin các nhân</span>
+                                            <span>Thông tin cá nhân</span>
                                         </a>
 
                                     </div>
@@ -83,24 +96,99 @@
                                     </div>
                                     <div class="header-Acount_item">
                                         <a href="#" class="header-Acount_link">
-                                            <i class="fi fi-rr-exit"></i>
+                                            <i class="fi fi-rr-sign-out"></i>
                                             <span>Đăng xuất</span>
                                         </a>
-
                                     </div>
                                 </div>
                             </div>
                             <!-- Have Acount -->
                         </div>
                     </div>
-
-
                 </div>
+                <!-- End Desktop -->
+                <!-- Mobile - Tablet -->
+                <div class="header-GeneralMB">
+                    <div class="header-GeneralMB_top">
+                        <i class="fi fi-br-cross header-Top_cancel"></i>
+                        <!-- Don't Login -->
+                        <!-- <div class="header-ActionMB_login">
+                            <i class="fi fi-sr-user"></i><span>Đăng nhập</span>
+                        </div> -->
+                        <!-- Don't Login -->
+                        <div class="header-ActionMB_acount">
+                            <div class="header-ActionMB_acountIMG">
+                                <img src="./assets/img/user-img.png" alt="">
+                            </div>
+                            <span>Trần Ngọc Đoan Trang</span>
+                        </div>
+                        
 
-
+                    </div>
+                    <!-- User-Action -->
+                    <div class="header-GeneralMB_user">
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-user"></i>
+                                <span>Thông tin cá nhân</span>
+                            </a>
+                        </div>
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-calendar"></i>
+                                <span>Thời khóa biểu</span>
+                            </a>
+                        </div>
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-star"></i>
+                                <span>Mục ưa thích</span>
+                            </a>
+                        </div>
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-trophy"></i>
+                                <span>Điểm số</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End User-Action -->
+                    <!-- Header Category -->
+                    <div class="header-GeneralMB_category">
+                        <div class="header-Category_item">
+                            <a href="#">
+                                <i class="fi fi-sr-home"></i>
+                                <span>Trang chủ</span>
+                            </a>
+                        </div>
+                        <div class="header-Category_item">
+                            <a href="#">
+                                <i class="fi fi-sr-book"></i>
+                                <span>Môn học</span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <!-- End - Header Category -->
+                </div>
+                <!-- End _ Mobile - Tablet  -->
             </div>
         </div>
+
+
     </div>
+    <script>
+        $('.header-Action_acount').click(function () {
+            $('.header-Acount_category').toggleClass('show-Category');
+        });
+        //Mobile
+        $('.header-Menu > i').click(function(){
+            $('.header-GeneralMB').toggleClass('showCategoryMB');
+        });
+        $('.header-Top_cancel').click(function(){
+            $('.header-GeneralMB').removeClass('showCategoryMB');
+        });
+    </script>
 </body>
 
 </html>

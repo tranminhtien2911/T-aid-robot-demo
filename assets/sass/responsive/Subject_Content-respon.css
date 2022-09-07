@@ -25,7 +25,7 @@
     padding-left: 0 !important;
     position: fixed;
     top: 0px;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
     width: 90%;
     height: 100vh;
     transition: 0.5s;

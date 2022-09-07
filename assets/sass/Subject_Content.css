@@ -107,13 +107,15 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   right: 10px;
-  padding: 0 10px;
+  padding: 0 0.8rem;
+  margin-right: 1.2rem;
 }
 .nav-bar_menu i {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   color: #1D262B;
 }
 
@@ -127,12 +129,19 @@ body {
   max-width: 1440px;
   background-color: #F6F8F9;
   box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.06);
+  padding-bottom: 8rem;
+}
+.main-content_tree_title h1 {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e7eb;
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+  color: #1D262B;
 }
 .main-content_tree .tree {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  padding: 1.8rem 0 0 0;
+  padding: 1rem 0 0 0;
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-family: "DarkerGrotesque-SemiBold", sans-serif;
@@ -439,8 +448,8 @@ body {
   padding: 2.4rem 0;
 }
 .main-content_lesson .lesson-content {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   font-family: "DarkerGrotesque-SemiBold", sans-serif;
 }
 .main-content_lesson .lesson-paragraph {
@@ -518,10 +527,35 @@ body {
   color: #1A71CA;
 }
 .main-content_lesson .lesson-more_nameFile a {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   font-family: "DarkerGrotesque-SemiBold", sans-serif;
   color: #1D262B;
+}
+
+#back-top a {
+  width: 4.6rem;
+  height: 4.6rem;
+  right: 2rem;
+  bottom: 8rem;
+  position: fixed;
+  padding-top: 1.2rem;
+  display: block;
+  text-align: center;
+  background-color: #fcfcfe;
+  box-shadow: 0px 4px 4px 8px rgba(255, 255, 255, 0.25), 0px 0px 10px 2px rgba(0, 0, 0, 0.25), 0px 0px 15px 10px #e0fff5;
+  border-radius: 50%;
+  z-index: 9996;
+  opacity: 0.45;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+#back-top a i {
+  font-size: 1rem;
+  color: #079db2;
+}
+#back-top a:hover, #back-top a:focus {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=Subject_Content.css.map */

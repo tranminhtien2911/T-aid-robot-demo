@@ -65,86 +65,105 @@ body {
 }
 
 .footer {
-  background: #fff;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.06);
+  padding: 4rem 0 6rem 0;
 }
-.footer__wrap {
+.footer-Wrap {
+  background-color: #FFF;
+}
+.footer-Logo a {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-Logo a span {
+  font-family: "Aquire-Regular", sans-serif;
+  color: #1A71CA;
+  font-size: 4.2rem;
+}
+.footer-Body {
   display: flex;
   justify-content: space-between;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
-.footer__guide .title, .footer__info .title, .footer__links .title {
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-  color: #df2040;
-  font-size: 2.4rem;
-  padding-top: 4.5rem;
-}
-.footer__item a {
-  display: block;
-  padding-top: 3.6rem;
+.footer-Intro_nameSys_title {
   font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  color: #22438c;
-  font-size: 1.8rem;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: #22438C;
 }
-.footer .links {
+.footer-Intro_main {
   display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
 }
-.footer .links a {
-  font-size: 3rem;
-  padding-top: 2.5rem;
-  margin-right: 1.5rem;
+.footer-Intro_nameSchool {
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #1D262B;
+}
+.footer-Intro_location, .footer-Intro_phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-Intro_location i, .footer-Intro_phone i {
+  font-size: 2.4rem;
+  height: 2.4rem;
+}
+.footer-Intro_location span, .footer-Intro_phone span {
+  font-family: "DarkerGrotesque-Medium", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #1D262B;
+}
+.footer-Intro_location i {
+  color: #1A71CA;
+}
+.footer-Intro_phone i {
+  color: #DF2040;
+}
+.footer-Guide, .footer-Info, .footer-Conect {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-Guide_name, .footer-Info_name, .footer-Conect_name {
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #DF2040;
+}
+.footer-Guide_link, .footer-Info_link, .footer-Conect_link {
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  color: #22438C;
+}
+.footer-Guide_link:hover, .footer-Info_link:hover, .footer-Conect_link:hover {
+  color: #1D262B;
+}
+.footer-Conect_social {
+  display: flex;
+  gap: 3.2rem;
+}
+.footer-Conect_social i {
+  font-size: 4rem;
+  color: #22438C;
 }
 
-a.location {
-  padding-top: 2.8rem;
-}
-
-a.phone {
-  padding-top: 2.8rem;
-}
-
-.location::before {
-  content: url("../img/location.svg");
-  display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-right: 1.5rem;
-  transform: translateY(20%);
-}
-
-.phone::before {
-  content: url("../img/phone-call.svg");
-  display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-right: 1.5rem;
-  transform: translateY(20%);
-}
-
-.logo {
+.copyR {
   display: flex;
   justify-content: center;
-}
-.logo a {
-  padding: 0;
-}
-
-.no-pd-top {
-  padding-top: 0rem !important;
-}
-
-.bottom {
-  background-color: rgba(164, 217, 255, 0.5);
-}
-.bottom__info {
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  color: #7b7986;
-  text-align: center;
   padding: 1.4rem 0;
 }
-.bottom__info p {
-  margin-bottom: 0;
+.copyR-Wrap {
+  background: rgba(164, 217, 255, 0.5);
+}
+.copyR span {
+  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
 }
 
 /*# sourceMappingURL=Footer.css.map */

@@ -1,90 +1,116 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'base/mutual';
-
 .footer {
-    background: #fff;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.06);
-  
-    &__wrap {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 4rem;
-      padding-bottom: 4rem;
-      // flex-flow col cho responsive
-    }
-  
-    &__guide,
-    &__info,
-    &__links {
-      .title {
-        font-family: $font-bold;
-        color: $color--red;
-        font-size: 2.4rem;
-        padding-top: 4.5rem;
-      }
-    }
-    &__item {
-      a {
-        display: block;
-        padding-top: 3.6rem;
-        font-family: $font-semibold;
-        color: $color--darkblue;
-        font-size: 1.8rem;
-      }
-    }
-    .links {
-      display: flex;
-      a {
-        font-size: 3rem;
-        padding-top: 2.5rem;
-        margin-right: 1.5rem;
-      }
-    }
+  padding: 4rem 0 6rem 0;
+  &-Wrap{
+    background-color: #FFF;
   }
-  a.location {
-    padding-top: 2.8rem;
-  }
-  a.phone {
-    padding-top: 2.8rem;
-  }
-  .location::before {
-    content: url("../img/location.svg");
-    display: inline-block;
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-right: 1.5rem;
-    transform: translateY(20%);
-  }
-  .phone::before {
-    content: url("../img/phone-call.svg");
-    display: inline-block;
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-right: 1.5rem;
-    transform: translateY(20%);
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
+  &-Logo {
     a {
-      padding: 0;
-    }
-  }
-  .no-pd-top {
-    padding-top: 0rem !important;
-  }
-  .bottom {
-    background-color: $color-bottom-bar;
-    // margin-top: 7.7rem;
-    &__info {
-      font-family: $font-semibold;
-      color: $color--grey;
-      text-align: center;
-      padding: 1.4rem 0;
-  
-      p {
-        margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      span {
+        font-family: "Aquire-Regular", sans-serif;
+        color: $primary-2;
+        font-size: 4.2rem;
       }
     }
   }
+  &-Body{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-Intro{
+    &_nameSys{
+      &_title{
+        font-family: $font-semibold;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        color: $secondary-1;
+      }
+    }
+    &_main{
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      margin-top: 2.4rem;
+    }
+    &_nameSchool{
+      font-family: $font-bold;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      color: $palette-1;
+    }
+    &_location, &_phone{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      i{
+        font-size: 2.4rem;
+        height: 2.4rem;
+      }
+      span{
+        font-family: $font-medium;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: $palette-1;
+      }
+    }
+    &_location{
+      i{
+        color: $primary-2;
+      }
+    }
+    &_phone{
+      i{
+        color: $brand;
+      }
+    }
+  }
+  &-Guide, &-Info, &-Conect{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    &_name{
+      font-family: $font-bold;
+      font-size: 3.2rem;
+      line-height: 4rem;
+      color: $brand;
+    }
+    &_link{
+      font-family: $font-semibold;
+      font-size: 2rem;
+      line-height: 1.8rem;
+      color: $secondary-1;
+    }
+    &_link:hover{
+      color: $palette-1;
+    }
+  }
+  &-Conect{
+    &_social{
+      display: flex;
+      gap: 3.2rem;
+      i{
+        font-size: 4rem;
+        color: $secondary-1;
+      }
+    }
+  }
+}
+.copyR{
+  &-Wrap{
+    background: rgba(164, 217, 255, 0.5);
+  }
+  display: flex;
+  justify-content: center;
+  padding: 1.4rem 0;
+  span{
+    font-family: $font-semibold;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+  
+}
