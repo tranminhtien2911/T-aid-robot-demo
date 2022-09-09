@@ -5,7 +5,7 @@
 .header {
   width: 100%;
   padding: 1rem 0px;
-  background-color: $palette-7;
+  background-color: #fff;
   &-General {
     display: flex;
     align-items: center;
@@ -111,6 +111,9 @@
         max-width: 100%;
       }
     }
+    &_icon{
+      transform: rotate(-90deg);
+    }
     &_category{
       display: none;
       position: absolute;
@@ -155,6 +158,9 @@
 }
 .show-Category{
   display: block;
+}
+.rote90{
+  transform: rotate(0deg);
 }
 
 

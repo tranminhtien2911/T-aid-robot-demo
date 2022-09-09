@@ -19,7 +19,7 @@
   }
   .header-Menu i {
     font-size: 2.4rem;
-    color: #22438C;
+    color: #1D262B;
   }
   .header-Logo a img {
     height: 6.4rem;
@@ -52,6 +52,9 @@
     background-color: #A4D9FF;
     border-bottom: 2px solid #22438C;
     padding: 3.2rem 1.2rem;
+  }
+  .header-GeneralMB_top > i {
+    color: #22438C;
   }
   .header-GeneralMB_user, .header-GeneralMB_category {
     margin-top: 1.2rem;

@@ -59,7 +59,7 @@ img {
 }
 
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: $font-medium;
   font-size: $font-size;
   color: $color--grey;
@@ -683,13 +683,6 @@ a.phone {
   z-index: -1;
   // transform: scaleX(1.5);
 }
-.banner-bg::after {
-  content: url(../img/bg-grey-top.svg);
-  position: absolute;
-  bottom: -40%;
-  left: 10%;
-  z-index: -1;
-}
 .bg-func::after {
   content: url(../img/bg-grey-top-sm.svg);
   position: absolute;
@@ -700,15 +693,15 @@ a.phone {
 .bg-about::before {
   content: url(../img/bg-blue-about.svg);
   position: absolute;
-  top: -41%;
-  left: 0;
+  top: -40%;
+  left: -280px;
   z-index: -1;
 }
 .bg-about::after {
   content: url(../img/bg-grey-about-sm.svg);
   position: absolute;
-  right: 0;
-  top: -20rem;
+  right: -4%;
+  top: 0rem;
   z-index: -1;
 }
 .bg-app::before {

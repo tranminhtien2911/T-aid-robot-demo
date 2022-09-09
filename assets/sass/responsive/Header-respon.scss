@@ -21,7 +21,7 @@
             margin-left: 8px;
             i{
                 font-size: 2.4rem;
-                color: $secondary-1;
+                color: $palette-1;
             }
         }
         &-Logo{
@@ -60,6 +60,9 @@
                 border-bottom: 2px solid $secondary-1;
                 padding: 3.2rem 1.2rem;
             }
+            &_top > i{
+                color: $secondary-1;
+            } 
             &_user, &_category{
                 margin-top: 1.2rem;
                 padding: 0 1.2rem;

@@ -18,6 +18,8 @@
     <!-- JS -->
     <script src="./vendors/js/jquery-2.1.4.min.js"></script>
     <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/Subject_Content.js"></script>
+   
     <title>Document</title>
 </head>
 
@@ -59,12 +61,17 @@
                             <!-- Have Acount -->
                             <div class="header-Action_acount">
                                 <!-- Avatar-user -->
-                                <div class="header-Acount_img">
+                                <!-- Have Image -->
+                                <!-- <div class="header-Acount_img">
                                     <img src="./assets/img/user-img.png" alt="">
+                                </div> -->
+                                <!-- No Image -->
+                                <div class="header-Acount_img">
+                                    <img src="./assets/img/SVG/NoImgUser.svg" alt="">
                                 </div>
                                 <!-- Avatar-user -->
                                 <span>Trần Ngọc Đoan Trang</span>
-                                <i class="fi fi-rr-caret-down"></i>
+                                <i class="fi fi-rr-caret-down header-Acount_icon"></i>
                                 <div class="header-Acount_category">
                                     <div class="header-Acount_item">
                                         <a href="#" class="header-Acount_link">
@@ -117,13 +124,18 @@
                         </div> -->
                         <!-- Don't Login -->
                         <div class="header-ActionMB_acount">
-                            <div class="header-ActionMB_acountIMG">
-                                <img src="./assets/img/user-img.png" alt="">
+                            <!-- Avatar-user -->
+                            <!-- Have Image -->
+                            <!-- <div class="header-Acount_img">
+                                    <img src="./assets/img/user-img.png" alt="">
+                                </div> -->
+                            <!-- No Image -->
+                            <div class="header-Acount_img">
+                                <img src="./assets/img/SVG/NoImgUser.svg" alt="">
                             </div>
+                            <!-- Avatar-user -->
                             <span>Trần Ngọc Đoan Trang</span>
                         </div>
-                        
-
                     </div>
                     <!-- User-Action -->
                     <div class="header-GeneralMB_user">
@@ -167,28 +179,21 @@
                                 <span>Môn học</span>
                             </a>
                         </div>
-                        
+                        <div class="header-Category_item">
+                            <a href="#">
+                                <i class="fi fi-sr-sign-out"></i>
+                                <span>Đăng xuất</span>
+                            </a>
+                        </div>
+
                     </div>
                     <!-- End - Header Category -->
                 </div>
                 <!-- End _ Mobile - Tablet  -->
             </div>
         </div>
-
-
     </div>
-    <script>
-        $('.header-Action_acount').click(function () {
-            $('.header-Acount_category').toggleClass('show-Category');
-        });
-        //Mobile
-        $('.header-Menu > i').click(function(){
-            $('.header-GeneralMB').toggleClass('showCategoryMB');
-        });
-        $('.header-Top_cancel').click(function(){
-            $('.header-GeneralMB').removeClass('showCategoryMB');
-        });
-    </script>
+     <script src="./assets/js/header.js"></script>
 </body>
 
 </html>

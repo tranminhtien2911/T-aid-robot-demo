@@ -20,12 +20,13 @@
   }
   .bg-top::before,
   .banner-bg::after,
+  .banner-bg::before,
   .bg-func::after,
   .bg-about::before,
   .bg-about::after,
   .bg-app::before,
   .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .banner-bg {
     background-image: url("../img/bg-top-mobile.svg");
@@ -59,7 +60,7 @@
         }
         .btn-custom {
           a {
-            font-size: 2rem;
+            font-size: 1.8rem;
           }
         }
       }
@@ -283,12 +284,13 @@
   }
   .bg-top::before,
   .banner-bg::after,
+  .banner-bg::before,
   .bg-func::after,
   .bg-about::before,
   .bg-about::after,
   .bg-app::before,
   .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .banner-bg {
     background-image: url(/assets/img/bg-top-mobile.svg);
@@ -531,12 +533,13 @@
     overflow-x: clip;
   }
   .banner-bg::after,
+  .banner-bg::before,
   .bg-func::after,
   .bg-about::before,
   .bg-about::after,
   .bg-app::before,
   .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .bg-top::before {
     transform: scale(0.8);
@@ -753,12 +756,13 @@
     display: none;
   }
   .banner-bg::after,
+  .banner-bg::before,
   .bg-func::after,
   .bg-about::before,
   .bg-about::after,
   .bg-app::before,
   .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .banner {
     margin-top: $mr-section-sm;
@@ -853,18 +857,18 @@
   }
 }
 @include desktop-lg {
-  .banner-bg::after {
-    content: url(../img/bg-grey-top.svg);
-    position: absolute;
-    bottom: -70%;
-    left: -10%;
-    z-index: -1;
-  }
+  // .banner-bg::after {
+  //   content: url(../img/bg-grey-top.svg);
+  //   position: absolute;
+  //   bottom: -70%;
+  //   left: -10%;
+  //   z-index: -1;
+  // }
   .bg-about::after {
     content: url(../img/bg-grey-about-sm.svg);
     position: absolute;
-    right: -10%;
-    top: -20rem;
+    right: 0%;
+    top: 0rem;
     z-index: -1;
   }
 }

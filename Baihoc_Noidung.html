@@ -76,7 +76,7 @@
                                 </div>
                                 <!-- Avatar-user -->
                                 <span>Trần Ngọc Đoan Trang</span>
-                                <i class="fi fi-rr-caret-down"></i>
+                                <i class="fi fi-rr-caret-down header-Acount_icon"></i>
                                 <div class="header-Acount_category">
                                     <div class="header-Acount_item">
                                         <a href="#" class="header-Acount_link">
@@ -182,6 +182,12 @@
                             <a href="#">
                                 <i class="fi fi-sr-book"></i>
                                 <span>Môn học</span>
+                            </a>
+                        </div>
+                        <div class="header-Category_item">
+                            <a href="#">
+                                <i class="fi fi-sr-sign-out"></i>
+                                <span>Đăng xuất</span>
                             </a>
                         </div>
 
@@ -708,11 +714,11 @@
                         </div>
                     </div>
                     <div class="lesson-action">
-                        <div class="lesson-action_back">
+                        <div class="btn lesson-action_back">
                             <i class="fi fi-rr-arrow-small-left"></i>
                             <span>Quay lại</span>
                         </div>
-                        <div class="lesson-action_next">
+                        <div class=" btn lesson-action_next">
                             <span>Bài học kế tiếp</span>
                             <i class="fi fi-rr-arrow-small-right"></i>
                         </div>
@@ -854,6 +860,14 @@
     </div>
     <!-- Js extent -->
     <script src="./assets/js/Subject_Content.js"></script>
+    <script>
+        $('#back-top a').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    </script>
 </body>
 
 </html>

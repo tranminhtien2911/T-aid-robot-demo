@@ -61,7 +61,6 @@ img {
 }
 
 body {
-  overflow-x: hidden;
   font-family: "DarkerGrotesque-Medium", sans-serif;
   font-size: 1.6rem;
   color: #7b7986;
@@ -662,14 +661,6 @@ a.phone {
   z-index: -1;
 }
 
-.banner-bg::after {
-  content: url(../img/bg-grey-top.svg);
-  position: absolute;
-  bottom: -40%;
-  left: 10%;
-  z-index: -1;
-}
-
 .bg-func::after {
   content: url(../img/bg-grey-top-sm.svg);
   position: absolute;
@@ -681,16 +672,16 @@ a.phone {
 .bg-about::before {
   content: url(../img/bg-blue-about.svg);
   position: absolute;
-  top: -41%;
-  left: 0;
+  top: -40%;
+  left: -280px;
   z-index: -1;
 }
 
 .bg-about::after {
   content: url(../img/bg-grey-about-sm.svg);
   position: absolute;
-  right: 0;
-  top: -20rem;
+  right: -4%;
+  top: 0rem;
   z-index: -1;
 }
 
@@ -1429,12 +1420,13 @@ a.phone {
   }
   .bg-top::before,
 .banner-bg::after,
+.banner-bg::before,
 .bg-func::after,
 .bg-about::before,
 .bg-about::after,
 .bg-app::before,
 .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .banner-bg {
     background-image: url("../img/bg-top-mobile.svg");
@@ -1470,7 +1462,7 @@ a.phone {
     padding-right: 0;
   }
   .banner-bg .banner__btn .btn-custom a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .banner-bg .banner__img {
     display: none;
@@ -1681,12 +1673,13 @@ a.phone {
   }
   .bg-top::before,
 .banner-bg::after,
+.banner-bg::before,
 .bg-func::after,
 .bg-about::before,
 .bg-about::after,
 .bg-app::before,
 .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .banner-bg {
     background-image: url(/assets/img/bg-top-mobile.svg);
@@ -1916,12 +1909,13 @@ a.phone {
     overflow-x: clip;
   }
   .banner-bg::after,
+.banner-bg::before,
 .bg-func::after,
 .bg-about::before,
 .bg-about::after,
 .bg-app::before,
 .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .bg-top::before {
     transform: scale(0.8);
@@ -2126,12 +2120,13 @@ a.phone {
     display: none;
   }
   .banner-bg::after,
+.banner-bg::before,
 .bg-func::after,
 .bg-about::before,
 .bg-about::after,
 .bg-app::before,
 .bg-app::after {
-    display: none;
+    display: none !important;
   }
   .banner {
     margin-top: 4rem;
@@ -2219,18 +2214,11 @@ a.phone {
   }
 }
 @media (min-width: 1440px) and (max-width: 1540px) {
-  .banner-bg::after {
-    content: url(../img/bg-grey-top.svg);
-    position: absolute;
-    bottom: -70%;
-    left: -10%;
-    z-index: -1;
-  }
   .bg-about::after {
     content: url(../img/bg-grey-about-sm.svg);
     position: absolute;
-    right: -10%;
-    top: -20rem;
+    right: 0%;
+    top: 0rem;
     z-index: -1;
   }
 }

@@ -67,7 +67,7 @@ body {
 .header {
   width: 100%;
   padding: 1rem 0px;
-  background-color: #fcfcfc;
+  background-color: #fff;
 }
 .header-General {
   display: flex;
@@ -167,6 +167,9 @@ body {
   display: block;
   max-width: 100%;
 }
+.header-Acount_icon {
+  transform: rotate(-90deg);
+}
 .header-Acount_category {
   display: none;
   position: absolute;
@@ -209,6 +212,10 @@ body {
 
 .show-Category {
   display: block;
+}
+
+.rote90 {
+  transform: rotate(0deg);
 }
 
 /*# sourceMappingURL=Header.css.map */
