@@ -32,14 +32,6 @@
 
 </head>
 <style>
-  .header {
-    position: sticky;
-    top: 0;
-    background-color: unset;
-    z-index: 9000;
-    transition: 0.3s;
-  }
-
   .banner {
     z-index: 20;
   }
@@ -68,17 +60,10 @@
   .banner__desc {
     width: 90%;
   }
-
-
-  .footer,
-  .footer-Wrap {
-    background: none;
-    box-shadow: none;
-  }
 </style>
 
 <body>
-  <div class="header">
+  <div class="header header-Sticky">
     <div class="container header-wrapper p-0">
       <div class="row">
         <!-- Desktop -->
@@ -108,24 +93,24 @@
           <div class="header-General_right">
             <div class="header-Action">
               <!-- Don't Login -->
-              <div class="header-Action_login">
+              <!-- <div class="header-Action_login">
                 <i class="fi fi-sr-user"></i><span>Đăng nhập</span>
-              </div>
+              </div> -->
               <!-- Don't Login -->
               <!-- Have Acount -->
               <div class="header-Action_acount">
                 <!-- Avatar-user -->
                 <!-- Have Image -->
-                <!-- <div class="header-Acount_img">
+                <div class="header-Acount_img">
                   <img src="./assets/img/user-img.png" alt="">
-                </div> -->
+                </div>
                 <!-- No Image -->
                 <!-- <div class="header-Acount_img">
                   <img src="./assets/img/SVG/NoImgUser.svg" alt="">
                 </div> -->
                 <!-- Avatar-user -->
-                <!-- <span>Trần Ngọc Đoan Trang</span> -->
-                <!-- <i class="fi fi-rr-caret-down"></i> -->
+                <span>Trần Ngọc Đoan Trang</span>
+                <i class="fi fi-rr-caret-down"></i>
                 <div class="header-Acount_category">
                   <div class="header-Acount_item">
                     <a href="#" class="header-Acount_link">
@@ -465,9 +450,9 @@
     </div>
   </section>
   <!--  -->
-  <div class="footer-Wrap">
-    <div class="container p-0 footer-Wrap">
-      <footer class="footer">
+  <div class="footer-Wrap footer-noneBG">
+    <div class="container p-0 footer-Contain footer-noneBG">
+      <footer class="footer footer-noneBG">
         <div class="footer-Top">
           <div class="footer-Logo">
             <a href="#">

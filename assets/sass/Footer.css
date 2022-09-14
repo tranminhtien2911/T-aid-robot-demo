@@ -69,6 +69,7 @@ body {
 }
 .footer-Wrap {
   background-color: #FFF;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.06);
 }
 .footer-Logo a {
   display: flex;

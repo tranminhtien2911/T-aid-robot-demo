@@ -137,6 +137,13 @@
   .header-User_item:last-child {
     border-bottom: 1px solid #22438C;
   }
+  .header-Sticky {
+    position: sticky;
+    top: 0;
+    background-color: unset;
+    z-index: 9000;
+    transition: 0.3s;
+  }
   .showCategoryMB {
     transform: translateX(0%);
   }

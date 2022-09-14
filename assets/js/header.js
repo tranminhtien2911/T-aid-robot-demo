@@ -37,4 +37,5 @@ $('.header-Top_cancel').click(function(){
 });
 $('section').click(function(){
     $('.header-GeneralMB').removeClass('showCategoryMB');
+    $('.header-Acount_category').removeClass('show-Category');
 });

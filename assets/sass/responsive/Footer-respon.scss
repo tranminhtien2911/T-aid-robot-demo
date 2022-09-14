@@ -71,7 +71,11 @@
         }
       }
     }
+    .footer-noneBG{
+      box-shadow: none;
+    }
   }
+  
   .copyR{
     span{
       font-size: 1.8rem;
@@ -106,6 +110,7 @@
     }
     &-Col{
       text-align: start;
+      padding: 0 10px 10px 10px;
     }
     &-Intro{
       text-align: start;
@@ -136,7 +141,7 @@
       }
       &_link{
         font-size: 2rem;
-        line-height: 1.8rem;
+        line-height:2.6rem;
       }
     }
     &-Conect{
@@ -152,6 +157,11 @@
       font-size: 2.4rem;
       line-height: 3.2rem;
     }
+  }
+  .footer-noneBG{
+    background: transparent;
+    background-color: transparent;
+    box-shadow: none;
   }
   .copyR{
     span{
@@ -170,7 +180,12 @@
         justify-content: flex-start;
         gap: 2rem;
         img{
-          width: 8rem;
+          width: 10.5rem;
+          height: 10.5rem;
+        }
+        span{
+          font-size: 4.2rem;
+          line-height: 5rem;
         }
       }
     }
@@ -180,6 +195,7 @@
     }
     &-Col{
       text-align: start;
+      padding: 0 10px 10px 10px;
     }
     &-Intro{
       text-align: start;
@@ -201,6 +217,10 @@
           line-height: 2.6rem;
         }
       }
+      &_nameSchool{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
     }
     &-Guide, &-Info, &-Conect{
       margin-top: 0;
@@ -210,7 +230,7 @@
       }
       &_link{
         font-size: 2rem;
-        line-height: 1.8rem;
+        line-height: 2.6rem;
       }
     }
     &-Conect{
@@ -222,10 +242,7 @@
         }
       }
     }
-    &_nameSchool{
-      font-size: 2.4rem;
-      line-height: 3.2rem;
-    }
+    
   }
   .copyR{
     span{
