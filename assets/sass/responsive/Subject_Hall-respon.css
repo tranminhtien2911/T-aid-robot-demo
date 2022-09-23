@@ -69,6 +69,9 @@
   }
 }
 @media screen and (min-width: 480px) {
+  .subjectHall_title {
+    margin-top: 2rem;
+  }
   .subjectHall_card-learn::before, .subjectHall_card-exam::before {
     opacity: 1;
   }
@@ -102,6 +105,7 @@
 }
 @media screen and (min-width: 1024px) {
   .subjectHall_title {
+    margin-top: 4rem;
     padding: 2.4rem 1rem;
   }
   .subjectHall_title h1 {

@@ -100,7 +100,9 @@
 
 @media screen and(min-width:480px) {
     .subjectHall {
-
+        &_title{
+            margin-top: 2rem;
+        }
         //---------------------------------------------------------------------//
         &_card {
 
@@ -161,6 +163,7 @@
 @media screen and(min-width:1024px) {
     .subjectHall {
         &_title {
+            margin-top: 4rem;
             padding: 2.4rem 1rem;
 
             h1 {
