@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="assets/img/Logo.svg" />
+        <title>T-AID-ROBOT</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="./vendors/awesome-fonts/css/all.css" />
+        <link rel="stylesheet" href="./vendors/uicons/css/uicons-regular-rounded.css" />
+        <link rel="stylesheet" href="./vendors/uicons/css/uicons-solid-rounded.css" />
+        <link rel="stylesheet" href="./vendors/uicons/css/uicons-bold-rounded.css" />
+        <link rel="stylesheet" href="./assets/css/fonts-style.css" />
+        <link rel="stylesheet" href="./assets/sass/main.css" />
+        <link rel="stylesheet" href="./assets/sass/Header.css" />
+        <link rel="stylesheet" href="./assets/sass/responsive/Header-respon.css" />
+        <link rel="stylesheet" href="./assets/sass/Subject_Hall.css" />
+        <link rel="stylesheet" href="./assets/sass/responsive/Subject_Hall-respon.css" />
+        <link rel="stylesheet" href="./assets/sass/Footer.css" />
+        <link rel="stylesheet" href="./assets/sass/responsive/Footer-respon.css" />
+
+        <!-- JS -->
+        <script src="./vendors/js/jquery-2.1.4.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendors/slick/slick.min.js"></script>
+    </head>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header header-Sticky">
+        <div class="container header-wrapper p-0">
+            <div class="row">
+                <!-- Desktop -->
+                <div class="header-General p-0">
+                    <div class="header-General_left">
+                        <div class="header-Menu">
+                            <i class="fi fi-br-menu-burger"></i>
+                        </div>
+                        <div class="header-Logo">
+                            <a href="#">
+                                <img src="./assets/img/Logo.svg" alt="" />
+                                <span>T-AID-ROBOT</span>
+                            </a>
+                        </div>
+                        <div class="header-Category">
+                            <div class="header-Category_item ">
+                                <a href="#" class="header-Category_link header-Link_active">Trang chủ</a>
+                            </div>
+                            <div class="header-Category_item">
+                                <a href="#" class="header-Category_link">Môn học</a>
+                            </div>
+                            <div class="header-Category_item">
+                                <a href="#" class="header-Category_link">Liên hệ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-General_right">
+                        <div class="header-Action">
+                            <!-- Don't Login -->
+                            <!-- <div class="header-Action_login">
+                                <i class="fi fi-sr-user"></i><span>Đăng nhập</span>
+                            </div> -->
+                            <!-- Don't Login -->
+                            <!-- Have Acount -->
+                            <div class="header-Action_acount">
+                                <!-- Avatar-user -->
+                                <!-- Have Image -->
+                                <!-- <div class="header-Acount_img">
+                                    <img src="./assets/img/user-img.png" alt="">
+                                </div> -->
+                                <!-- No Image -->
+                                <div class="header-Acount_img">
+                                    <img src="./assets/img/SVG/NoImgUser.svg" alt="">
+                                </div>
+                                <!-- Avatar-user -->
+                                <span>Trần Ngọc Đoan Trang</span>
+                                <i class="fi fi-rr-caret-down header-Acount_icon"></i>
+                                <div class="header-Acount_category">
+                                    <div class="header-Acount_item">
+                                        <a href="#" class="header-Acount_link">
+                                            <i class="fi fi-rr-user"></i>
+                                            <span>Thông tin cá nhân</span>
+                                        </a>
+
+                                    </div>
+                                    <div class="header-Acount_item">
+                                        <a href="#" class="header-Acount_link">
+                                            <i class="fi fi-rr-calendar"></i>
+                                            <span>Thời khóa biểu</span>
+                                        </a>
+
+                                    </div>
+                                    <div class="header-Acount_item">
+                                        <a href="#" class="header-Acount_link">
+                                            <i class="fi fi-rr-star"></i>
+                                            <span>Mục ưa thích</span>
+                                        </a>
+
+                                    </div>
+                                    <div class="header-Acount_item">
+                                        <a href="#" class="header-Acount_link">
+                                            <i class="fi fi-rr-trophy"></i>
+                                            <span>Điểm số</span>
+                                        </a>
+
+                                    </div>
+                                    <div class="header-Acount_item">
+                                        <a href="#" class="header-Acount_link">
+                                            <i class="fi fi-rr-sign-out"></i>
+                                            <span>Đăng xuất</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Have Acount -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Desktop -->
+                <!-- Mobile - Tablet -->
+                <div class="header-GeneralMB">
+                    <div class="header-GeneralMB_top">
+                        <i class="fi fi-br-cross header-Top_cancel"></i>
+                        <!-- Don't Login -->
+                        <!-- <div class="header-ActionMB_login">
+                            <i class="fi fi-sr-user"></i><span>Đăng nhập</span>
+                        </div> -->
+                        <!-- Don't Login -->
+                        <div class="header-ActionMB_acount">
+                            <!-- Avatar-user -->
+                            <!-- Have Image -->
+                            <!-- <div class="header-Acount_img">
+                                    <img src="./assets/img/user-img.png" alt="">
+                                </div> -->
+                            <!-- No Image -->
+                            <div class="header-Acount_img">
+                                <img src="./assets/img/SVG/NoImgUser.svg" alt="">
+                            </div>
+                            <!-- Avatar-user -->
+                            <span>Trần Ngọc Đoan Trang</span>
+                        </div>
+                    </div>
+                    <!-- User-Action -->
+                    <div class="header-GeneralMB_user">
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-user"></i>
+                                <span>Thông tin cá nhân</span>
+                            </a>
+                        </div>
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-calendar"></i>
+                                <span>Thời khóa biểu</span>
+                            </a>
+                        </div>
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-star"></i>
+                                <span>Mục ưa thích</span>
+                            </a>
+                        </div>
+                        <div class="header-User_item">
+                            <a href="#">
+                                <i class="fi fi-rr-trophy"></i>
+                                <span>Điểm số</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End User-Action -->
+                    <!-- Header Category -->
+                    <div class="header-GeneralMB_category">
+                        <div class="header-Category_item">
+                            <a href="#">
+                                <i class="fi fi-sr-home"></i>
+                                <span>Trang chủ</span>
+                            </a>
+                        </div>
+                        <div class="header-Category_item">
+                            <a href="#">
+                                <i class="fi fi-sr-book"></i>
+                                <span>Môn học</span>
+                            </a>
+                        </div>
+                        <div class="header-Category_item">
+                            <a href="#">
+                                <i class="fi fi-sr-sign-out"></i>
+                                <span>Đăng xuất</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- End - Header Category -->
+                </div>
+                <!-- End _ Mobile - Tablet  -->
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <!-- Breadcrumb -->
+    <div class="nav-bar">
+        <div class="nav-bar_content container">
+            <a href="#" class="nav-bar_link">Trang chủ</a>
+            <i class="fi fi-rr-angle-small-right"></i>
+            <a href="#" class="nav-bar_link nav-bar_link_subjectHall">Logic học đại cương</a>
+            <!-- <i class="fi fi-rr-angle-small-right"></i>
+            <a href="#" class="nav-bar_link">Học</a> -->
+        </div>
+        <div class="nav-bar_menu" style="display:none;">
+            <i class="fi fi-rr-menu-dots-vertical"></i>
+        </div>
+    </div>
+    <!-- Breadcrumb -->
+    <!-- Main -->
+    <div class="container">
+        <div class="row">
+            <div class="subjectHall_title">
+                <h1>logic học đại cương</h1>
+                <div class="subjectHall_title-underline"></div>
+            </div>
+        </div>
+        <div class="row subjectHall_main">
+            <div class="subjectHall_intro">
+                <h2 class="subjectHall_intro-title">giới thiệu</h2>
+                <div class="subjectHall_intro-content">
+                    Khóa học này bao gồm các nội dung: Giới thiệu cấu trúc dữ liệu và thuật toán, phân tích và mô tả một
+                    thuật toán theo một số cách, ngoài ra nó còn trình bày sâu về một số cấu trúc dữ liệu cơ bản, thuật
+                    toán như mảng, danh sách liên kết, hàng đợi, ngăn xếp, cây… và khám phá một số thuật toán: sắp xếp
+                    dữ liệu, tìm kiếm dữ liệu,… trên máy tính bằng nhiều cách. Cuối cùng, người học có thể viết thuật
+                    toán bằng chương trình ngôn ngữ C ++.
+                </div>
+            </div>
+            <div class="subjectHall_card">
+                <div class="subjectHall_card-item subjectHall_card-learn">
+                    <span class="subjectHall_card-name">HỌC</span>
+                    <img src="./assets/img/SVG/Card-Actions-Learn.svg" alt="">
+                </div>
+                <div class="subjectHall_card-item subjectHall_card-exam">
+                    <span class="subjectHall_card-name">THI</span>
+                    <img src="./assets/img/SVG/Card-Actions-Exam.svg" alt="">
+                </div>
+            </div>
+            <div class="subjectHall_divide"></div>
+            <div class="subjectHall_relate">
+                <h2 class="subjectHall_relate-title">
+                    môn học liên quan
+                </h2>
+                <div class="subjectHall_relate-card">
+                    <div class="subjectHall_relate-card-item">
+                        <div class="subjectHall_relate-card-name">
+                            Xã hội học đại cương
+                        </div>
+                        <div class="subjectHall_relate-card-content">
+                            Xã hội học (XHH) là một môn khoa học thuộc các khoa học xã hội, nghiên cứu các tương tác xã
+                            hội, đặc biệt đi sâu nghiên cứu một cách hệ thống sự phát triển, cấu trúc, mối tương quan xã
+                            hội và các hành vi hoạt động của con người trong các tổ chức, nhóm xã hội.
+                        </div>
+                    </div>
+                    <div class="subjectHall_relate-card-item">
+                        <div class="subjectHall_relate-card-name">
+                            Xã hội học đại cương
+                        </div>
+                        <div class="subjectHall_relate-card-content">
+                            Xã hội học (XHH) là một môn khoa học thuộc các khoa học xã hội, nghiên cứu các tương tác xã
+                            hội, đặc biệt đi sâu nghiên cứu một cách hệ thống sự phát triển, cấu trúc, mối tương quan xã
+                            hội và các hành vi hoạt động của con người trong các tổ chức, nhóm xã hội.
+                        </div>
+                    </div>
+                    <div class="subjectHall_relate-card-item subjectHall_relate-card-down">
+                        <div class="subjectHall_relate-card-name">
+                            Xã hội học đại cương
+                        </div>
+                        <div class="subjectHall_relate-card-content">
+                            Xã hội học (XHH) là một môn khoa học thuộc các khoa học xã hội, nghiên cứu các tương tác xã
+                            hội, đặc biệt đi sâu nghiên cứu một cách hệ thống sự phát triển, cấu trúc, mối tương quan xã
+                            hội và các hành vi hoạt động của con người trong các tổ chức, nhóm xã hội.
+                        </div>
+                    </div>
+                    <div class="subjectHall_relate-card-item subjectHall_relate-card-down">
+                        <div class="subjectHall_relate-card-name">
+                            Xã hội học đại cương
+                        </div>
+                        <div class="subjectHall_relate-card-content">
+                            Xã hội học (XHH) là một môn khoa học thuộc các khoa học xã hội, nghiên cứu các tương tác xã
+                            hội, đặc biệt đi sâu nghiên cứu một cách hệ thống sự phát triển, cấu trúc, mối tương quan xã
+                            hội và các hành vi hoạt động của con người trong các tổ chức, nhóm xã hội.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- Main -->
+    <!-- Footer -->
+    <div class="footer-Wrap">
+        <div class="container p-0 footer-Contain footer-noneBG">
+            <footer class="footer footer-noneBG">
+                <div class="footer-Top">
+                    <div class="footer-Logo">
+                        <a href="#">
+                            <img src="./assets/img/SVG/LogoFooter.svg" alt="">
+                            <span>T-AID-ROBOT</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-Body">
+                    <div class="footer-Intro">
+                        <div class="footer-Intro_nameSys">
+                            <span class="footer-Intro_nameSys_title">HỆ THỐNG QUẢN LÍ THI CỬ</span>
+                        </div>
+                        <div class="footer-Intro_main">
+                            <span class="footer-Intro_nameSchool">Trường Đại học Duy Tân</span>
+                            <div class="footer-Intro_location">
+                                <i class="fi fi-sr-marker"></i>
+                                <span>254 Nguyễn Văn Linh- Thanh Khê - Đà Nẵng</span>
+                            </div>
+                            <div class="footer-Intro_phone">
+                                <i class="fi fi-sr-phone-call"></i>
+                                <span>(+84) 236.3650403 - (+84) 236.3827111</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-Col">
+                        <div class="footer-Guide">
+                            <span class="footer-Guide_name">HƯỚNG DẪN</span>
+                            <a class="footer-Guide_link">
+                                <span>Trung tâm hỗ trợ</span>
+                            </a>
+                            <a class="footer-Guide_link">
+                                <span>Điều khoản sử dụng</span>
+                            </a>
+                            <a class="footer-Guide_link">
+                                <span>Chính sách bảo mật</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-Col">
+                        <div class="footer-Info">
+                            <span class="footer-Info_name">THÔNG TIN</span>
+                            <a class="footer-Info_link">
+                                <span>Trang chủ</span>
+                            </a>
+                            <a class="footer-Info_link">
+                                <span>Danh mục</span>
+                            </a>
+                            <a class="footer-Info_link">
+                                <span>Ôn thi</span>
+                            </a>
+                            <a class="footer-Info_link">
+                                <span>Giới thiệu</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-Col">
+                        <div class="footer-Conect">
+                            <span class="footer-Conect_name">LIÊN KẾT</span>
+                            <div class="footer-Conect_social">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="copyR-Wrap">
+        <div class="container p-0">
+            <div class="copyR">
+                <span>Copyright © 2022 Duy Tan University</span>
+            </div>
+        </div>
+    </div>
+    <!-- back-top -->
+    <div id="back-top" style="display: block">
+        <a href="#top"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+    <!-- Footer -->
+    <!-- JS -->
+    <script src="./assets/js/header.js"></script>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            $('.header').css('box-shadow', '0px 4px 10px rgba(98, 99, 101, 0.1)');
+          }
+          else{
+            $('.header').css('box-shadow', 'none');
+          }
+        }
+      </script>
+</body>
+
+</html>

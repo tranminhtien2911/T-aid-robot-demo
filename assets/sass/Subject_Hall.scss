@@ -1,0 +1,167 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/mutual';
+@import 'base/breadcrumb';
+
+body {
+    margin: auto;
+}
+
+.subjectHall {
+    &_title {
+        width: 100%;
+        padding: 2.4rem 1rem;
+        text-align: center;
+
+        h1 {
+            width: 100%;
+            font-family: $font-bold;
+            font-size: 3.2rem;
+            line-height: 4rem;
+            text-transform: uppercase;
+            color: $secondary-1;
+        }
+
+        &-underline {
+            width: 30rem;
+            border: 1.5px solid $brand;
+            border-radius: 10rem;
+            background-color: $brand;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    //---------------------------------------------------------------------//
+    &_main {
+        margin-top: 4.8rem;
+        padding: 4rem 4rem 7.2rem 4rem;
+    }
+
+    //---------------------------------------------------------------------//
+    &_intro {
+        padding: 4rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.06), 2px 2px 10px rgba(0, 0, 0, 0.06);
+        ;
+
+        &-title {
+            font-family: $font-bold;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            text-transform: uppercase;
+            color: $secondary-1;
+        }
+
+        &-content {
+            font-family: $font-medium;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            color: $secondary-7;
+            text-align: justify;
+            margin-top: 1.6rem;
+        }
+    }
+
+    //---------------------------------------------------------------------//
+    &_card {
+        display: flex;
+        gap: 4rem;
+        padding: 0;
+        margin-top: 4rem;
+
+        &-item {
+            width: 48.4%;
+            height: 30rem;
+            border-radius: 1rem;
+            position: relative;
+        }
+
+        &-learn,
+        &-exam {
+            position: relative;
+            overflow: hidden;
+        }
+
+        &-name {
+            position: absolute;
+            font-family: $font-bold;
+            font-size: 5.6rem;
+            line-height: 6.4rem;
+            color: $palette-7;
+            top: 3.2rem;
+            left: 3.2rem;
+        }
+
+        &-learn::before {
+            content: url('./../img/SVG//Learn.svg');
+            position: absolute;
+            top: 6.8rem;
+            left: 31rem;
+            transform: rotate(-20deg);
+            mix-blend-mode: soft-light;
+            opacity: 0.6;
+        }
+
+        &-exam::before {
+            content: url('./../img/SVG//Exam.svg');
+            position: absolute;
+            top: 6rem;
+            left: 32rem;
+            mix-blend-mode: soft-light;
+            opacity: 0.6;
+        }
+    }
+
+    //---------------------------------------------------------------------//
+    &_divide {
+        width: 100%;
+        border: 1px solid $palette-4;
+        margin-top: 4.8rem;
+    }
+    //---------------------------------------------------------------------//
+    &_relate{
+        margin-top: 4.8rem;
+        padding: 1.2rem 0 2.4rem 0;
+        &-title{
+            font-family: $font-bold;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            color: $secondary-1;
+            text-transform: uppercase;
+
+        }
+        &-card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2.8rem;
+            
+            &-item{
+                max-width: 49%;
+                background-color: #ffff;
+                border-radius: 1rem;
+                box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.06), 2px 2px 10px rgba(0, 0, 0, 0.06);
+                padding: 2.4rem;
+            }
+            &-name{
+                font-weight: bold;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                color: $palette-1;
+            }
+            &-content{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: $secondary-7;
+                text-align: justify;
+                margin-top: 1.6rem;
+            }
+            &-down{
+                margin-top: 2.4rem;
+            }
+        }
+    }
+
+}

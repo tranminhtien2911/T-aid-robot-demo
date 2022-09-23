@@ -1,0 +1,277 @@
+@media screen and(min-width:240px) {
+    .subjectHall {
+        &_title {
+            padding: 2rem 1rem;
+
+            h1 {
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+            }
+
+            &-underline {
+                width: 20rem;
+            }
+        }
+
+        //---------------------------------------------------------------------//
+        &_main {
+            margin-top: 0;
+            padding: 2rem 1.2rem 4.8rem 1.2rem;
+        }
+
+        //---------------------------------------------------------------------//
+        &_intro {
+            padding: 1.8rem;
+
+            &-title {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+            }
+
+            &-content {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+
+        //---------------------------------------------------------------------//
+        &_card {
+            flex-direction: column;
+            margin-top: 2.4rem;
+
+            &-item {
+                width: 100%;
+                height: auto;
+            }
+
+            &-learn::before,
+            &-exam::before {
+                opacity: 0;
+            }
+
+            &-name {
+                font-size: 4rem;
+                line-height: 4.8rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        //---------------------------------------------------------------------//
+        &_divide {
+            margin-top: 3.2rem;
+        }
+
+        //---------------------------------------------------------------------//
+        &_relate {
+            margin-top: 2.4rem;
+
+            &-title {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                text-align: center;
+
+            }
+
+            &-card {
+                flex-direction: column;
+                gap: 2.4rem;
+
+                &-item {
+                    max-width: 100%;
+                }
+
+                &-name {
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                }
+
+                &-down {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and(min-width:320px) {}
+
+@media screen and(min-width:480px) {
+    .subjectHall {
+
+        //---------------------------------------------------------------------//
+        &_card {
+
+            &-learn::before,
+            &-exam::before {
+                opacity: 1;
+            }
+
+            &-name {
+                top: 3.2rem;
+                left: 3.2rem;
+                transform: translate(0%, 0%);
+            }
+
+            &-learn::before,
+            &-exam::before {
+                top: 6rem;
+                left: 26rem;
+            }
+        }
+
+        &_relate {
+            &-title {
+                text-align: left;
+            }
+        }
+
+        //---------------------------------------------------------------------//
+    }
+}
+
+@media screen and(min-width:768px) {
+    .subjectHall {
+
+        //---------------------------------------------------------------------//
+        &_card {
+            flex-direction: row;
+
+            &-name {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &-learn::before,
+            &-exam::before {
+                opacity: 0;
+                top: 5rem;
+                left: 20rem;
+            }
+        }
+
+        //---------------------------------------------------------------------//
+
+    }
+}
+
+@media screen and(min-width:1024px) {
+    .subjectHall {
+        &_title {
+            padding: 2.4rem 1rem;
+
+            h1 {
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+
+            &-underline {
+                width: 30rem;
+            }
+        }
+
+        //---------------------------------------------------------------------//
+        &_main {
+            margin-top: 0;
+            padding: 4rem 4rem 7.2rem 4rem;
+        }
+
+        //---------------------------------------------------------------------//
+        &_intro {
+            padding: 4rem;
+
+            &-title {
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+            }
+
+            &-content {
+                font-size: 2rem;
+                line-height: 2.8rem;
+            }
+        }
+
+        //---------------------------------------------------------------------//
+        &_card {
+            margin-top: 4rem;
+
+            &-learn::before,
+            &-exam::before {
+                opacity: 1;
+            }
+
+            &-name {
+                font-size: 5.6rem;
+                line-height: 6.4rem;
+                top: 3.2rem;
+                left: 3.2rem;
+                transform: translate(0%, 0%);
+            }
+        }
+
+        //---------------------------------------------------------------------//
+        &_divide {
+            margin-top: 4.8rem;
+        }
+
+        //---------------------------------------------------------------------//
+        &_relate {
+            margin-top: 4.8rem;
+
+            &-title {
+                font-size: 2.4rem;
+                line-height: 3.2rem;
+
+            }
+
+            &-card {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 2.4rem;
+
+                &-item {
+                    max-width: 48%;
+                }
+
+                &-name {
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                }
+
+                &-down {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and(min-width:1200px) {
+    .subjectHall {
+
+        //---------------------------------------------------------------------//
+        &_card {
+            flex-direction: row;
+
+            &-learn::before {
+                top: 6.8rem;
+                left: 31rem;
+            }
+
+            &-exam::before {
+                top: 6rem;
+                left: 32rem;
+            }
+        }
+
+        //---------------------------------------------------------------------//
+
+    }
+}
+
+@media screen and(min-width:1440px) {}
