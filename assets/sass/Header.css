@@ -64,6 +64,129 @@ body {
   background-color: #f9fbfe;
 }
 
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e7eb;
+  width: 100%;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-left: 6rem;
+}
+.nav-bar_content {
+  display: flex;
+  gap: 8px;
+  max-width: 1440px;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  font-family: "DarkerGrotesque-Bold", sans-serif;
+}
+.nav-bar_content a,
+.nav-bar_content i {
+  cursor: pointer;
+  color: #1D262B;
+}
+.nav-bar_content i {
+  display: flex;
+  align-items: center;
+}
+.nav-bar_content a:last-child {
+  color: #22438C;
+}
+.nav-bar_content a:hover {
+  text-decoration: underline;
+}
+.nav-bar_menu {
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: 10px;
+  padding: 0 0.8rem;
+  margin-right: 1.2rem;
+}
+.nav-bar_menu i {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #1D262B;
+}
+
+@media screen and (min-width: 240px) {
+  .nav-bar {
+    gap: 4px;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 1.2rem;
+  }
+  .nav-bar_content {
+    font-size: 14px;
+    line-height: 2.2rem;
+  }
+  .nav-bar_content i {
+    padding-top: 2px;
+  }
+  .nav-bar_link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 8rem;
+  }
+  .nav-bar_link_subjectHall {
+    max-width: 14rem;
+  }
+  .nav-bar_menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) {
+  .nav-bar_content {
+    font-size: 16px;
+    line-height: 2.4rem;
+  }
+  .nav-bar_content i {
+    padding-top: 2px;
+  }
+  .nav-bar_link {
+    max-width: 24rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    padding-left: 6rem;
+  }
+  .nav-bar_content {
+    font-size: 18px;
+    line-height: 2.6rem;
+  }
+  .nav-bar_content i {
+    padding-top: 4px;
+  }
+  .nav-bar_link {
+    max-width: 60rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-bar_menu i {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav-bar {
+    padding-left: 6rem;
+  }
+  .nav-bar_content {
+    font-size: 20px;
+    line-height: 2.8rem;
+  }
+  .nav-bar_content i {
+    padding-top: 0px;
+  }
+  .nav-bar_link {
+    max-width: 60rem;
+  }
+}
 .header {
   width: 100%;
   padding: 1rem 0px;

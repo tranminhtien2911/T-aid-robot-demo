@@ -8,60 +8,60 @@ body{
   position: relative;
 }
 //--Top---------------------------------------------------//
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  background-color: $palette-4;
-  width: 100%;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  padding-left: 6rem;
+// .nav-bar {
+//   display: flex;
+//   justify-content: space-between;
+//   background-color: $palette-4;
+//   width: 100%;
+//   padding-top: 2.4rem;
+//   padding-bottom: 2.4rem;
+//   padding-left: 6rem;
 
-  &_content {
-    display: flex;
-    gap: 8px;
-    max-width: 1440px;
-    font-size: 2rem;
-    line-height: 2.8rem;
-    font-family: $font-bold;
+//   &_content {
+//     display: flex;
+//     gap: 8px;
+//     max-width: 1440px;
+//     font-size: 2rem;
+//     line-height: 2.8rem;
+//     font-family: $font-bold;
 
-    a,
-    i {
-      cursor: pointer;
-      color: $palette-1;
-    }
+//     a,
+//     i {
+//       cursor: pointer;
+//       color: $palette-1;
+//     }
 
-    i {
-      display: flex;
-      align-items: center;
-    }
-  }
+//     i {
+//       display: flex;
+//       align-items: center;
+//     }
+//   }
 
-  &_content a:last-child {
-    color: $secondary-1;
-  }
+//   &_content a:last-child {
+//     color: $secondary-1;
+//   }
 
-  &_content a:hover {
-    text-decoration: underline;
-  }
-  &_menu{
-    // position: relative;
-    display: none;
-    margin-top: auto;
-    margin-bottom: auto;
-    right: 10px;
-    padding: 0 0.8rem;
-    margin-right: 1.2rem;
-    i{
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      font-size: 1.8rem;
-      line-height: 2.6rem;
-      color: $palette-1;
-    }
-  }
-}
+//   &_content a:hover {
+//     text-decoration: underline;
+//   }
+//   &_menu{
+//     // position: relative;
+//     display: none;
+//     margin-top: auto;
+//     margin-bottom: auto;
+//     right: 10px;
+//     padding: 0 0.8rem;
+//     margin-right: 1.2rem;
+//     i{
+//       display: flex;
+//       justify-content: flex-start;
+//       align-items: center;
+//       font-size: 1.8rem;
+//       line-height: 2.6rem;
+//       color: $palette-1;
+//     }
+//   }
+// }
 
 //--Content---------------------------------------------------//
 .main-content {

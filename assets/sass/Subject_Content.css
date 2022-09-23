@@ -70,55 +70,6 @@ body {
   position: relative;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #e0e7eb;
-  width: 100%;
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  padding-left: 6rem;
-}
-.nav-bar_content {
-  display: flex;
-  gap: 8px;
-  max-width: 1440px;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-}
-.nav-bar_content a,
-.nav-bar_content i {
-  cursor: pointer;
-  color: #1D262B;
-}
-.nav-bar_content i {
-  display: flex;
-  align-items: center;
-}
-.nav-bar_content a:last-child {
-  color: #22438C;
-}
-.nav-bar_content a:hover {
-  text-decoration: underline;
-}
-.nav-bar_menu {
-  display: none;
-  margin-top: auto;
-  margin-bottom: auto;
-  right: 10px;
-  padding: 0 0.8rem;
-  margin-right: 1.2rem;
-}
-.nav-bar_menu i {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  color: #1D262B;
-}
-
 .main-content {
   max-width: 1440px;
 }
