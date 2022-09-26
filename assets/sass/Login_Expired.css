@@ -103,7 +103,7 @@ body {
   font-size: 2.4rem;
   line-height: 3.2rem;
   color: #1A71CA;
-  padding: 8px 7.2rem;
+  padding: 8px 7.2rem 12px 7.2rem;
   background: #F9FBFE;
   box-shadow: 0px 2px 6px rgba(4, 95, 191, 0.2);
   border-radius: 10rem;
@@ -115,4 +115,4 @@ body {
   color: white;
 }
 
-/*# sourceMappingURL=Login_Expred.css.map */
+/*# sourceMappingURL=Login_Expired.css.map */
