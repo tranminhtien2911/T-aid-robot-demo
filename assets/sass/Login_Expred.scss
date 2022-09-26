@@ -1,0 +1,54 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/mutual';
+
+body {
+    margin: auto;
+}
+.container{
+    height: 100vh;
+}
+.row{
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+.loginExpred{
+    text-align: center;
+    &_img{
+        img{
+            margin: auto;
+        }
+    }
+    &_announce, &_message, &_button{
+        font-family: $font-bold;
+        margin-top: 2.4rem;
+    }
+
+    &_announce{
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        color: $palette-1;
+    }
+    &_message, &_button{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $secondary-7;
+        margin-bottom: 4rem;
+    }
+    &_button{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $primary-2;
+        padding: 8px 7.2rem;
+        background: $palette-6;
+        box-shadow: 0px 2px 6px rgba(4, 95, 191, 0.2);
+        border-radius: 10rem;
+        transition: 0.25s ease;
+        &:hover{
+            border-radius: 6px;
+            background-color: $primary-2;
+            color: #ffff;
+        }
+    }
+}
