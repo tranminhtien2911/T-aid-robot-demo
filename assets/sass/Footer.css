@@ -39,25 +39,14 @@ img {
   max-width: 100%;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 /* using rem unit */
 html {
   font-size: 62.5%;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 body {
   overflow-x: hidden;
-  font-family: "DarkerGrotesque-Medium", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 1.6rem;
   color: #7b7986;
   line-height: 1;
@@ -79,16 +68,18 @@ body {
 .footer-Logo a span {
   font-family: "Aquire-Regular", sans-serif;
   color: #1A71CA;
-  font-size: 4.2rem;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
 }
 .footer-Body {
   display: flex;
   justify-content: space-between;
 }
 .footer-Intro_nameSys_title {
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 3.2rem;
-  line-height: 3.2rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
   color: #22438C;
 }
 .footer-Intro_main {
@@ -98,9 +89,10 @@ body {
   margin-top: 2.4rem;
 }
 .footer-Intro_nameSchool {
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-  font-size: 2.4rem;
-  line-height: 3.2rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
   color: #1D262B;
 }
 .footer-Intro_location, .footer-Intro_phone {
@@ -113,9 +105,10 @@ body {
   height: 2.4rem;
 }
 .footer-Intro_location span, .footer-Intro_phone span {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   color: #1D262B;
 }
 .footer-Intro_location i {
@@ -130,15 +123,17 @@ body {
   gap: 2.4rem;
 }
 .footer-Guide_name, .footer-Info_name, .footer-Conect_name {
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-  font-size: 3.2rem;
-  line-height: 4rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
   color: #DF2040;
 }
 .footer-Guide_link, .footer-Info_link, .footer-Conect_link {
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 2rem;
-  line-height: 1.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
   color: #22438C;
 }
 .footer-Guide_link:hover, .footer-Info_link:hover, .footer-Conect_link:hover {

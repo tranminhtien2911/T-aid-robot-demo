@@ -22,6 +22,7 @@
     color: #1D262B;
   }
   .header-Logo a img {
+    width: 6.4rem;
     height: 6.4rem;
   }
   .header-Logo a span {
@@ -92,8 +93,7 @@
     gap: 1rem;
   }
   .header-ActionMB_acount span {
-    font-family: "DarkerGrotesque-Medium", sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #1D262B;
   }
   .header-ActionMB_acount span {
@@ -123,13 +123,14 @@
     align-items: center;
   }
   .header-User_item i, .header-User_item span, .header-Category_item i, .header-Category_item span {
-    font-family: "DarkerGrotesque-SemiBold", sans-serif;
-    font-size: 2rem;
-    line-height: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     color: #22438C;
   }
   .header-User_item i, .header-Category_item i {
-    height: 2rem;
+    font-size: 1.8rem;
+    height: 1.8rem;
+    transform: translateY(-1px);
   }
   .header-User_item span, .header-Category_item span {
     margin-left: 8px;
@@ -167,6 +168,7 @@
     display: block;
   }
   .header-Logo a img {
+    width: 6.4rem;
     height: 6.4rem;
   }
   .header-Logo a span {
@@ -195,6 +197,7 @@
     display: block;
   }
   .header-Logo a img {
+    width: 7.2rem;
     height: 7.2rem;
   }
   .header-Logo a span {

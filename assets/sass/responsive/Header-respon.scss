@@ -27,6 +27,8 @@
         &-Logo{
            a{
             img{
+                // @include sameSize(6.4rem,6.4rem);
+                width: 6.4rem;
                 height: 6.4rem;
             }
             span{
@@ -102,8 +104,7 @@
                 align-items: center;
                 gap: 1rem;
                 span{
-                    font-family: $font-medium;
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                     color: $palette-1;
                 }
                 span{
@@ -135,13 +136,14 @@
                     align-items: center;
                 }
                 i, span{
-                    font-family: $font-semibold;
-                    font-size: 2rem;
-                    line-height: 2.8rem;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
                     color: $secondary-1;
                 }
                 i{
-                    height: 2rem;
+                    font-size: 1.8rem;
+                    height: 1.8rem;
+                    transform: translateY(-1px);
                 }
                 span{
                     margin-left: 8px;
@@ -198,7 +200,9 @@
         &-Logo{
             a{
              img{
-                 height: 6.4rem;
+                // @include sameSize(6.4rem,6.4rem );
+                width: 6.4rem;
+                height: 6.4rem;
              }
              span{
                  font-size: 2.4rem;
@@ -236,7 +240,9 @@
         &-Logo{
             a{
              img{
-                 height: 7.2rem;
+                // @include sameSize(7.2rem,7.2rem );
+                width: 7.2rem;
+                height: 7.2rem;
              }
              span{
                 font-size: 3.2rem;

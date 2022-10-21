@@ -1,31 +1,4 @@
 @media screen and(min-width:240px) {
-    .nav-bar {
-        gap: 4px;
-        padding-top: 1.8rem;
-        padding-bottom: 1.8rem;
-        padding-left: 1.2rem;
-
-        &_content {
-            font-size: 14px;
-            line-height: 2.2rem;
-
-            i {
-                padding-top: 2px;
-            }
-        }
-
-        &_link {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 8rem;
-        }
-
-        &_menu {
-            display: block;
-        }
-    }
-
     .main-content {
         &_tree {
             padding-left: 0 !important;
@@ -172,21 +145,6 @@
 }
 
 @media screen and(min-width:480px) {
-    .nav-bar {
-        &_content {
-            font-size: 16px;
-            line-height: 2.4rem;
-
-            i {
-                padding-top: 2px;
-            }
-        }
-
-        &_link {
-            max-width: 24rem;
-        }
-    }
-
     .main-content {
         &_tree {
             padding-left: 0 !important;
@@ -197,7 +155,7 @@
                 line-height: 2.6rem;
 
                 li {
-                    padding: 0 1.2rem 0 1.2rem;
+                    padding: 4px 1.2rem 4px 1.8rem ;
                     font-size: 1.8rem;
                     line-height: 2.6rem;
 
@@ -227,23 +185,6 @@
 }
 
 @media screen and(min-width:768px) {
-    .nav-bar {
-        padding-left: 6rem;
-
-        &_content {
-            font-size: 18px;
-            line-height: 2.6rem;
-
-            i {
-                padding-top: 4px;
-            }
-        }
-
-        &_link {
-            max-width: 60rem;
-        }
-    }
-
     .main-content {
         &_lesson {
             width: 90%;
@@ -312,14 +253,6 @@
 }
 
 @media screen and(min-width:1024px) {
-    .nav-bar {
-        &_menu {
-            i {
-                display: none;
-            }
-        }
-    }
-
     .main-content {
         .row {
             flex-wrap: nowrap;
@@ -368,26 +301,10 @@
 @media screen and(min-width:1200px) {}
 
 @media screen and(min-width:1440px) {
-    .nav-bar {
-        padding-left: 6rem;
-
-        &_content {
-            font-size: 20px;
-            line-height: 2.8rem;
-
-            i {
-                padding-top: 0px;
-            }
-        }
-
-        &_link {
-            max-width: 60rem;
-        }
-    }
-
     .main-content {
         &_tree{
             width: 25%;
+            height: 100vh;
         }
         
         &_lesson {
@@ -422,7 +339,9 @@
                         line-height: 2.4rem;
 
                         i {
-                            display: none;
+                            display: flex;
+                            align-items: center;
+                            
                         }
                     }
 

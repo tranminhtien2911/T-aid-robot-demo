@@ -1,26 +1,4 @@
 @media screen and (min-width: 240px) {
-  .nav-bar {
-    gap: 4px;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
-    padding-left: 1.2rem;
-  }
-  .nav-bar_content {
-    font-size: 14px;
-    line-height: 2.2rem;
-  }
-  .nav-bar_content i {
-    padding-top: 2px;
-  }
-  .nav-bar_link {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 8rem;
-  }
-  .nav-bar_menu {
-    display: block;
-  }
   .main-content_tree {
     padding-left: 0 !important;
     position: fixed;
@@ -123,16 +101,6 @@
   }
 }
 @media screen and (min-width: 480px) {
-  .nav-bar_content {
-    font-size: 16px;
-    line-height: 2.4rem;
-  }
-  .nav-bar_content i {
-    padding-top: 2px;
-  }
-  .nav-bar_link {
-    max-width: 24rem;
-  }
   .main-content_tree {
     padding-left: 0 !important;
     width: 50%;
@@ -142,7 +110,7 @@
     line-height: 2.6rem;
   }
   .main-content_tree .tree li {
-    padding: 0 1.2rem 0 1.2rem;
+    padding: 4px 1.2rem 4px 1.8rem;
     font-size: 1.8rem;
     line-height: 2.6rem;
   }
@@ -158,19 +126,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .nav-bar {
-    padding-left: 6rem;
-  }
-  .nav-bar_content {
-    font-size: 18px;
-    line-height: 2.6rem;
-  }
-  .nav-bar_content i {
-    padding-top: 4px;
-  }
-  .nav-bar_link {
-    max-width: 60rem;
-  }
   .main-content_lesson {
     width: 90%;
     margin: auto;
@@ -213,9 +168,6 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .nav-bar_menu i {
-    display: none;
-  }
   .main-content .row {
     flex-wrap: nowrap;
   }
@@ -253,21 +205,9 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .nav-bar {
-    padding-left: 6rem;
-  }
-  .nav-bar_content {
-    font-size: 20px;
-    line-height: 2.8rem;
-  }
-  .nav-bar_content i {
-    padding-top: 0px;
-  }
-  .nav-bar_link {
-    max-width: 60rem;
-  }
   .main-content_tree {
     width: 25%;
+    height: 100vh;
   }
   .main-content_lesson {
     margin: 0;
@@ -296,7 +236,8 @@
     line-height: 2.4rem;
   }
   .main-content_lesson .lesson-general_info i {
-    display: none;
+    display: flex;
+    align-items: center;
   }
   .main-content_lesson .lesson-general_favorite {
     width: 18px;

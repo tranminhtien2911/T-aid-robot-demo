@@ -39,25 +39,14 @@ img {
   max-width: 100%;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 /* using rem unit */
 html {
   font-size: 62.5%;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 body {
   overflow-x: hidden;
-  font-family: "DarkerGrotesque-Medium", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 1.6rem;
   color: #7b7986;
   line-height: 1;
@@ -75,27 +64,32 @@ body {
 }
 .main-content_tree {
   height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
   max-width: 1440px;
   background-color: #F6F8F9;
   box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.06);
-  padding-bottom: 8rem;
+  padding-bottom: 4.8rem;
 }
 .main-content_tree_title h1 {
+  font-family: "OpenSans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
   padding: 1rem;
   border-bottom: 1px solid #e0e7eb;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
   color: #1D262B;
+  margin-bottom: 0;
 }
 .main-content_tree .tree {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   overflow-x: hidden;
+  overflow-y: auto;
   width: 100%;
   height: 100%;
-  padding: 1rem 0 0 0;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  padding: 0 0 0 0;
 }
 .main-content_tree .tree ul {
   position: relative;
@@ -113,7 +107,7 @@ body {
   cursor: pointer;
   width: 100%;
   margin: 0;
-  padding: 0 1.2rem 0 1.8rem;
+  padding: 8px 1.2rem 8px 1.8rem;
   font-size: 2rem;
   line-height: 2.8rem;
   color: #7B7986;
@@ -193,9 +187,10 @@ body {
   padding: 1.6rem 0;
 }
 .main-content_lesson .lesson-head h1 {
-  font-size: 4rem;
-  line-height: 4.8rem;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
   color: #1D262B;
 }
 .main-content_lesson .lesson-general {
@@ -205,12 +200,14 @@ body {
   align-items: center;
 }
 .main-content_lesson .lesson-general_info {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   display: flex;
   align-items: center;
+  margin: auto;
   gap: 1.4rem;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
   color: #1D262B;
 }
 .main-content_lesson .lesson-general_info i {
@@ -273,9 +270,10 @@ body {
   z-index: 1000;
 }
 .main-content_lesson .lesson-general .audio.green-audio-player .controls {
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   color: #1D262B;
   display: flex;
   flex-grow: 1;
@@ -352,7 +350,10 @@ body {
   }
 }
 .main-content_lesson .lesson-general_author {
-  font-family: "DarkerGrotesque-Bold", sans-serif;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
   color: #22438C;
 }
 .main-content_lesson .lesson-general_divide {
@@ -360,6 +361,8 @@ body {
   border-radius: 2px;
   background-color: #e0e7eb;
   height: 2.8rem;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 .main-content_lesson .lesson-general_favorite {
   position: relative;
@@ -381,11 +384,12 @@ body {
   visibility: hidden;
 }
 .main-content_lesson .lesson-general_announce span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   display: block;
   width: 100%;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
 }
 .main-content_lesson .lesson-general .click-announce {
   color: #1D262B;
@@ -399,9 +403,7 @@ body {
   padding: 2.4rem 0;
 }
 .main-content_lesson .lesson-content {
-  font-size: 2rem;
-  line-height: 2.8rem;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  line-height: 3.2rem;
 }
 .main-content_lesson .lesson-paragraph {
   text-align: justify;
@@ -414,14 +416,20 @@ body {
   justify-content: space-between;
   padding: 2.4rem 0;
 }
-.main-content_lesson .lesson-action_back i, .main-content_lesson .lesson-action_next i {
-  vertical-align: middle;
+.main-content_lesson .lesson-action_back, .main-content_lesson .lesson-action_next {
+  display: flex;
 }
 .main-content_lesson .lesson-action_back span, .main-content_lesson .lesson-action_back i, .main-content_lesson .lesson-action_next span, .main-content_lesson .lesson-action_next i {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
   color: #1A71CA;
+}
+.main-content_lesson .lesson-action_back i, .main-content_lesson .lesson-action_next i {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .main-content_lesson .lesson-more {
   display: flex;
@@ -436,24 +444,24 @@ body {
   gap: 8px;
 }
 .main-content_lesson .lesson-more_head h2 {
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
   margin: 0;
-  font-size: 2rem;
-  line-height: 2.8rem;
   color: #22438C;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
 }
 .main-content_lesson .lesson-more_number {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
+  padding: 1px 7px;
   border-radius: 100px;
   background-color: #A4D9FF;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
   color: #1A71CA;
+}
+.main-content_lesson .lesson-more_number span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 600;
 }
 .main-content_lesson .lesson-more_document {
   padding: 1.6rem 3.2rem;
@@ -477,11 +485,20 @@ body {
   display: block;
   color: #1A71CA;
 }
-.main-content_lesson .lesson-more_nameFile a {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
+.main-content_lesson .lesson-more_nameFile {
   color: #1D262B;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.main-content_lesson .lesson-more_nameFile a {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #7B7986;
+}
+.main-content_lesson .lesson-more_nameFile a:hover {
+  color: #1A71CA;
 }
 
 #back-top a {

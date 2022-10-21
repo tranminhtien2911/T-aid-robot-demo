@@ -1,3 +1,57 @@
+// $fontWeight: thin ,light, regular, medium, semibold, extrabold, black;
+// font($fontWeight: string, $fontSize: number)
+// font(regular, 16)
+@mixin font($fontWeight, $fontSize){
+  @if $fontWeight == 'thin' or $fontWeight == 100{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 100;
+  }
+  @if $fontWeight == 'light' or $fontWeight == 300{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 300;
+  }
+  @else if $fontWeight == 'regular' or $fontWeight == 400{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 400;
+  }
+  @else if $fontWeight == 'medium' or $fontWeight == 500{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 500;
+  }
+  @else if $fontWeight == 'semibold'or $fontWeight == 600{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 600;
+  }
+  @else if $fontWeight == 'bold'or $fontWeight == 700{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 700;
+  }
+  @else if $fontWeight == 'extrabold'or $fontWeight == 800{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 800;
+  }
+  @else if $fontWeight == 'black'or $fontWeight == 900{
+      font-family: $font-openSans;
+      font-size: #{$fontSize+'px'};
+      line-height: #{$fontSize+8+'px'};
+      font-weight: 900;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +83,7 @@
   &__logo {
     display: block;
     max-width: 38.9rem;
+    max-height: 6rem;
     margin: 0 auto;
   }
   &__form {
@@ -37,45 +92,46 @@
       margin-top: 2rem;
     }
     .login-label {
-      font-family: $font-medium;
-      font-size: 2rem;
+      @include font(regular,16);
       color: $color--black;
-      margin-bottom: 1rem;
+      margin-bottom: 4px;
     }
     .check-label {
-      font-family: $font-medium;
-      font-size: 1.8rem;
+      @include font(regular,14);
       color: $color--black;
     }
     .login-input {
+      @include font(regular,14);
       height: 4rem;
       border-radius: 0.8rem;
       background-color: $color-bg-semiwhite;
       border: solid 1px #dee4f5;
-      font-size: 1.8rem;
       padding-left: 2rem;
     }
     .login-input::placeholder {
-      font-family: $font-medium;
-      font-size: 1.8rem;
+      font-family: $font-openSans;
+      @include font(regular,16);
       color: #c2cfd6;
     }
     .help {
       display: flex;
       justify-content: space-between;
       margin-top: 1.5rem;
+      .form-check{
+        margin-bottom: 0;
+      }
       .form-check-input:checked {
         background-color: $color--blue;
         border-color: $color--blue;
       }
     }
     .forgot {
-      font-family: $font-medium;
+      @include font(regular,14);
       color: $color--blue;
-      font-size: 1.8rem;
     }
     .form-check-input {
       border: 2px solid $color--grey;
+      transform: translateY(-3px);
     }
     .btn-login {
       display: block;
@@ -83,8 +139,7 @@
       padding: 1rem;
       margin-top: 3rem;
       background-color: $color--orange;
-      font-family: $font-bold;
-      font-size: 1.8rem;
+      @include font(semibold,18);
       color: $color--lightgrey;
       border: none;
       border-radius: 0.8rem;
@@ -97,37 +152,34 @@
       max-width: 60rem;
       margin: 2rem auto;
       text-align: center;
-      font-family: $font-medium;
-      font-size: 1.8rem;
+      @include font(regular,16);
       color: $color--black;
     }
     .line::before {
       content: "";
       display: block;
-      width: 30%;
+      width: 44%;
       height: 1px;
       background: $color--black;
       opacity: 25%;
-      left: 10%;
       top: 50%;
       position: absolute;
     }
     .line::after {
       content: "";
       display: block;
-      width: 30%;
+      width: 44%;
       height: 1px;
       background: $color--black;
       opacity: 25%;
-      right: 10%;
+      right: 0%;
       top: 50%;
       position: absolute;
     }
     .guide {
       margin-top: 3rem;
       text-align: center;
-      font-family: $font-semibold;
-      font-size: 1.8rem;
+      @include font(regular,14);
       color: $color--black;
       line-height: 2.5rem;
       &__link {

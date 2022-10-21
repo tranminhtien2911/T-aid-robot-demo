@@ -4,115 +4,130 @@
 
 .footer {
   padding: 4rem 0 6rem 0;
-  &-Wrap{
+
+  &-Wrap {
     background-color: #FFF;
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.06);
   }
+
   &-Logo {
     a {
       display: flex;
       align-items: center;
       gap: 2rem;
+
       span {
         font-family: "Aquire-Regular", sans-serif;
         color: $primary-2;
-        font-size: 4.2rem;
+        font-size: 4.8rem;
+        line-height: 5.6rem;
       }
     }
   }
-  &-Body{
+
+  &-Body {
     display: flex;
     justify-content: space-between;
   }
-  &-Intro{
-    &_nameSys{
-      &_title{
-        font-family: $font-semibold;
-        font-size: 3.2rem;
-        line-height: 3.2rem;
+
+  &-Intro {
+    &_nameSys {
+      &_title {
+        @include font(semibold, 28);
         color: $secondary-1;
       }
     }
-    &_main{
+
+    &_main {
       display: flex;
       flex-direction: column;
       gap: 1.6rem;
       margin-top: 2.4rem;
     }
-    &_nameSchool{
-      font-family: $font-bold;
-      font-size: 2.4rem;
-      line-height: 3.2rem;
+
+    &_nameSchool {
+      @include font(semibold, 20);
       color: $palette-1;
     }
-    &_location, &_phone{
+
+    &_location,
+    &_phone {
       display: flex;
       align-items: center;
       gap: 8px;
-      i{
+
+      i {
         font-size: 2.4rem;
         height: 2.4rem;
       }
-      span{
-        font-family: $font-medium;
-        font-size: 1.8rem;
-        line-height: 2.6rem;
+
+      span {
+        @include font(regular, 16);
         color: $palette-1;
       }
     }
-    &_location{
-      i{
+
+    &_location {
+      i {
         color: $primary-2;
       }
     }
-    &_phone{
-      i{
+
+    &_phone {
+      i {
         color: $brand;
       }
     }
   }
-  &-Guide, &-Info, &-Conect{
+
+  &-Guide,
+  &-Info,
+  &-Conect {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    &_name{
-      font-family: $font-bold;
-      font-size: 3.2rem;
-      line-height: 4rem;
+
+    &_name {
+      @include font(semibold, 24);
       color: $brand;
     }
-    &_link{
-      font-family: $font-semibold;
-      font-size: 2rem;
-      line-height: 1.8rem;
+
+    &_link {
+      @include font(semibold, 16);
       color: $secondary-1;
-    }
-    &_link:hover{
-      color: $palette-1;
+
+      &:hover {
+        color: $palette-1;
+      }
     }
   }
-  &-Conect{
-    &_social{
+
+  &-Conect {
+    &_social {
       display: flex;
       gap: 3.2rem;
-      i{
+      i {
         font-size: 4rem;
         color: $secondary-1;
       }
     }
+
   }
 }
-.copyR{
-  &-Wrap{
+
+.copyR {
+  &-Wrap {
     background: rgba(164, 217, 255, 0.5);
   }
+
   display: flex;
   justify-content: center;
   padding: 1.4rem 0;
-  span{
+
+  span {
     font-family: $font-semibold;
     font-size: 2.4rem;
     line-height: 2.4rem;
   }
-  
+
 }

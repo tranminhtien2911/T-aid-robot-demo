@@ -9,7 +9,7 @@
     width: 7rem;
   }
   .footer-Logo a span {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
   .footer-Body {
     flex-direction: column;
@@ -26,34 +26,20 @@
   }
   .footer-Intro_nameSys_title {
     font-size: 2.4rem;
-    line-height: 2.4rem;
+    line-height: 3.2rem;
   }
   .footer-Intro_nameSchool {
     font-size: 1.8rem;
     line-height: 2.4rem;
+    display: none;
   }
   .footer-Intro_location, .footer-Intro_phone {
     justify-content: center;
-  }
-  .footer-Intro_location i, .footer-Intro_phone i {
-    font-size: 2rem;
-    height: 2rem;
-  }
-  .footer-Intro_location span, .footer-Intro_phone span {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    display: none;
   }
   .footer-Guide, .footer-Info, .footer-Conect {
     flex-direction: column;
     margin-top: 2rem;
-  }
-  .footer-Guide_name, .footer-Info_name, .footer-Conect_name {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-  }
-  .footer-Guide_link, .footer-Info_link, .footer-Conect_link {
-    font-size: 2rem;
-    line-height: 1.8rem;
   }
   .footer-Guide_link:hover, .footer-Info_link:hover, .footer-Conect_link:hover {
     color: #1D262B;
@@ -96,30 +82,18 @@
     text-align: start;
   }
   .footer-Intro_nameSys_title {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .footer-Intro_nameSchool {
+    display: block;
   }
   .footer-Intro_location, .footer-Intro_phone {
     justify-content: flex-start;
-  }
-  .footer-Intro_location i, .footer-Intro_phone i {
-    font-size: 2rem;
-    height: 2rem;
-  }
-  .footer-Intro_location span, .footer-Intro_phone span {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    display: flex;
   }
   .footer-Guide, .footer-Info, .footer-Conect {
     margin-top: 0;
-  }
-  .footer-Guide_name, .footer-Info_name, .footer-Conect_name {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-  }
-  .footer-Guide_link, .footer-Info_link, .footer-Conect_link {
-    font-size: 2rem;
-    line-height: 2.6rem;
   }
   .footer-Conect_social {
     justify-content: flex-start;
@@ -152,8 +126,8 @@
     height: 10.5rem;
   }
   .footer-Logo a span {
-    font-size: 4.2rem;
-    line-height: 5rem;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
   }
   .footer-Body {
     flex-direction: row;
@@ -169,35 +143,12 @@
   .footer-Intro_nameSys {
     text-align: start;
   }
-  .footer-Intro_nameSys_title {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
-  }
-  .footer-Intro_location, .footer-Intro_phone {
-    justify-content: flex-start;
-  }
-  .footer-Intro_location i, .footer-Intro_phone i {
-    font-size: 2.4rem;
-    height: 2.4rem;
-  }
-  .footer-Intro_location span, .footer-Intro_phone span {
-    font-size: 1.8rem;
-    line-height: 2.6rem;
-  }
   .footer-Intro_nameSchool {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
   }
   .footer-Guide, .footer-Info, .footer-Conect {
     margin-top: 0;
-  }
-  .footer-Guide_name, .footer-Info_name, .footer-Conect_name {
-    font-size: 3.2rem;
-    line-height: 4rem;
-  }
-  .footer-Guide_link, .footer-Info_link, .footer-Conect_link {
-    font-size: 2rem;
-    line-height: 2.6rem;
   }
   .footer-Conect_social {
     justify-content: flex-start;

@@ -7,11 +7,6 @@ html {
   padding: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
 input,
 textarea,
@@ -27,15 +22,6 @@ input {
 label,
 button {
   cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 *,
@@ -60,7 +46,7 @@ img {
 
 body {
   // overflow-x: hidden;
-  font-family: $font-medium;
+  font-family: $font-openSans;
   font-size: $font-size;
   color: $color--grey;
   line-height: 1;
@@ -363,8 +349,7 @@ body {
     padding: 9rem 0;
   }
   &__text {
-    font-family: $font-medium;
-    font-size: 4.8rem;
+    @include font(regular, 40);
     color: $color--darkblue;
   }
   &__text--bold {
@@ -374,7 +359,8 @@ body {
     margin-top: 3rem;
   }
   &__desc {
-    font-size: 2rem;
+    @include font(regular, 16);
+    line-height: 3.2rem;
     color: $color--darkblue;
     margin-top: 4.8rem;
   }
@@ -385,9 +371,8 @@ body {
       width: 50%;
       padding-right: 1.5rem;
       a {
+        @include font(semibold, 20);
         display: block;
-        font-family: $font-bold;
-        font-size: 2.4rem;
         padding: 1.6rem 2.4rem;
         text-align: center;
         box-shadow: $shadow-btn;
@@ -410,9 +395,8 @@ body {
 }
 .titleheading {
   h4 {
-    font-family: $font-extrabold;
+    @include font(semibold, 32);
     color: $color--blue;
-    font-size: 3.6rem;
     text-align: center;
   }
 }
@@ -444,16 +428,14 @@ body {
         height: 15rem;
       }
       .title {
-        font-family: $font-semibold;
-        font-size: 2.4rem;
+        @include font(semibold, 18);
         color: $color--grey;
         margin: 3.3rem 0 1rem 0;
       }
       .desc {
-        font-family: $font-medium;
-        color: $color--blue;
-        font-size: 2rem;
-        line-height: 28px;
+        @include font(regular, 16);
+        line-height: 3.2rem;
+        color: $color--blue; 
       }
     }
   }
@@ -465,10 +447,10 @@ body {
     padding-top: 6rem;
   }
   &__text {
-    font-family: $font-semibold;
-    font-size: 2.8rem;
+    @include font(regular, 24);
+    line-height: 4.8rem;
     color: $color--grey;
-    line-height: 4.6rem;
+
     padding: 6rem 0 0 1rem;
   }
 }
@@ -503,19 +485,18 @@ body {
         text-align: right;
 
         &__tilte {
-          font-family: $font-medium;
-          font-size: 1.6rem;
-          line-height: 2.4rem;
+          @include font(regular, 14);
           color: $color--darkblue;
         }
         &__number {
+          @include font(semibold, 20);
           font-family: $font-bold;
           font-size: 2.4rem;
           line-height: 3rem;
           margin-top: 1.6rem;
 
           .numbertype {
-            font-size: 1.4rem;
+            @include font(semibold, 14);
             margin-left: 0.6rem;
           }
         }
@@ -540,9 +521,8 @@ body {
 
   &__text {
     width: 53rem;
-    font-family: $font-semibold;
-    font-size: 2.8rem;
-    line-height: 4.6rem;
+    @include font(regular, 24);
+    line-height: 4.8rem;
     color: $color--grey;
     margin-top: 7rem;
     padding-top: 9rem;
@@ -800,13 +780,11 @@ body {
 }
 .input-search {
   border: none;
+  @include font(semibold, 28);
   background-color: transparent;
   border-bottom: 1px solid $palette-3;
   width: 100%;
   padding: 1rem;
-  font-family: $font-medium;
-  color: $palette-3;
-  font-size: 3.2rem;
   color: $palette-1;
 
 }
@@ -847,14 +825,14 @@ body {
       height: 5rem;
       padding-bottom: 5px;
       span{
-        font-size: 2.4rem;
+        @include font(semibold, 28);
         list-style: 3.2rem;
-        font-weight: $font-bold;
       }
       &:hover {
         color: $color--darkblue;
         background-color: #a4d9ff;
         transition: all 0.3s linear;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -877,10 +855,7 @@ body {
     border-collapse: collapse;
   }
   .table{
-    margin: 0;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5rem;
+    margin: 6rem auto 6rem auto;
     border-radius: 1rem;
     border-style: hidden;
     box-shadow: 0 0 0 1px $palette-3;
@@ -894,9 +869,7 @@ body {
         align-items: stretch;
       }
       span{
-        font-family: $font-bold;
-        font-size: 3.2rem;
-        line-height: 4rem;
+        @include font(semibold, 28);
         color: $color--black;
         padding: 2rem;
         width: 100%;
@@ -919,21 +892,16 @@ body {
       border: none;
     }
     &-Action{
+      @include font(regular, 20);
       display: flex;
       width: 100%;
-      font-family: $font-medium;
-      font-size: 2.4rem;
-      line-height: 3.2rem;
-
     }
     &-Code{
       &-major{
+        @include font(semibold, 28);
         width: 50%;
         text-align: center;
         border-right: 1px solid $palette-3;
-        font-family: $font-bold;
-        font-size: 3.2rem;
-        line-height: 4rem;
         color: $color--black;
         padding-top: 1rem;
 

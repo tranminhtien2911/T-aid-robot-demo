@@ -47,3 +47,41 @@
   src: url(../webfonts/DarkerGrotesque-Black.ttf) format("truetype");
   font-weight: 900;
 }
+/* OpenSans */
+/* OpenSans-Light */
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfonts/OpenSans-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+/* OpenSans-Regular */
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfonts/OpenSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+/* OpenSans-Medium */
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfonts/OpenSans-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+/* openSans-SimiBold */
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfonts/OpenSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+/* OpenSans-Bold*/
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfonts/OpenSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+/* OpenSans-ExtraBold*/
+@font-face {
+  font-family: "OpenSans";
+  src: url(../webfonts/OpenSans-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+}
+

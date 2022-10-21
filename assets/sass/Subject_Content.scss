@@ -7,92 +7,37 @@ body{
   height: 100vh;
   position: relative;
 }
-//--Top---------------------------------------------------//
-// .nav-bar {
-//   display: flex;
-//   justify-content: space-between;
-//   background-color: $palette-4;
-//   width: 100%;
-//   padding-top: 2.4rem;
-//   padding-bottom: 2.4rem;
-//   padding-left: 6rem;
-
-//   &_content {
-//     display: flex;
-//     gap: 8px;
-//     max-width: 1440px;
-//     font-size: 2rem;
-//     line-height: 2.8rem;
-//     font-family: $font-bold;
-
-//     a,
-//     i {
-//       cursor: pointer;
-//       color: $palette-1;
-//     }
-
-//     i {
-//       display: flex;
-//       align-items: center;
-//     }
-//   }
-
-//   &_content a:last-child {
-//     color: $secondary-1;
-//   }
-
-//   &_content a:hover {
-//     text-decoration: underline;
-//   }
-//   &_menu{
-//     // position: relative;
-//     display: none;
-//     margin-top: auto;
-//     margin-bottom: auto;
-//     right: 10px;
-//     padding: 0 0.8rem;
-//     margin-right: 1.2rem;
-//     i{
-//       display: flex;
-//       justify-content: flex-start;
-//       align-items: center;
-//       font-size: 1.8rem;
-//       line-height: 2.6rem;
-//       color: $palette-1;
-//     }
-//   }
-// }
-
 //--Content---------------------------------------------------//
 .main-content {
   max-width: 1440px;
+
   //--Tree
- 
   &_tree {
     height: 100vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     max-width: 1440px;
     background-color: $palette-5;
     box-shadow: 4px 0px 6px rgb(0 0 0 / 6%);
-    padding-bottom: 8rem;
+    padding-bottom: 4.8rem;
     &_title{
       h1{
+        @include font(semibold, 20);
         padding: 1rem;
         border-bottom: 1px solid $palette-4;
-        font-family: $font-bold;
         color: $palette-1;
+        margin-bottom: 0;
       }
     }
     
     .tree {
+      @include font(regular, 16);
       overflow-x: hidden;
+      overflow-y: auto;
       width: 100%;
       height: 100%;
-      padding: 1rem 0 0 0;
-      font-size: 1.8rem;
-      line-height: 2.8rem;
-      font-family: $font-semibold;
+      padding: 0 0 0 0;
+      
+
       ul {
         position: relative;
         width: 100%;
@@ -110,7 +55,7 @@ body{
         cursor: pointer;
         width: 100%;
         margin: 0;
-        padding: 0 1.2rem 0 1.8rem ;
+        padding: 8px 1.2rem 8px 1.8rem ;
         font-size: 2rem;
         line-height: 2.8rem;
         color: $secondary-7;
@@ -198,9 +143,7 @@ body{
       &-head{
         padding: 1.6rem 0;
         h1{
-          font-size: 4rem;
-          line-height: 4.8rem;
-          font-family: $font-bold;
+          @include font(semibold, 32);
           color: $palette-1;
         }
       }
@@ -210,12 +153,11 @@ body{
         padding: 1.4rem 0;
         align-items: center;
         &_info{
+          @include font(regular, 14);
           display: flex;
           align-items: center;
+          margin: auto;
           gap: 1.4rem;
-          font-family: $font-semibold;
-          font-size: 1.6rem;
-          line-height: 2.4rem;
           color: $palette-1;
           i{
             transform: translateY(12%);
@@ -277,9 +219,7 @@ body{
             }
           }
           .controls {
-            font-family: $font-semibold;
-            font-size: 1.6rem;
-            line-height: 2.4rem;
+            @include font(regular, 14);
             color: $palette-1;
             display: flex;
             flex-grow: 1;
@@ -358,7 +298,7 @@ body{
           }
         }
         &_author{
-          font-family: $font-bold;
+          @include font(semibold, 14);
           color: $secondary-1;
         }
         &_divide{
@@ -366,6 +306,8 @@ body{
           border-radius: 2px;
           background-color:$palette-4;
           height: 2.8rem;
+          margin-bottom: auto;
+          margin-top: auto;
         }
         &_favorite{
           position: relative;
@@ -388,12 +330,9 @@ body{
           visibility: hidden;
 
           span{
+            @include font(regular, 14);
             display: block;
             width: 100%;
-            font-size: 1.6rem;
-            line-height: 2.4rem;
-            font-family: $font-semibold;
-            
           }
         }
         .click-announce{
@@ -410,9 +349,8 @@ body{
         padding: 2.4rem 0;
       }
       &-content{
-        font-size: 2rem;
-        line-height: 2.8rem;
-        font-family: $font-semibold;
+        @include font(simibold, 16);
+        line-height: 3.2rem;
       }
       &-paragraph{
         text-align: justify;
@@ -426,15 +364,17 @@ body{
         justify-content: space-between;
         padding: 2.4rem 0;
         &_back, &_next{
-          i{
-            vertical-align: middle;
-          }
+          display: flex;
           span, i{
-            font-size: 1.8rem;
-            line-height: 2.6rem;
-            font-family: $font-semibold;
+            @include font(semibold, 16);
             color: $primary-2;
           }
+          i{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+          
         }
       }
       // Lesson More
@@ -449,25 +389,19 @@ body{
           align-items: center;
           gap: 8px;
           h2{
+            @include font(semibold, 18);
             margin: 0;
-            font-size: 2rem;
-            line-height: 2.8rem;
             color: $secondary-1;
-            font-family: $font-bold;
           }
         }
         &_number{
-          display: flex;
-          align-content: center;
-          justify-content: center;
-          width: 2rem;
-          height: 2rem;
+          padding: 1px 7px;
           border-radius: 100px;
           background-color: $secondary-6;
-          font-size: 1.2rem;
-          line-height: 2.2rem;
-          font-family: $font-bold;
           color: $primary-2;
+          span{
+            @include font(semibold, 10);
+          }
         }
         &_document{
           padding: 1.6rem 3.2rem;
@@ -492,13 +426,17 @@ body{
           }
         }
         &_nameFile{
+          color: $palette-1;
+          margin-top: auto;
+          margin-bottom: auto;
           a{
-            font-size: 1.8rem;
-            line-height: 2.6rem;
-            font-family: $font-semibold;
-            color: $palette-1;
+            @include font(regular, 16);
+            color: $secondary-7;
+            &:hover{
+              color: $primary-2;
+            }
           }
-          
+
         }
       }
     }
@@ -526,7 +464,6 @@ body{
   }
   &:hover,
   &:focus {
-    // background-color: #c7383e;
     opacity: 0.8;
   }
 }

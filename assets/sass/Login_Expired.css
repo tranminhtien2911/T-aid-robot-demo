@@ -39,25 +39,14 @@ img {
   max-width: 100%;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 /* using rem unit */
 html {
   font-size: 62.5%;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 body {
   overflow-x: hidden;
-  font-family: "DarkerGrotesque-Medium", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 1.6rem;
   color: #7b7986;
   line-height: 1;
@@ -85,29 +74,30 @@ body {
   margin: auto;
 }
 .loginExpred_announce, .loginExpred_message, .loginExpred_button {
-  font-family: "DarkerGrotesque-Bold", sans-serif;
   margin-top: 2.4rem;
 }
 .loginExpred_announce {
-  font-size: 4.8rem;
-  line-height: 5.6rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
   color: #1D262B;
 }
 .loginExpred_message, .loginExpred_button {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
   color: #7B7986;
   margin-bottom: 4rem;
 }
 .loginExpred_button {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
   color: #1A71CA;
-  padding: 8px 7.2rem 12px 7.2rem;
+  padding: 10px 7.2rem 12px 7.2rem;
   background: #F9FBFE;
   box-shadow: 0px 2px 6px rgba(4, 95, 191, 0.2);
   border-radius: 10rem;
-  transition: 0.25s ease;
+  transition: 0.3s ease;
 }
 .loginExpred_button:hover {
   border-radius: 6px;

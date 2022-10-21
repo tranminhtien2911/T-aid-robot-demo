@@ -38,26 +38,17 @@ html {
     max-width: 100%;
   }
   
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-  
   /* using rem unit */
   html {
     font-size: 62.5%;
   }
   
-  img {
-    display: block;
-    max-width: 100%;
-  }
   body {
     overflow-x: hidden;
-    font-family: $font-medium;
+    font-family: $font-openSans;
     font-size: $font-size;
     color: $color--grey;
     line-height: 1;
     background-color: $color-text--lightgrey;
   }
+  

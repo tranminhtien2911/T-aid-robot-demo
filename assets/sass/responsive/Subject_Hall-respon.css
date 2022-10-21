@@ -21,8 +21,8 @@
     line-height: 2.6rem;
   }
   .subjectHall_intro-content {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 3rem;
   }
   .subjectHall_card {
     flex-direction: column;
@@ -36,8 +36,8 @@
     opacity: 0;
   }
   .subjectHall_card-name {
-    font-size: 4rem;
-    line-height: 4.8rem;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -123,12 +123,12 @@
     padding: 4rem;
   }
   .subjectHall_intro-title {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
-  }
-  .subjectHall_intro-content {
     font-size: 2rem;
     line-height: 2.8rem;
+  }
+  .subjectHall_intro-content {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
   }
   .subjectHall_card {
     margin-top: 4rem;
@@ -150,8 +150,8 @@
     margin-top: 4.8rem;
   }
   .subjectHall_relate-title {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
   }
   .subjectHall_relate-card {
     flex-direction: row;
@@ -163,8 +163,8 @@
     max-width: 48%;
   }
   .subjectHall_relate-card-name {
-    font-size: 2rem;
-    line-height: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
   }
   .subjectHall_relate-card-down {
     margin-top: 0;

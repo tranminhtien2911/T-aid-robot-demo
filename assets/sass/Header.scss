@@ -2,7 +2,9 @@
 @import "abstracts/mixins";
 @import "base/mutual";
 @import 'base/breadcrumb';
-
+html{
+  scroll-snap-type: y mandatory;
+}
 .header {
   width: 100%;
   padding: 1rem 0px;
@@ -29,7 +31,7 @@
       }
     }
     img {
-      height: 7.2rem;
+      @include sameSize(7.2rem,7.2rem);
     }
   }
   &-Category {
@@ -44,19 +46,17 @@
         padding: 1rem;
         min-width: 10rem;
         text-align: center;
-        font-family: $font-semibold;
-        font-size: 2.4rem;
-        line-height: 3.2rem;
+        @include font(regular, 18);
         color: $palette-1;
     }
     &_link:hover{
         color: $palette-1;
-        font-family: $font-bold;
+        @include font(semibold, 18);
     }
   }
   &-Link {
     &_active {
-      font-family: $font-bold;
+      @include font(semibold, 18);
     }
   }
   &-Action {
@@ -75,9 +75,7 @@
       }
       i,
       span {
-        font-family: $font-semibold;
-        font-size: 2rem;
-        line-height: 2.8rem;
+        @include font(semibold, 18);
         color: $palette-7;
       }
     }
@@ -86,6 +84,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      cursor: pointer;
       span,i{
         font-family: $font-medium;
         font-size: 2rem;
@@ -133,13 +132,13 @@
       padding: 1.4rem 1rem;
       i, span{
         vertical-align: baseline;
-        font-family: $font-medium;
-        font-size: 2rem;
-        line-height: 2.8rem;
+        @include font(regular,16);
         color: $palette-1;
       }
       i{
-        line-height: 1.8rem !important;
+        font-size: 2rem;
+        line-height: 2rem !important;
+        transform: translateY(1px);
       }
       span{
         width: 100%;

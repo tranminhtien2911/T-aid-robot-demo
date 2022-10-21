@@ -9,12 +9,6 @@ html {
   padding: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 input,
 textarea,
 select,
@@ -29,15 +23,6 @@ input {
 label,
 button {
   cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 *,
@@ -61,7 +46,7 @@ img {
 }
 
 body {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 1.6rem;
   color: #7b7986;
   line-height: 1;
@@ -349,8 +334,10 @@ body {
   padding: 9rem 0;
 }
 .banner__text {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 4.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
   color: #22438c;
 }
 .banner__text--bold {
@@ -360,7 +347,11 @@ body {
   margin-top: 3rem;
 }
 .banner__desc {
-  font-size: 2rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  line-height: 3.2rem;
   color: #22438c;
   margin-top: 4.8rem;
 }
@@ -373,9 +364,11 @@ body {
   padding-right: 1.5rem;
 }
 .banner__btn .btn-custom a {
+  font-family: "OpenSans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
   display: block;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-  font-size: 2.4rem;
   padding: 1.6rem 2.4rem;
   text-align: center;
   box-shadow: 0px 2px 6px rgba(4, 95, 191, 0.2);
@@ -397,9 +390,11 @@ body {
 }
 
 .titleheading h4 {
-  font-family: "DarkerGrotesque-ExtraBold", sans-serif;
+  font-family: "OpenSans", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
   color: #1a71ca;
-  font-size: 3.6rem;
   text-align: center;
 }
 
@@ -432,16 +427,20 @@ body {
   height: 15rem;
 }
 .function .func__item .title {
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 2.4rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
   color: #7b7986;
   margin: 3.3rem 0 1rem 0;
 }
 .function .func__item .desc {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  line-height: 3.2rem;
   color: #1a71ca;
-  font-size: 2rem;
-  line-height: 28px;
 }
 
 .about {
@@ -451,10 +450,12 @@ body {
   padding-top: 6rem;
 }
 .about__text {
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 2.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  line-height: 4.8rem;
   color: #7b7986;
-  line-height: 4.6rem;
   padding: 6rem 0 0 1rem;
 }
 
@@ -490,19 +491,27 @@ body {
   text-align: right;
 }
 .highlight .hl__item .text__tilte {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   color: #22438c;
 }
 .highlight .hl__item .text__number {
+  font-family: "OpenSans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
   font-family: "DarkerGrotesque-Bold", sans-serif;
   font-size: 2.4rem;
   line-height: 3rem;
   margin-top: 1.6rem;
 }
 .highlight .hl__item .text__number .numbertype {
-  font-size: 1.4rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
   margin-left: 0.6rem;
 }
 .highlight .hl__item .text__number--orange {
@@ -523,9 +532,11 @@ body {
 }
 .application__text {
   width: 53rem;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 2.8rem;
-  line-height: 4.6rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  line-height: 4.8rem;
   color: #7b7986;
   margin-top: 7rem;
   padding-top: 9rem;
@@ -806,13 +817,14 @@ body {
 
 .input-search {
   border: none;
+  font-family: "OpenSans", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
   background-color: transparent;
   border-bottom: 1px solid #c2cfd6;
   width: 100%;
   padding: 1rem;
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  color: #c2cfd6;
-  font-size: 3.2rem;
   color: #1D262B;
 }
 
@@ -855,14 +867,17 @@ body {
   padding-bottom: 5px;
 }
 .sort-list__item .sort-letter span {
-  font-size: 2.4rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
   list-style: 3.2rem;
-  font-weight: "DarkerGrotesque-Bold", sans-serif;
 }
 .sort-list__item .sort-letter:hover {
   color: #22438c;
   background-color: #a4d9ff;
   transition: all 0.3s linear;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 .sort-list .sort-list__item-width {
   width: 80%;
@@ -883,10 +898,7 @@ body {
   border-collapse: collapse;
 }
 .table-list .table {
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5rem;
+  margin: 6rem auto 6rem auto;
   border-radius: 1rem;
   border-style: hidden;
   box-shadow: 0 0 0 1px #c2cfd6;
@@ -899,9 +911,10 @@ body {
   align-items: stretch;
 }
 .table-list .table-Header span {
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-  font-size: 3.2rem;
-  line-height: 4rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
   color: #1d262b;
   padding: 2rem;
   width: 100%;
@@ -923,19 +936,21 @@ body {
   border: none;
 }
 .table-list .table-Action {
+  font-family: "OpenSans", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
   display: flex;
   width: 100%;
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 2.4rem;
-  line-height: 3.2rem;
 }
 .table-list .table-Code-major {
+  font-family: "OpenSans", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
   width: 50%;
   text-align: center;
   border-right: 1px solid #c2cfd6;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-  font-size: 3.2rem;
-  line-height: 4rem;
   color: #1d262b;
   padding-top: 1rem;
 }
@@ -1199,6 +1214,7 @@ body {
 .login__logo {
   display: block;
   max-width: 38.9rem;
+  max-height: 6rem;
   margin: 0 auto;
 }
 .login__form {
@@ -1208,27 +1224,37 @@ body {
   margin-top: 2rem;
 }
 .login__form .login-label {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 2rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   color: #1d262b;
-  margin-bottom: 1rem;
+  margin-bottom: 4px;
 }
 .login__form .check-label {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 1.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   color: #1d262b;
 }
 .login__form .login-input {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   height: 4rem;
   border-radius: 0.8rem;
   background-color: #fcfcfe;
   border: solid 1px #dee4f5;
-  font-size: 1.8rem;
   padding-left: 2rem;
 }
 .login__form .login-input::placeholder {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 1.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   color: #c2cfd6;
 }
 .login__form .help {
@@ -1236,17 +1262,23 @@ body {
   justify-content: space-between;
   margin-top: 1.5rem;
 }
+.login__form .help .form-check {
+  margin-bottom: 0;
+}
 .login__form .help .form-check-input:checked {
   background-color: #1a71ca;
   border-color: #1a71ca;
 }
 .login__form .forgot {
-  font-family: "DarkerGrotesque-Medium", sans-serif;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   color: #1a71ca;
-  font-size: 1.8rem;
 }
 .login__form .form-check-input {
   border: 2px solid #7b7986;
+  transform: translateY(-3px);
 }
 .login__form .btn-login {
   display: block;
@@ -1254,8 +1286,10 @@ body {
   padding: 1rem;
   margin-top: 3rem;
   background-color: #fbab5b;
-  font-family: "DarkerGrotesque-Bold", sans-serif;
-  font-size: 1.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
   color: #f6f8f9;
   border: none;
   border-radius: 0.8rem;
@@ -1266,37 +1300,40 @@ body {
   max-width: 60rem;
   margin: 2rem auto;
   text-align: center;
-  font-family: "DarkerGrotesque-Medium", sans-serif;
-  font-size: 1.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   color: #1d262b;
 }
 .login .bottom-help .line::before {
   content: "";
   display: block;
-  width: 30%;
+  width: 44%;
   height: 1px;
   background: #1d262b;
   opacity: 25%;
-  left: 10%;
   top: 50%;
   position: absolute;
 }
 .login .bottom-help .line::after {
   content: "";
   display: block;
-  width: 30%;
+  width: 44%;
   height: 1px;
   background: #1d262b;
   opacity: 25%;
-  right: 10%;
+  right: 0%;
   top: 50%;
   position: absolute;
 }
 .login .bottom-help .guide {
   margin-top: 3rem;
   text-align: center;
-  font-family: "DarkerGrotesque-SemiBold", sans-serif;
-  font-size: 1.8rem;
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
   color: #1d262b;
   line-height: 2.5rem;
 }

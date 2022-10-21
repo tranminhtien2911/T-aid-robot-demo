@@ -29,8 +29,8 @@
             }
 
             &-content {
-                font-size: 1.6rem;
-                line-height: 2.4rem;
+                font-size: 1.4rem;
+                line-height: 3rem;
             }
         }
 
@@ -50,8 +50,8 @@
             }
 
             &-name {
-                font-size: 4rem;
-                line-height: 4.8rem;
+                font-size: 4.8rem;
+                line-height: 5.6rem;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -96,13 +96,15 @@
 
 }
 
-@media screen and(min-width:320px) {}
+@media screen and(min-width:320px) {
+}
 
 @media screen and(min-width:480px) {
     .subjectHall {
-        &_title{
+        &_title {
             margin-top: 2rem;
         }
+
         //---------------------------------------------------------------------//
         &_card {
 
@@ -187,13 +189,13 @@
             padding: 4rem;
 
             &-title {
-                font-size: 2.4rem;
-                line-height: 3.2rem;
+                font-size: 2rem;
+                line-height: 2.8rem;
             }
 
             &-content {
-                font-size: 2rem;
-                line-height: 2.8rem;
+                font-size: 1.6rem;
+                line-height: 3.2rem;
             }
         }
 
@@ -207,6 +209,7 @@
             }
 
             &-name {
+
                 font-size: 5.6rem;
                 line-height: 6.4rem;
                 top: 3.2rem;
@@ -225,8 +228,8 @@
             margin-top: 4.8rem;
 
             &-title {
-                font-size: 2.4rem;
-                line-height: 3.2rem;
+                font-size: 2rem;
+                line-height: 2.8rem;
 
             }
 
@@ -241,8 +244,8 @@
                 }
 
                 &-name {
-                    font-size: 2rem;
-                    line-height: 2.8rem;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
                 }
 
                 &-down {

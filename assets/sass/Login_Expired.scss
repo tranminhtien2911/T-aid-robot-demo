@@ -1,7 +1,8 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 @import 'base/mutual';
-
+// font($fontWeight: string or number, $fontSize: number) trong file _variables.scss
+// sameSize($width, $height) trong file _variables.scss
 body {
     margin: auto;
 }
@@ -21,30 +22,24 @@ body {
         }
     }
     &_announce, &_message, &_button{
-        font-family: $font-bold;
         margin-top: 2.4rem;
     }
-
     &_announce{
-        font-size: 4.8rem;
-        line-height: 5.6rem;
+        @include font(semibold,40);
         color: $palette-1;
     }
     &_message, &_button{
-        font-size: 2.4rem;
-        line-height: 3.2rem;
+        @include font(semibold,20);
         color: $secondary-7;
         margin-bottom: 4rem;
     }
     &_button{
-        font-size: 2.4rem;
-        line-height: 3.2rem;
         color: $primary-2;
-        padding: 8px 7.2rem 12px 7.2rem;
+        padding: 10px 7.2rem 12px 7.2rem;
         background: $palette-6;
         box-shadow: 0px 2px 6px rgba(4, 95, 191, 0.2);
         border-radius: 10rem;
-        transition: 0.25s ease;
+        transition: 0.3s ease;
         &:hover{
             border-radius: 6px;
             background-color: $primary-2;
