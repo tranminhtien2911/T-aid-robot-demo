@@ -1,0 +1,107 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/mutual';
+
+body {
+    background-color: #fff !important;
+}
+
+.box-result{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    &-title{
+        @include font(bold, 32);
+        text-align: center;
+        margin-top: 56px;
+        margin-bottom: 0;
+        color: $palette-1;
+    }
+    &-wrapper{
+        padding: 48px 32px 32px 32px;
+        margin-top: 72px;
+        border-radius: 16px;
+        box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+    }
+    &-trueAnswer{
+        @include font(bold, 36);
+        letter-spacing: 0.015em;
+        color: $secondary-1;
+        text-align: center;
+        &-true, &-divide, &-all{
+            font-size: 64px;
+            line-height: 72px;
+        }
+        &-true{
+            color: $primary-3;
+        }
+        &-divide{
+            color: $palette-4;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        &-all{
+            color: $secondary-1;
+        }
+    }
+    &-process{
+        &-wrapper{
+            width: 100%;
+            height: 24px;
+            background-color: $palette-5;
+            border-radius: 100px;
+            margin-top: 24px;
+        }
+        height: 100%;
+        background-color: $primary-3;
+        border-radius: 100px;
+    }
+    &-action{
+        display: flex;
+        flex-direction: row;
+        margin-top: 48px;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        &-makeAgain{
+            padding: 14px;
+            border-radius: 100px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(171, 190, 209, 0.4);
+            // transform: matrix(-1, 0, 0, 1, 0, 0);
+            color: $secondary-1;
+            i{
+                display: block;
+                font-size: 20px;
+                line-height: 20px;
+                height: 20px;
+            }
+            &:hover{
+                box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.4);
+               i{
+                animation: roteicon linear .5s;
+               }
+            }
+        }
+        &-lookDetail{
+            @include font(semibold, 16);
+            padding: 12px 20px;
+            color: $secondary-1;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(171, 190, 209, 0.4);
+            border-radius: 100px;
+            &:hover{
+                box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.4);
+            }
+        }
+
+    }
+}
+@keyframes roteicon{
+    0%{ 
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}

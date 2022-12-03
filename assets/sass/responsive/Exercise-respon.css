@@ -1,0 +1,105 @@
+@media screen and (min-width: 280px) {
+  .ex-row-content {
+    margin-bottom: 80px;
+  }
+  .ex-icon24-second-07 {
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+  }
+  .ex-numQuiz-each {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .ex-numQuiz-all {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .ex-numQuiz-box {
+    max-width: 306px;
+    min-height: 289px;
+    left: -60px;
+  }
+  .ex-numQuiz-box-row:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .ex-numQuiz-box-item {
+    width: 40px;
+  }
+  .ex-numQuiz-box-item:not(:last-child) {
+    margin-right: 16px;
+  }
+  .ex-content-question {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .ex-content-match {
+    flex-direction: column;
+  }
+  .ex-content-match-question, .ex-content-match-select-wrapper {
+    width: 100%;
+  }
+  .ex-nextBack {
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .ex-nextBack-backButton, .ex-nextBack-nextButton {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .ex-submit span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .ex-row-content {
+    margin-bottom: 109px;
+  }
+  .ex-icon24-second-07 {
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+  }
+  .ex-numQuiz-each {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .ex-numQuiz-all {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .ex-numQuiz-box {
+    max-width: 336px;
+    min-height: 316px;
+    left: -108px;
+  }
+  .ex-numQuiz-box-row:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .ex-numQuiz-box-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .ex-content-question {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .ex-nextBack-backButton, .ex-nextBack-nextButton {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .ex-submit span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ex-content-match {
+    flex-direction: row;
+  }
+  .ex-content-match-question, .ex-content-match-select-wrapper {
+    width: 38.3410138249%;
+  }
+}
+
+/*# sourceMappingURL=Exercise-respon.css.map */

@@ -1,0 +1,155 @@
+@media screen and (min-width:280px){
+    .ex{
+        &-row{
+            &-content{
+                margin-bottom: 80px;
+            }
+           
+        }
+        &-icon24-second-07 {
+            font-size: 20px;
+            line-height: 20px;
+            height: 20px;
+        }
+        &-numQuiz{
+            &-each{
+                font-size: 40px;
+                line-height: 48px;
+            }
+            &-all{
+                font-size: 24px;
+                line-height: 32px;
+            }
+            &-box{
+                max-width: 306px;
+                min-height: 289px;
+                left: -60px;
+                &-row{
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                }
+                &-item{
+                    width: 40px;
+                    &:not(:last-child){
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+        &-content{
+            &-question{
+                font-size: 20px;
+                line-height: 28px;
+            }
+            // Question - Matching
+            &-match{
+                flex-direction: column;
+                &-question, &-select-wrapper{
+                    width: 100%;
+                }
+            }
+        }
+        &-nextBack{
+            gap: 0px;
+            justify-content: space-between;
+            &-backButton,
+            &-nextButton {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        &-submit{
+            span{
+                font-size: 14px;
+                line-height: 22px;
+            }
+            
+        }
+    }
+}
+@media screen and (min-width:576px){
+    .ex{
+        &-row{
+            &-content{
+                margin-bottom: 109px;
+            }
+           
+        }
+        &-icon24-second-07 {
+            font-size: 24px;
+            line-height: 24px;
+            height: 24px;
+        }
+        &-numQuiz{
+            &-each{
+                font-size: 48px;
+                line-height: 56px;
+            }
+            &-all{
+                font-size: 32px;
+                line-height: 40px;
+            }
+            &-box{
+                max-width: 336px;
+                min-height: 316px;
+                left: -108px;
+                &-row{
+                    &:not(:last-child){
+                        margin-bottom: 24px;
+                    }
+                }
+                &-item{
+                    &:not(:last-child){
+                        margin-right: 24px;
+                    }
+                }
+            }
+        }
+        &-content{
+            &-question{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        &-nextBack{
+            &-backButton,
+            &-nextButton {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &-submit{
+            span{
+                font-size: 18px;
+                line-height: 26px;
+            }
+            
+        }
+    }
+}
+@media screen and (min-width:768px){
+
+}
+@media screen and (min-width:480px){
+
+}
+@media screen and (min-width:992px){
+    .ex{
+        &-content{
+            // Question - Matching
+            &-match{
+                flex-direction: row;
+                &-question, &-select-wrapper{
+                    width: calc(100% - 61.6589861751152%);
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width:1200px){
+
+}
+@media screen and (min-width:1440px){
+}
