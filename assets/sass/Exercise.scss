@@ -164,11 +164,31 @@ body {
     }
 
     &-submit {
+        position: relative;
         background-color: $primary-3;
         padding: 11px 23px;
         border-radius: 100px;
         cursor: pointer;
-
+        &-wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;     
+            gap: 20px;
+        }
+        &-time{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            i{
+                display: flex;
+                align-items: center;
+            }
+            i, span{
+                @include font(semibold, 24);
+                color: $primary-1;
+            }
+        }
         span {
             @include font(semibold, 18);
             color: #fff;
@@ -176,6 +196,28 @@ body {
 
         &:hover {
             box-shadow: -2px -2px 8px rgba(251, 171, 91, 0.4), 2px 2px 8px rgba(251, 171, 91, 0.4);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -4px;
+            background-color: #fff;
+            width: calc(100% + 8px);
+            height: 116%;
+            border-radius: 100px;
+            z-index: -1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -118px;        
+            background-color: $secondary-4;
+            width: 206%;
+            height: 116%;
+            border-radius: 100px;
+            z-index: -2;
         }
     }
 
@@ -401,6 +443,12 @@ body {
 
     &-box-nextBack-active {
         color: $secondary-1 !important;
+    }
+    &-timesUp{
+        i, span{
+            color: $brand;
+        }
+        
     }
 }
 
