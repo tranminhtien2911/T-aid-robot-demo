@@ -11,6 +11,16 @@
             line-height: 20px;
             height: 20px;
         }
+        &-action{
+            padding-left: 12px;
+            padding-right: 12px;
+            justify-content: flex-start;
+            gap: 28%;
+            &-wrapper{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
         &-numQuiz{
             &-each{
                 font-size: 40px;
@@ -23,7 +33,7 @@
             &-box{
                 max-width: 306px;
                 min-height: 289px;
-                left: -60px;
+                left: -108px;
                 &-row{
                     &:not(:last-child){
                         margin-bottom: 20px;
@@ -60,11 +70,9 @@
             }
         }
         &-submit{
-            span{
-                font-size: 14px;
-                line-height: 22px;
+            &-wrapper{
+                display: none;
             }
-            
         }
     }
 }
@@ -80,6 +88,16 @@
             font-size: 24px;
             line-height: 24px;
             height: 24px;
+        }
+        &-action{
+            padding-left: 12px;
+            padding-right: 12px;
+            justify-content: space-between;
+            gap: 0;
+            &-wrapper{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
         }
         &-numQuiz{
             &-each{
@@ -120,11 +138,12 @@
             }
         }
         &-submit{
-            span{
-                font-size: 18px;
-                line-height: 26px;
+            &-mobile{
+                display: none;
             }
-            
+            &-wrapper{
+                display: flex;
+            }
         }
     }
 }
