@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/* Set các giá trị với màn hình tương ứng */
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* using rem unit */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "OpenSans", sans-serif;
+  font-size: 1.6rem;
+  color: #7b7986;
+  line-height: 1;
+  background-color: #f9fbfe;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background-color: #fff !important;
+  position: relative;
+}
+
+.search-bar {
+  margin-top: 40px;
+}
+
+.wrapper_listEx_popup {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 45px;
+  box-shadow: 0px -4px 16px rgba(171, 190, 209, 0.4);
+  background-color: #fff;
+}
+
+.listEx_row {
+  margin-top: 40px;
+}
+.listEx_col {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  margin: 20px 0px;
+}
+.listEx_card {
+  padding: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.listEx_card-iconMenu {
+  display: flex;
+  max-width: 20px;
+  align-items: center;
+}
+.listEx_card-iconMenu i {
+  display: block;
+  height: 20px;
+  font-size: 20px;
+}
+.listEx_card-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.listEx_card-header span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #1A71CA;
+}
+.listEx_card-body {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.listEx_card-body-lable {
+  font-family: "OpenSans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #7B7986;
+}
+.listEx_card-body-major {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #1D262B;
+}
+.listEx_card-signal {
+  margin-top: 16px;
+  display: flex;
+}
+.listEx_card-signal span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 6px 16px;
+  color: #40BF6A;
+  background-color: #d9f2e1;
+  border-radius: 8px;
+}
+.listEx_card:hover {
+  transform: scale(1.02);
+  transition: all linear 200ms;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+.listEx_popup-title {
+  font-family: "OpenSans", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #1A71CA;
+}
+.listEx_popup-content {
+  display: flex;
+  margin-top: 8px;
+  z-index: 2;
+}
+.listEx_popup-col {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.listEx_popup-card {
+  position: relative;
+  padding: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 24px;
+  background-color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+.listEx_popup-card-head span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #1D262B;
+  text-align: justify;
+}
+.listEx_popup-card-body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 32px;
+  z-index: 2;
+}
+.listEx_popup-card-numQuiz, .listEx_popup-card-timeUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+}
+.listEx_popup-card-numQuiz span {
+  color: #22438C;
+}
+.listEx_popup-card-timeUp span {
+  color: #fff;
+}
+.listEx_popup-card-cover {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+}
+.listEx_popup-card-litleLable {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.listEx_popup-card-hugeLable {
+  font-family: "OpenSans", sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 600;
+}
+.listEx_popup-card-minute {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  line-height: 31px;
+}
+.listEx_popup-card-favorite {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 13px;
+  padding-bottom: 8px;
+}
+.listEx_popup-card-favorite i {
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+  color: #fff;
+  z-index: 2;
+}
+.listEx_popup-card::after {
+  content: "";
+  position: absolute;
+  top: 24.7058823529%;
+  left: 23.8367346939%;
+  background-image: url("../img/listEx_cardPopup_BG.svg");
+  width: 441px;
+  height: 441px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.listEx_popup-card:hover {
+  transform: scale(1.02);
+  transition: all linear 200ms;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.slick-next, .slick-prev {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+}
+.slick-next i, .slick-prev i {
+  display: flex;
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.slick-list {
+  padding: 24px 0px;
+}
+
+.slick-next {
+  top: 42%;
+  right: -32px;
+}
+
+.slick-prev {
+  top: 42%;
+  left: -32px;
+}
+
+/*# sourceMappingURL=List_Exercise.css.map */

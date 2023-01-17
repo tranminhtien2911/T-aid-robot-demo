@@ -1,0 +1,239 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/mutual';
+html{
+    position: relative;
+}
+body {
+    background-color: #fff !important;
+    position: relative;
+}
+
+.search-bar {
+    margin-top: 40px;
+}
+
+.wrapper {
+    &_listEx_card {}
+
+    &_listEx_popup {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding-top: 24px;
+        padding-bottom: 45px;
+        box-shadow: 0px -4px 16px rgba(171, 190, 209, 0.4);
+        background-color: #fff;
+    }
+}
+
+.listEx {
+    &_row {
+        margin-top: 40px;
+    }
+
+    &_col {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        margin: 20px 0px;
+    }
+
+    // CARD //////////
+    &_card {
+        padding: 16px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+        border-radius: 24px;
+        background-color: #fff;
+        cursor: pointer;
+
+        &-iconMenu {
+            display: flex;
+            max-width: 20px;
+            align-items: center;
+
+            i {
+                display: block;
+                height: 20px;
+                font-size: 20px;
+
+            }
+        }
+
+        &-header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            span {
+                @include font(semibold, 26);
+                color: $primary-2;
+            }
+        }
+
+        &-body {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+
+            &-lable {
+                @include font(regular, 14);
+                color: $secondary-7;
+            }
+
+            &-major {
+                @include font(semibold, 16);
+                color: $palette-1;
+            }
+        }
+
+        &-signal {
+            margin-top: 16px;
+            display: flex;
+
+            span {
+                @include font(semibold, 16);
+                padding: 6px 16px;
+                color: $primary-1;
+                background-color: $secondary-4;
+                border-radius: 8px;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            transition: all linear 200ms;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    // CARD-POPUP //////////
+    &_popup {
+        &-title {
+            @include font(semibold, 32);
+            color: $primary-2;
+        }
+        &-content{
+            display: flex;
+            margin-top: 8px;
+            z-index: 2;
+        }
+        &-col{
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+        }
+
+        &-card {
+            position: relative;
+            padding: 16px;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+            border-radius: 24px;
+            background-color: #fff;
+            cursor: pointer;
+            overflow: hidden;
+
+            &-head {
+                span {
+                    @include font(semibold, 24);
+                    color: $palette-1;
+                    text-align: justify;
+                }
+            }
+            &-body{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 12px;
+                padding-right: 12px;
+                margin-top: 32px;
+                z-index: 2;
+            }
+            &-numQuiz, &-timeUp{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 2px;
+            }
+            &-numQuiz{
+                span{
+                    color: $secondary-1;
+                }
+            }
+            &-timeUp{
+                span{
+                    color: #fff;
+                }
+            }
+            &-cover{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 4px;
+            }
+            &-litleLable{
+                @include font(semibold, 16);
+            }
+            &-hugeLable{
+                @include font(semibold, 48);
+            }
+            &-minute{
+                @include font(semibold, 16);
+                line-height: 31px;
+            }
+            &-favorite{
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 13px;
+                padding-bottom: 8px;
+                
+                i{
+                    font-size: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    color: #fff;
+                    z-index: 2;
+                }
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: calc(100% - 75.29411764705883%);
+                left: calc(100% - 76.16326530612245%);
+                background-image: url('../img/listEx_cardPopup_BG.svg');
+                width:  441px;
+                height: 441px;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+            &:hover {
+                transform: scale(1.02);
+                transition: all linear 200ms;
+                box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+// Slide ///////
+.slick-next, .slick-prev{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    i{
+        display: flex;
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+    }
+}
+.slick-list{
+    padding: 24px 0px;
+}
+.slick-next{
+    top: 42%;
+    right: -32px;
+}
+.slick-prev{
+    top: 42%;
+    left: -32px;
+}
