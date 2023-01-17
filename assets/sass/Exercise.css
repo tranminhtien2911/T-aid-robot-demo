@@ -194,10 +194,35 @@ body {
   color: #22438C;
 }
 .ex-submit {
+  position: relative;
   background-color: #FBAB5B;
   padding: 11px 23px;
   border-radius: 100px;
   cursor: pointer;
+}
+.ex-submit-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.ex-submit-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.ex-submit-time i {
+  display: flex;
+  align-items: center;
+}
+.ex-submit-time i,
+.ex-submit-time span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #40BF6A;
 }
 .ex-submit span {
   font-family: "OpenSans", sans-serif;
@@ -206,7 +231,57 @@ body {
   font-weight: 600;
   color: #fff;
 }
+.ex-submit-clockBG {
+  position: absolute;
+  top: 0px;
+  left: -122px;
+  background-color: #d9f2e1;
+  width: 206%;
+  height: 100%;
+  border-radius: 100px;
+  z-index: -2;
+}
 .ex-submit:hover {
+  box-shadow: -2px -2px 8px rgba(251, 171, 91, 0.4), 2px 2px 8px rgba(251, 171, 91, 0.4);
+}
+.ex-submit-mobile {
+  display: flex;
+  background-color: #d9f2e1;
+  padding: 10px 12px;
+  justify-content: space-between;
+}
+.ex-submit-mobile-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.ex-submit-mobile-time i {
+  display: flex;
+  align-items: center;
+}
+.ex-submit-mobile-time i,
+.ex-submit-mobile-time span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #40BF6A;
+}
+.ex-submit-mobile-button {
+  background-color: #FBAB5B;
+  padding: 11px 23px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.ex-submit-mobile-button span {
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.ex-submit-mobile-button:hover {
   box-shadow: -2px -2px 8px rgba(251, 171, 91, 0.4), 2px 2px 8px rgba(251, 171, 91, 0.4);
 }
 .ex-content-question {
@@ -339,7 +414,7 @@ body {
 }
 .ex-content-match-option:hover {
   cursor: pointer;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 .ex-content-match-option.selected {
   color: #1D262B;
@@ -411,6 +486,10 @@ body {
 }
 .ex-box-nextBack-active {
   color: #22438C !important;
+}
+.ex-timesUp i,
+.ex-timesUp span {
+  color: #DF2040;
 }
 
 @keyframes hideToshow {

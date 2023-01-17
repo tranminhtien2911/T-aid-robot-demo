@@ -1,431 +1,508 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'base/mutual';
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/mutual";
 
 body {
-    background-color: #fff !important;
+  background-color: #fff !important;
 }
 
 .ex {
-    &-row {
-        &-action {
-            margin-bottom: 40px;
-        }
-    }
-    &-action,
-    &-numQuiz,
-    &-nextBack {
-        display: flex;
-    }
-
-    &-icon24-second-07 {
-        font-size: 24px;
-        line-height: 24px;
-        height: 24px;
-        color: $secondary-7;
-        display: block;
-    }
-
+  &-row {
     &-action {
+      margin-bottom: 40px;
+    }
+  }
+  &-action,
+  &-numQuiz,
+  &-nextBack {
+    display: flex;
+  }
+
+  &-icon24-second-07 {
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    color: $secondary-7;
+    display: block;
+  }
+
+  &-action {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $palette-4;
+
+    &-wrapper {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+  &-numQuiz {
+    position: relative;
+    cursor: pointer;
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
+    }
+    &-each,
+    &-all {
+      letter-spacing: 0.015em;
+    }
+
+    &-each {
+      @include font(bold, 48);
+      color: $secondary-1;
+    }
+
+    &-all {
+      @include font(semibold, 32);
+      color: $palette-3;
+    }
+
+    &-choose {
+      position: relative;
+      padding: 8px 0px;
+
+      & > i {
+        position: relative;
+        color: $palette-3;
+      }
+    }
+
+    &-box {
+      max-width: 336px;
+      min-height: 316px;
+      position: absolute;
+      top: 60px;
+      left: -208px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: -4px -4px 16px rgba(171, 190, 209, 0.2),
+        4px 4px 16px rgba(171, 190, 209, 0.2);
+      border-radius: 13px;
+      z-index: 10;
+      animation-name: hideToshow;
+      animation-duration: 0.8s;
+      overflow: hidden;
+      // display: none;
+
+      &-head {
+        @include font(regular, 16);
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        border-bottom: 1px solid $palette-4;
+        color: $palette-1;
+        margin-bottom: 20px;
+      }
 
-        &-wrapper {
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-    }
-
-    &-numQuiz {
+      &-wrapper {
+        width: 100%;
+        display: flex;
         position: relative;
+        transition: transform 0.25s linear;
+        gap: 20px;
+      }
+
+      &-body {
+        width: 100%;
+        position: relative;
+        flex: 1 0 100%;
+      }
+
+      &-nextBack {
+        display: flex;
+        gap: 16px;
+
+        i {
+          font-size: 24px;
+          height: 24px;
+          line-height: 24px;
+          color: $palette-4;
+        }
+
+        .ex-numQuiz-box-back:hover {
+          color: $secondary-1;
+        }
+
+        .ex-numQuiz-box-next:hover {
+          color: $secondary-1;
+        }
+      }
+
+      &-row {
+        display: flex;
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+
+      &-item {
+        @include font(semibold, 20);
+        // width: calc(100% - 13.513513513513514%);
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-align: center;
+        border-radius: 100%;
+        color: $palette-1;
         cursor: pointer;
-        &-wrapper{
-            display: flex;
-            align-items: flex-end;
-        }
-        &-each,
-        &-all {
-            letter-spacing: 0.015em;
+
+        &:not(:last-child) {
+          margin-right: 24px;
         }
 
-        &-each {
-            @include font(bold, 48);
-            color: $secondary-1;
+        &:hover {
+          background: $secondary-8;
+          color: $secondary-1;
         }
+      }
+    }
+  }
 
-        &-all {
-            @include font(semibold, 32);
-            color: $palette-3;
-        }
-
-        &-choose {
-            position: relative;
-            padding: 8px 0px;
-
-            &>i {
-                position: relative;
-                color: $palette-3;
-            }
-        }
-
-        &-box {
-            max-width: 336px;
-            min-height: 316px;
-            position: absolute;
-            top: 60px;
-            left: -208px;
-            padding: 20px;
-            background: #fff;
-            box-shadow: -4px -4px 16px rgba(171, 190, 209, 0.2), 4px 4px 16px rgba(171, 190, 209, 0.2);
-            border-radius: 13px;
-            z-index: 10;
-            animation-name: hideToshow;
-            animation-duration: 0.8s;
-            overflow: hidden;
-            // display: none;
-
-            &-head {
-                @include font(regular, 16);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: $palette-1;
-                margin-bottom: 20px;
-
-            }
-
-            &-wrapper {
-                width: 100%;
-                display: flex;
-                position: relative;
-                transition: transform .25s linear;
-                gap: 20px;
-
-            }
-
-            &-body {
-                width: 100%;
-                position: relative;
-                flex: 1 0 100%;
-            }
-
-            &-nextBack {
-                display: flex;
-                gap: 16px;
-
-                i {
-                    font-size: 24px;
-                    height: 24px;
-                    line-height: 24px;
-                    color: $palette-4;
-                }
-
-                .ex-numQuiz-box-back:hover {
-                    color: $secondary-1;
-                }
-
-                .ex-numQuiz-box-next:hover {
-                    color: $secondary-1;
-                }
-            }
-
-            &-row {
-                display: flex;
-
-                &:not(:last-child) {
-                    margin-bottom: 24px;
-                }
-            }
-
-            &-item {
-                @include font(semibold, 20);
-                // width: calc(100% - 13.513513513513514%);
-                padding-top: 6px;
-                padding-bottom: 6px;
-                text-align: center;
-                border-radius: 100%;
-                color: $palette-1;
-                cursor: pointer;
-
-                &:not(:last-child) {
-                    margin-right: 24px;
-                }
-
-                &:hover {
-                    background: $secondary-8;
-                    color: $secondary-1;
-
-                }
-            }
-        }
+  &-submit {
+    position: relative;
+    background-color: $primary-3;
+    padding: 11px 23px;
+    border-radius: 100px;
+    cursor: pointer;
+    &-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+    &-time {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      i {
+        display: flex;
+        align-items: center;
+      }
+      i,
+      span {
+        @include font(semibold, 24);
+        color: $primary-1;
+      }
+    }
+    span {
+      @include font(semibold, 18);
+      color: #fff;
+    }
+    &-clockBG {
+      position: absolute;
+      top: 0px;
+      left: -122px;
+      background-color: $secondary-4;
+      width: 206%;
+      height: 100%;
+      //height: 115%;
+      border-radius: 100px;
+      z-index: -2;
     }
 
-    &-submit {
+    &:hover {
+      box-shadow: -2px -2px 8px rgba(251, 171, 91, 0.4),
+        2px 2px 8px rgba(251, 171, 91, 0.4);
+    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -2px;
+    //   left: -2px;
+    //   background-color: #fff;
+    //   width: calc(100% + 4px);
+    //   //height: 116%;
+    //   height: 108.33333333333333%;
+    //   border-radius: 100px;
+    //   z-index: -1;
+    // }
+
+    &-mobile {
+      display: flex;
+      background-color: $secondary-4;
+      padding: 10px 12px;
+      justify-content: space-between;
+      &-time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        i {
+          display: flex;
+          align-items: center;
+        }
+        i,
+        span {
+          @include font(semibold, 24);
+          color: $primary-1;
+        }
+      }
+      &-button {
         background-color: $primary-3;
         padding: 11px 23px;
         border-radius: 100px;
         cursor: pointer;
-
         span {
-            @include font(semibold, 18);
-            color: #fff;
+          @include font(semibold, 16);
+          color: #fff;
         }
-
         &:hover {
-            box-shadow: -2px -2px 8px rgba(251, 171, 91, 0.4), 2px 2px 8px rgba(251, 171, 91, 0.4);
+          box-shadow: -2px -2px 8px rgba(251, 171, 91, 0.4),
+            2px 2px 8px rgba(251, 171, 91, 0.4);
         }
+      }
     }
+  }
 
-    //Question-Text
-    &-content {
-        &-question {
-            @include font(bold, 24);
-            color: $secondary-1;
-            margin-bottom: 32px;
-        }
-        // Question - Radio
-        &-item {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            padding: 11px 0px 11px 11px;
-
-            &-wrapper {}
-
-            &:not(.disabled) {
-                border: 1px solid #fff;
-            }
-
-            &:hover {
-                width: 100%;
-                height: 100%;
-                background: $palette-6;
-                border: 1px solid $palette-4;
-                border-radius: 10px;
-            }
-
-            margin-bottom: 16px;
-
-            &:last-child {
-                margin-bottom: 32px;
-            }
-        }
-        &-answer {
-            width: 24px;
-            height: 24px;
-
-            &-label {
-                @include font(regular, 16);
-                width: 100%;
-                margin-left: 24px;
-                color: $palette-1;
-            }
-        }
-
-        // Question - Matching
-        &-match{
-            display: flex;
-            gap: 24px;
-            justify-content: center;
-            padding: 24px 0;
-            &-question, &-select-wrapper{
-                width: calc(100% - 61.6589861751152%);
-            }
-            &-request{
-                @include font(bold, 16);
-                color: $secondary-7;
-                padding-bottom: 16px;
-            }
-            &-question{
-                span{
-                    @include font(bold, 16);
-                    color: $palette-1;
-                }
-
-            }
-            &-select{
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                &-wrapper{
-                    position: relative;
-                    user-select: none;
-                }
-                &.open .ex-content-match-options{
-                    opacity: 1;
-                    visibility: visible;
-                    pointer-events: all;
-                }                
-            }
-            &-trigger{
-                @include font(regular, 16);
-                position: relative;
-                display: flex;
-                gap: 8px;
-                align-items: center;
-                justify-content: space-between;
-                padding: 12px 20px 12px 24px;
-                color: $palette-1;
-                background: #fff;
-                border: 1px solid $palette-4;
-                border-radius: 13px;
-                i{
-                    display: flex;
-                    align-items: center;
-                    color: $secondary-1;
-                }
-            }
-            &-options{
-                position: absolute;
-                display: block;
-                top: 106%;
-                left: 0;
-                right: 0;
-                border: 1px solid $palette-4;
-                background-color: #fff;
-                transition: all 0.5s;
-                opacity: 0;
-                visibility: hidden;
-                pointer-events: none;
-                z-index: 2;
-                border-radius: 13px;
-                box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
-            }
-            &-option{
-                @include font(regular, 16);
-                position: relative;
-                display: block;
-                padding: 12px 24px;
-                cursor: pointer;
-                transition:  all 0.5s;
-                color: $palette-1;
-                &:hover{
-                    cursor: pointer;
-                    background-color: #F0F0F0;
-                }
-                &.selected{
-                    color: $palette-1;
-
-                }
-                &:first-child{
-                    border-top-left-radius: 13px;
-                    border-top-right-radius: 13px;
-                }
-                &:last-child{
-                    border-bottom-left-radius: 13px;
-                    border-bottom-right-radius: 13px;
-                }
-
-            }
-            &:not(:last-child){
-                border-bottom: 1px solid $palette-4;
-            }
-
-        }
+  //Question-Text
+  &-content {
+    &-question {
+      @include font(bold, 24);
+      color: $secondary-1;
+      margin-bottom: 32px;
+      text-align: justify;
     }
+    // Question - Radio
+    &-item {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 11px 0px 11px 11px;
 
+      &-wrapper {
+      }
 
+      &:not(.disabled) {
+        border: 1px solid #fff;
+      }
 
-    //Next and Back
-    &-nextBack {
-        gap: 80px;
-        
-
-        &-wrapper {
-            padding: 32px 12px 80px 12px;
-        }
-
-        &-backButton,
-        &-nextButton {
-            @include font(semibold, 16);
-            display: flex;
-            align-items: center;
-            padding: 12px 16px 12px 20px;
-            gap: 8px;
-            color: $secondary-1;
-            border-radius: 100px;
-            cursor: pointer;
-
-            i {
-                display: flex;
-                align-items: center;
-                font-size: 20px;
-                height: 20px;
-                line-height: 20px;
-                
-            }
-        }
-        &-backButton{
-            &:hover{
-                box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.4);
-                i{
-                    animation: hoverChangeBack linear .3s;
-                }
-
-            }
-        }
-        &-nextButton{
-            &:hover{
-                box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.4);
-                i{
-                    animation: hoverChangeNext linear .3s;
-                }
-
-            }
-        }
-
-        &-active {
-            box-shadow:  0px 4px 16px rgba(171, 190, 209, 0.45);
-        }
-    }
-
-    &-hide {
-        display: none;
-    }
-
-    &-show {
-        display: block;
-    }
-
-    &-answer-checked {
+      &:hover {
         width: 100%;
         height: 100%;
         background: $palette-6;
-        border: 1px solid $palette-4 !important;
+        border: 1px solid $palette-4;
         border-radius: 10px;
+      }
+
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 32px;
+      }
+    }
+    &-answer {
+      width: 24px;
+      height: 24px;
+
+      &-label {
+        @include font(regular, 16);
+        width: 100%;
+        margin-left: 24px;
+        color: $palette-1;
+      }
     }
 
-
-    &-box-nextBack-active {
-        color: $secondary-1 !important;
+    // Question - Matching
+    &-match {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      padding: 24px 0;
+      &-question,
+      &-select-wrapper {
+        width: calc(100% - 61.6589861751152%);
+      }
+      &-request {
+        @include font(bold, 16);
+        color: $secondary-7;
+        padding-bottom: 16px;
+      }
+      &-question {
+        span {
+          @include font(bold, 16);
+          color: $palette-1;
+        }
+      }
+      &-select {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        &-wrapper {
+          position: relative;
+          user-select: none;
+        }
+        &.open .ex-content-match-options {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: all;
+        }
+      }
+      &-trigger {
+        @include font(regular, 16);
+        position: relative;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px 12px 24px;
+        color: $palette-1;
+        background: #fff;
+        border: 1px solid $palette-4;
+        border-radius: 13px;
+        i {
+          display: flex;
+          align-items: center;
+          color: $secondary-1;
+        }
+      }
+      &-options {
+        position: absolute;
+        display: block;
+        top: 106%;
+        left: 0;
+        right: 0;
+        border: 1px solid $palette-4;
+        background-color: #fff;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 2;
+        border-radius: 13px;
+        box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+      }
+      &-option {
+        @include font(regular, 16);
+        position: relative;
+        display: block;
+        padding: 12px 24px;
+        cursor: pointer;
+        transition: all 0.5s;
+        color: $palette-1;
+        &:hover {
+          cursor: pointer;
+          background-color: #f0f0f0;
+        }
+        &.selected {
+          color: $palette-1;
+        }
+        &:first-child {
+          border-top-left-radius: 13px;
+          border-top-right-radius: 13px;
+        }
+        &:last-child {
+          border-bottom-left-radius: 13px;
+          border-bottom-right-radius: 13px;
+        }
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid $palette-4;
+      }
     }
+  }
+
+  //Next and Back
+  &-nextBack {
+    gap: 80px;
+
+    &-wrapper {
+      padding: 32px 12px 80px 12px;
+    }
+
+    &-backButton,
+    &-nextButton {
+      @include font(semibold, 16);
+      display: flex;
+      align-items: center;
+      padding: 12px 16px 12px 20px;
+      gap: 8px;
+      color: $secondary-1;
+      border-radius: 100px;
+      cursor: pointer;
+
+      i {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+    &-backButton {
+      &:hover {
+        box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.4);
+        i {
+          animation: hoverChangeBack linear 0.3s;
+        }
+      }
+    }
+    &-nextButton {
+      &:hover {
+        box-shadow: 0px 2px 8px rgba(171, 190, 209, 0.4);
+        i {
+          animation: hoverChangeNext linear 0.3s;
+        }
+      }
+    }
+
+    &-active {
+      box-shadow: 0px 4px 16px rgba(171, 190, 209, 0.45);
+    }
+  }
+
+  &-hide {
+    display: none;
+  }
+
+  &-show {
+    display: block;
+  }
+
+  &-answer-checked {
+    width: 100%;
+    height: 100%;
+    background: $palette-6;
+    border: 1px solid $palette-4 !important;
+    border-radius: 10px;
+  }
+
+  &-box-nextBack-active {
+    color: $secondary-1 !important;
+  }
+  &-timesUp {
+    i,
+    span {
+      color: $brand;
+    }
+  }
 }
 
 @keyframes hideToshow {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
-@keyframes hoverChangeNext{
-    0%{ 
-        transform: translateX(-6px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
+@keyframes hoverChangeNext {
+  0% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
-@keyframes hoverChangeBack{
-    0%{ 
-        transform: translateX(6px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
+@keyframes hoverChangeBack {
+  0% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
